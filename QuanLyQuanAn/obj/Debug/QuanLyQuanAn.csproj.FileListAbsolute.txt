@@ -1,0 +1,16 @@
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.exe.config
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.exe
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.pdb
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.AssemblyReference.cache
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.Properties.Resources.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.GenerateResource.cache
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.CoreCompileInputs.cache
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.exe
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.pdb
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FormDangNhap.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhMucNhanVien.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmMain.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDatDon.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDoanhThu.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThucDon.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\obj\Debug\FormCalculator.Form1.resources
