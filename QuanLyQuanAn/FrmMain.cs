@@ -42,64 +42,72 @@ namespace QuanLyQuanAn
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            sideBarTimer.Start();
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-        }
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
+        //    sideBarTimer.Start();
+        //    if (currentFormChild != null)
+        //    {
+        //        currentFormChild.Close();
+        //    }
+        //}
 
-        private Form currentFormChild;
-        private void OpenChildForm (Form childForm)
-        {
-            if (currentFormChild != null)
-            {
-                currentFormChild.Close();
-            }
-            currentFormChild = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panel_body.Controls.Add(childForm);
-            panel_body.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
+        //private Form currentFormChild;
+        //private void OpenChildForm (Form childForm)
+        //{
+        //    if (currentFormChild != null)
+        //    {
+        //        currentFormChild.Close();
+        //    }
+        //    currentFormChild = childForm;
+        //    childForm.TopLevel = false;
+        //    childForm.FormBorderStyle = FormBorderStyle.None;
+        //    childForm.Dock = DockStyle.Fill;
+        //    panel_body.Controls.Add(childForm);
+        //    panel_body.Tag = childForm;
+        //    childForm.BringToFront();
+        //    childForm.Show();
+        //}
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            OpenChildForm (new FrmDanhMucNhanVien() );
-            sideBarTimer.Start ();
+            //OpenChildForm (new FrmDanhMucChinh() );
+            //sideBarTimer.Start ();
+            FrmDanhMucChinh f = new FrmDanhMucChinh();
+            f.Show();
+            this.Hide();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmDoanhThu() );
-            sideBarTimer.Start();
+            FrmThongKeChinh f = new FrmThongKeChinh();
+            f.Show();
+            this.Hide();
         }
 
         private void btnHeThong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmDatDon() );
-            sideBarTimer.Start();
+            FrmHeThongChinh f = new FrmHeThongChinh();
+            f.Show();
+            this.Hide();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmThucDon());
-            sideBarTimer.Start();
-        }
-        private void closeBox_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+            FrmHoaDonChinh f = new FrmHoaDonChinh();
+            f.Show();
+            this.Hide();
         }
 
         private void btnKho_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Form1());
-            sideBarTimer.Start();
+            FrmKhoChinh f = new FrmKhoChinh();
+            f.Show();
+            this.Hide();
+        }
+
+        private void closeBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

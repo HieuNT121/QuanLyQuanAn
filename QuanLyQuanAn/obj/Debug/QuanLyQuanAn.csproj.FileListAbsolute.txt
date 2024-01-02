@@ -30,3 +30,8 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.exe
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.pdb
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhMucChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHeThongChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHoaDonChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmKhoChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThongKeChinh.resources
