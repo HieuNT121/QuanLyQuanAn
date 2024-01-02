@@ -83,6 +83,7 @@
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.elipseControl2 = new QuanLyQuanAn.elipseControl();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -106,6 +107,7 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.panel1);
             this.flowLayoutPanel2.Controls.Add(this.panel2);
             this.flowLayoutPanel2.Controls.Add(this.panel3);
@@ -138,13 +140,15 @@
             // 
             // ban1
             // 
+            this.ban1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban1.ForeColor = System.Drawing.Color.White;
             this.ban1.Location = new System.Drawing.Point(11, 8);
             this.ban1.Name = "ban1";
             this.ban1.Size = new System.Drawing.Size(78, 77);
             this.ban1.TabIndex = 0;
             this.ban1.Text = "Bàn 1";
-            this.ban1.UseVisualStyleBackColor = true;
+            this.ban1.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -156,13 +160,15 @@
             // 
             // ban2
             // 
+            this.ban2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban2.ForeColor = System.Drawing.Color.White;
             this.ban2.Location = new System.Drawing.Point(12, 8);
             this.ban2.Name = "ban2";
             this.ban2.Size = new System.Drawing.Size(78, 77);
             this.ban2.TabIndex = 2;
             this.ban2.Text = "Bàn 2";
-            this.ban2.UseVisualStyleBackColor = true;
+            this.ban2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -175,13 +181,15 @@
             // 
             // ban3
             // 
+            this.ban3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban3.ForeColor = System.Drawing.Color.White;
             this.ban3.Location = new System.Drawing.Point(10, 8);
             this.ban3.Name = "ban3";
             this.ban3.Size = new System.Drawing.Size(78, 77);
             this.ban3.TabIndex = 4;
             this.ban3.Text = "Bàn 3";
-            this.ban3.UseVisualStyleBackColor = true;
+            this.ban3.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -200,13 +208,15 @@
             // 
             // ban4
             // 
+            this.ban4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban4.ForeColor = System.Drawing.Color.White;
             this.ban4.Location = new System.Drawing.Point(10, 8);
             this.ban4.Name = "ban4";
             this.ban4.Size = new System.Drawing.Size(78, 77);
             this.ban4.TabIndex = 3;
             this.ban4.Text = "Bàn 4";
-            this.ban4.UseVisualStyleBackColor = true;
+            this.ban4.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -218,13 +228,15 @@
             // 
             // ban5
             // 
+            this.ban5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban5.ForeColor = System.Drawing.Color.White;
             this.ban5.Location = new System.Drawing.Point(10, 8);
             this.ban5.Name = "ban5";
             this.ban5.Size = new System.Drawing.Size(78, 77);
             this.ban5.TabIndex = 3;
             this.ban5.Text = "Bàn 5";
-            this.ban5.UseVisualStyleBackColor = true;
+            this.ban5.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
@@ -236,13 +248,15 @@
             // 
             // ban6
             // 
+            this.ban6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban6.ForeColor = System.Drawing.Color.White;
             this.ban6.Location = new System.Drawing.Point(10, 8);
             this.ban6.Name = "ban6";
             this.ban6.Size = new System.Drawing.Size(78, 77);
             this.ban6.TabIndex = 3;
             this.ban6.Text = "Bàn 6";
-            this.ban6.UseVisualStyleBackColor = true;
+            this.ban6.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -254,13 +268,15 @@
             // 
             // ban7
             // 
+            this.ban7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban7.ForeColor = System.Drawing.Color.White;
             this.ban7.Location = new System.Drawing.Point(10, 8);
             this.ban7.Name = "ban7";
             this.ban7.Size = new System.Drawing.Size(78, 77);
             this.ban7.TabIndex = 3;
             this.ban7.Text = "Bàn 7";
-            this.ban7.UseVisualStyleBackColor = true;
+            this.ban7.UseVisualStyleBackColor = false;
             // 
             // panel9
             // 
@@ -272,13 +288,15 @@
             // 
             // ban8
             // 
+            this.ban8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban8.ForeColor = System.Drawing.Color.White;
             this.ban8.Location = new System.Drawing.Point(10, 8);
             this.ban8.Name = "ban8";
             this.ban8.Size = new System.Drawing.Size(78, 77);
             this.ban8.TabIndex = 3;
             this.ban8.Text = "Bàn 8";
-            this.ban8.UseVisualStyleBackColor = true;
+            this.ban8.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -290,13 +308,15 @@
             // 
             // ban9
             // 
+            this.ban9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban9.ForeColor = System.Drawing.Color.White;
             this.ban9.Location = new System.Drawing.Point(10, 8);
             this.ban9.Name = "ban9";
             this.ban9.Size = new System.Drawing.Size(78, 77);
             this.ban9.TabIndex = 3;
             this.ban9.Text = "Bàn 9";
-            this.ban9.UseVisualStyleBackColor = true;
+            this.ban9.UseVisualStyleBackColor = false;
             // 
             // panel11
             // 
@@ -308,13 +328,15 @@
             // 
             // ban10
             // 
+            this.ban10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban10.ForeColor = System.Drawing.Color.White;
             this.ban10.Location = new System.Drawing.Point(10, 8);
             this.ban10.Name = "ban10";
             this.ban10.Size = new System.Drawing.Size(78, 77);
             this.ban10.TabIndex = 3;
             this.ban10.Text = "Bàn 10";
-            this.ban10.UseVisualStyleBackColor = true;
+            this.ban10.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -326,13 +348,15 @@
             // 
             // ban11
             // 
+            this.ban11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban11.ForeColor = System.Drawing.Color.White;
             this.ban11.Location = new System.Drawing.Point(10, 8);
             this.ban11.Name = "ban11";
             this.ban11.Size = new System.Drawing.Size(78, 77);
             this.ban11.TabIndex = 3;
             this.ban11.Text = "Bàn 11";
-            this.ban11.UseVisualStyleBackColor = true;
+            this.ban11.UseVisualStyleBackColor = false;
             // 
             // panel13
             // 
@@ -344,13 +368,15 @@
             // 
             // ban12
             // 
+            this.ban12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban12.ForeColor = System.Drawing.Color.White;
             this.ban12.Location = new System.Drawing.Point(10, 8);
             this.ban12.Name = "ban12";
             this.ban12.Size = new System.Drawing.Size(78, 77);
             this.ban12.TabIndex = 3;
             this.ban12.Text = "Bàn 12";
-            this.ban12.UseVisualStyleBackColor = true;
+            this.ban12.UseVisualStyleBackColor = false;
             // 
             // panel14
             // 
@@ -362,13 +388,15 @@
             // 
             // ban13
             // 
+            this.ban13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban13.ForeColor = System.Drawing.Color.White;
             this.ban13.Location = new System.Drawing.Point(10, 8);
             this.ban13.Name = "ban13";
             this.ban13.Size = new System.Drawing.Size(78, 77);
             this.ban13.TabIndex = 3;
             this.ban13.Text = "Bàn 13";
-            this.ban13.UseVisualStyleBackColor = true;
+            this.ban13.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -380,13 +408,15 @@
             // 
             // ban14
             // 
+            this.ban14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban14.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban14.ForeColor = System.Drawing.Color.White;
             this.ban14.Location = new System.Drawing.Point(10, 8);
             this.ban14.Name = "ban14";
             this.ban14.Size = new System.Drawing.Size(78, 77);
             this.ban14.TabIndex = 3;
             this.ban14.Text = "Bàn 14";
-            this.ban14.UseVisualStyleBackColor = true;
+            this.ban14.UseVisualStyleBackColor = false;
             // 
             // panel16
             // 
@@ -398,13 +428,15 @@
             // 
             // ban15
             // 
+            this.ban15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban15.ForeColor = System.Drawing.Color.White;
             this.ban15.Location = new System.Drawing.Point(10, 8);
             this.ban15.Name = "ban15";
             this.ban15.Size = new System.Drawing.Size(78, 77);
             this.ban15.TabIndex = 3;
             this.ban15.Text = "Bàn 15";
-            this.ban15.UseVisualStyleBackColor = true;
+            this.ban15.UseVisualStyleBackColor = false;
             // 
             // panel17
             // 
@@ -416,18 +448,21 @@
             // 
             // ban16
             // 
+            this.ban16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ban16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ban16.ForeColor = System.Drawing.Color.White;
             this.ban16.Location = new System.Drawing.Point(10, 8);
             this.ban16.Name = "ban16";
             this.ban16.Size = new System.Drawing.Size(78, 77);
             this.ban16.TabIndex = 3;
             this.ban16.Text = "Bàn 16";
-            this.ban16.UseVisualStyleBackColor = true;
+            this.ban16.UseVisualStyleBackColor = false;
             // 
             // order
             // 
             this.order.AutoSize = true;
             this.order.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.order.ForeColor = System.Drawing.Color.White;
             this.order.Location = new System.Drawing.Point(440, 11);
             this.order.Name = "order";
             this.order.Size = new System.Drawing.Size(124, 38);
@@ -475,7 +510,8 @@
             // 
             this.soLuong.AutoSize = true;
             this.soLuong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuong.Location = new System.Drawing.Point(805, 78);
+            this.soLuong.ForeColor = System.Drawing.Color.White;
+            this.soLuong.Location = new System.Drawing.Point(670, 76);
             this.soLuong.Name = "soLuong";
             this.soLuong.Size = new System.Drawing.Size(85, 25);
             this.soLuong.TabIndex = 6;
@@ -484,7 +520,7 @@
             // soLuongMon
             // 
             this.soLuongMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuongMon.Location = new System.Drawing.Point(896, 76);
+            this.soLuongMon.Location = new System.Drawing.Point(761, 77);
             this.soLuongMon.Name = "soLuongMon";
             this.soLuongMon.Size = new System.Drawing.Size(42, 31);
             this.soLuongMon.TabIndex = 7;
@@ -546,6 +582,7 @@
             // 
             this.tongTien.AutoSize = true;
             this.tongTien.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tongTien.ForeColor = System.Drawing.Color.White;
             this.tongTien.Location = new System.Drawing.Point(449, 492);
             this.tongTien.Name = "tongTien";
             this.tongTien.Size = new System.Drawing.Size(115, 31);
@@ -582,7 +619,8 @@
             // 
             this.TimeLabel.AutoSize = true;
             this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.Location = new System.Drawing.Point(661, 21);
+            this.TimeLabel.ForeColor = System.Drawing.Color.White;
+            this.TimeLabel.Location = new System.Drawing.Point(670, 9);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(93, 28);
             this.TimeLabel.TabIndex = 13;
@@ -618,11 +656,23 @@
             this.btnXoa.Text = "Xoá món";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(666, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 30);
+            this.dateTimePicker1.TabIndex = 16;
+            // 
             // FrmDatDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(987, 610);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.TimeLabel);
@@ -721,5 +771,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Don_Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Thanh_tien;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

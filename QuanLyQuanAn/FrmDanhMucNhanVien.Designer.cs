@@ -46,7 +46,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -56,9 +56,9 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -163,6 +163,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -171,6 +172,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(3, 60);
             this.panel2.Name = "panel2";
@@ -179,6 +181,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(3, 117);
             this.panel3.Name = "panel3";
@@ -187,6 +190,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(3, 174);
             this.panel4.Name = "panel4";
@@ -257,19 +261,23 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox2);
+            this.panel10.Controls.Add(this.comboBox1);
             this.panel10.Location = new System.Drawing.Point(3, 117);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(272, 51);
             this.panel10.TabIndex = 2;
             // 
-            // textBox2
+            // comboBox1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(5, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(265, 31);
-            this.textBox2.TabIndex = 4;
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBox1.Location = new System.Drawing.Point(5, 8);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(264, 31);
+            this.comboBox1.TabIndex = 2;
             // 
             // panel9
             // 
@@ -309,6 +317,7 @@
             // 
             // panel14
             // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel14.Controls.Add(this.label6);
             this.panel14.Location = new System.Drawing.Point(3, 111);
             this.panel14.Name = "panel14";
@@ -317,6 +326,7 @@
             // 
             // panel13
             // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel13.Controls.Add(this.label5);
             this.panel13.Location = new System.Drawing.Point(3, 57);
             this.panel13.Name = "panel13";
@@ -325,6 +335,7 @@
             // 
             // panel12
             // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel12.Controls.Add(this.label1);
             this.panel12.Location = new System.Drawing.Point(3, 3);
             this.panel12.Name = "panel12";
@@ -345,35 +356,45 @@
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.textBox7);
+            this.panel17.Controls.Add(this.comboBox3);
             this.panel17.Location = new System.Drawing.Point(9, 114);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(280, 48);
             this.panel17.TabIndex = 1;
             // 
-            // textBox7
+            // comboBox3
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(7, 9);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(265, 31);
-            this.textBox7.TabIndex = 4;
+            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Sáng",
+            "Chiều ",
+            "Tối"});
+            this.comboBox3.Location = new System.Drawing.Point(7, 9);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(265, 31);
+            this.comboBox3.TabIndex = 0;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.textBox6);
+            this.panel16.Controls.Add(this.comboBox2);
             this.panel16.Location = new System.Drawing.Point(9, 57);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(280, 48);
             this.panel16.TabIndex = 1;
             // 
-            // textBox6
+            // comboBox2
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(8, 9);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(265, 31);
-            this.textBox6.TabIndex = 4;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Chức vụ 1",
+            "Chức vụ 2",
+            "Chức vụ 3"});
+            this.comboBox2.Location = new System.Drawing.Point(7, 8);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(265, 31);
+            this.comboBox2.TabIndex = 0;
             // 
             // panel15
             // 
@@ -386,6 +407,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(7, 10);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(266, 30);
@@ -529,6 +551,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(987, 610);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
@@ -557,7 +580,6 @@
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -571,9 +593,7 @@
             this.panel12.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
             this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
             this.panel15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -599,7 +619,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel6;
@@ -609,9 +628,7 @@
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button btnXem;
@@ -628,5 +645,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

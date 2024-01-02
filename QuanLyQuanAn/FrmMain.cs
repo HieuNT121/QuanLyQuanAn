@@ -68,35 +68,35 @@ namespace QuanLyQuanAn
             childForm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnDanhMuc_Click(object sender, EventArgs e)
         {
             OpenChildForm (new FrmDanhMucNhanVien() );
             sideBarTimer.Start ();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnThongKe_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FrmDoanhThu() );
             sideBarTimer.Start();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnHeThong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FrmDatDon() );
             sideBarTimer.Start();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnHoaDon_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FrmThucDon());
             sideBarTimer.Start();
         }
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void closeBox_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnKho_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Form1());
             sideBarTimer.Start();

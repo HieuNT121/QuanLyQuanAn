@@ -162,6 +162,7 @@
             // 
             this.MonAn.AutoSize = true;
             this.MonAn.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MonAn.ForeColor = System.Drawing.Color.White;
             this.MonAn.Location = new System.Drawing.Point(632, 23);
             this.MonAn.Name = "MonAn";
             this.MonAn.Size = new System.Drawing.Size(93, 31);
@@ -204,6 +205,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.IDMon);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
@@ -213,6 +215,7 @@
             // IDMon
             // 
             this.IDMon.AutoSize = true;
+            this.IDMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.IDMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDMon.Location = new System.Drawing.Point(10, 7);
             this.IDMon.Name = "IDMon";
@@ -238,6 +241,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.NameMon);
             this.panel3.Location = new System.Drawing.Point(3, 50);
             this.panel3.Name = "panel3";
@@ -272,6 +276,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel5.Controls.Add(this.LoaiMon);
             this.panel5.Location = new System.Drawing.Point(3, 97);
             this.panel5.Name = "panel5";
@@ -306,6 +311,7 @@
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel7.Controls.Add(this.Gia);
             this.panel7.Location = new System.Drawing.Point(3, 144);
             this.panel7.Name = "panel7";
@@ -342,6 +348,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(987, 610);
             this.ControlBox = false;
             this.Controls.Add(this.flowLayoutPanel1);

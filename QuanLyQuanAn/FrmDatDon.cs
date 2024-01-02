@@ -23,5 +23,6 @@ namespace QuanLyQuanAn
             string formattedTime = currentTime.ToString("HH:mm:ss tt");
             TimeLabel.Text = formattedTime;
         }
+
     }
 }
