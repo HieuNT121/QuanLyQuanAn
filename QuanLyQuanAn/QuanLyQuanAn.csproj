@@ -150,5 +150,8 @@
   <ItemGroup>
     <None Include="Resources\restaurant.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
