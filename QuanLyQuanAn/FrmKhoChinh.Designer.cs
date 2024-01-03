@@ -28,30 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKhoChinh));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_top = new System.Windows.Forms.Panel();
             this.btnCapNhatHangHoa = new System.Windows.Forms.Button();
             this.btnSapXepHang = new System.Windows.Forms.Button();
             this.btnXuLyHangTon = new System.Windows.Forms.Button();
             this.btnNhapXuat = new System.Windows.Forms.Button();
-            this.closeBox = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
+            this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel_top
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.closeBox);
-            this.panel1.Controls.Add(this.btnCapNhatHangHoa);
-            this.panel1.Controls.Add(this.btnSapXepHang);
-            this.panel1.Controls.Add(this.btnXuLyHangTon);
-            this.panel1.Controls.Add(this.btnNhapXuat);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 100);
-            this.panel1.TabIndex = 0;
+            this.panel_top.BackColor = System.Drawing.Color.Gray;
+            this.panel_top.Controls.Add(this.btnCapNhatHangHoa);
+            this.panel_top.Controls.Add(this.btnSapXepHang);
+            this.panel_top.Controls.Add(this.btnXuLyHangTon);
+            this.panel_top.Controls.Add(this.btnNhapXuat);
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(743, 100);
+            this.panel_top.TabIndex = 0;
             // 
             // btnCapNhatHangHoa
             // 
@@ -97,39 +93,27 @@
             this.btnNhapXuat.Text = "Nhập, xuất";
             this.btnNhapXuat.UseVisualStyleBackColor = false;
             // 
-            // closeBox
-            // 
-            this.closeBox.Image = ((System.Drawing.Image)(resources.GetObject("closeBox.Image")));
-            this.closeBox.Location = new System.Drawing.Point(798, 12);
-            this.closeBox.Name = "closeBox";
-            this.closeBox.Size = new System.Drawing.Size(29, 28);
-            this.closeBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeBox.TabIndex = 6;
-            this.closeBox.TabStop = false;
-            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
-            // 
             // FrmKhoChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 450);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(743, 615);
+            this.Controls.Add(this.panel_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(266, 40);
             this.Name = "FrmKhoChinh";
             this.Text = "FrmKhoChinh";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
+            this.panel_top.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Button btnCapNhatHangHoa;
         private System.Windows.Forms.Button btnSapXepHang;
         private System.Windows.Forms.Button btnXuLyHangTon;
         private System.Windows.Forms.Button btnNhapXuat;
-        private System.Windows.Forms.PictureBox closeBox;
     }
 }

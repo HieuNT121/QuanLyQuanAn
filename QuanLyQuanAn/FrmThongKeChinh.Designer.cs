@@ -28,31 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThongKeChinh));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel_top = new System.Windows.Forms.Panel();
             this.btnDoanhSo = new System.Windows.Forms.Button();
             this.btnChiTieu = new System.Windows.Forms.Button();
             this.btnLuong = new System.Windows.Forms.Button();
             this.btnLuongKhach = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.closeBox = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
+            this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel_top
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.closeBox);
-            this.panel1.Controls.Add(this.btnDoanhSo);
-            this.panel1.Controls.Add(this.btnChiTieu);
-            this.panel1.Controls.Add(this.btnLuong);
-            this.panel1.Controls.Add(this.btnLuongKhach);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(768, 100);
-            this.panel1.TabIndex = 0;
+            this.panel_top.BackColor = System.Drawing.Color.Gray;
+            this.panel_top.Controls.Add(this.btnDoanhSo);
+            this.panel_top.Controls.Add(this.btnChiTieu);
+            this.panel_top.Controls.Add(this.btnLuong);
+            this.panel_top.Controls.Add(this.btnLuongKhach);
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(0, 0);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(743, 100);
+            this.panel_top.TabIndex = 0;
             // 
             // btnDoanhSo
             // 
@@ -103,44 +99,33 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(768, 351);
+            this.panel2.Size = new System.Drawing.Size(743, 515);
             this.panel2.TabIndex = 1;
-            // 
-            // closeBox
-            // 
-            this.closeBox.Image = ((System.Drawing.Image)(resources.GetObject("closeBox.Image")));
-            this.closeBox.Location = new System.Drawing.Point(727, 12);
-            this.closeBox.Name = "closeBox";
-            this.closeBox.Size = new System.Drawing.Size(29, 28);
-            this.closeBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeBox.TabIndex = 6;
-            this.closeBox.TabStop = false;
-            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
             // 
             // FrmThongKeChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 451);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(743, 615);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(266, 40);
             this.Name = "FrmThongKeChinh";
             this.Text = "FrmThongKeChinh";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
+            this.panel_top.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDoanhSo;
         private System.Windows.Forms.Button btnChiTieu;
         private System.Windows.Forms.Button btnLuong;
         private System.Windows.Forms.Button btnLuongKhach;
-        private System.Windows.Forms.PictureBox closeBox;
     }
 }

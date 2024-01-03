@@ -17,11 +17,5 @@ namespace QuanLyQuanAn
             InitializeComponent();
         }
 
-        private void closeBox_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            FrmMain f = new FrmMain();
-            f.Show(); 
-        }
     }
 }

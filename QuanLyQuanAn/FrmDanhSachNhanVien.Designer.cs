@@ -1,6 +1,6 @@
 ﻿namespace QuanLyQuanAn
 {
-    partial class FrmDanhMucNhanVien
+    partial class FrmDanhSachNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -156,7 +156,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel2);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 35);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 18);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 238);
             this.flowLayoutPanel1.TabIndex = 7;
@@ -238,7 +238,7 @@
             this.panel5.Controls.Add(this.panel10);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Controls.Add(this.panel8);
-            this.panel5.Location = new System.Drawing.Point(196, 35);
+            this.panel5.Location = new System.Drawing.Point(172, 18);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(282, 238);
             this.panel5.TabIndex = 10;
@@ -310,7 +310,7 @@
             this.panel6.Controls.Add(this.panel14);
             this.panel6.Controls.Add(this.panel13);
             this.panel6.Controls.Add(this.panel12);
-            this.panel6.Location = new System.Drawing.Point(484, 38);
+            this.panel6.Location = new System.Drawing.Point(460, 21);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(166, 235);
             this.panel6.TabIndex = 11;
@@ -349,7 +349,7 @@
             this.panel7.Controls.Add(this.panel17);
             this.panel7.Controls.Add(this.panel16);
             this.panel7.Controls.Add(this.panel15);
-            this.panel7.Location = new System.Drawing.Point(656, 38);
+            this.panel7.Location = new System.Drawing.Point(632, 21);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(292, 235);
             this.panel7.TabIndex = 12;
@@ -425,7 +425,7 @@
             this.ChucVu,
             this.DiaChi,
             this.NgaySinh});
-            this.dataGridView1.Location = new System.Drawing.Point(24, 334);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 317);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -486,7 +486,7 @@
             this.btnXem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Location = new System.Drawing.Point(67, 286);
+            this.btnXem.Location = new System.Drawing.Point(43, 269);
             this.btnXem.Name = "btnXem";
             this.btnXem.Size = new System.Drawing.Size(86, 36);
             this.btnXem.TabIndex = 14;
@@ -498,7 +498,7 @@
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(204, 286);
+            this.btnThem.Location = new System.Drawing.Point(180, 269);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(86, 36);
             this.btnThem.TabIndex = 15;
@@ -510,7 +510,7 @@
             this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(327, 286);
+            this.btnSua.Location = new System.Drawing.Point(303, 269);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(86, 36);
             this.btnSua.TabIndex = 16;
@@ -522,7 +522,7 @@
             this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(450, 287);
+            this.btnXoa.Location = new System.Drawing.Point(426, 270);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(86, 36);
             this.btnXoa.TabIndex = 17;
@@ -540,19 +540,19 @@
             this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(576, 287);
+            this.btnThoat.Location = new System.Drawing.Point(552, 270);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(86, 36);
             this.btnThoat.TabIndex = 18;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // FrmDanhMucNhanVien
+            // FrmDanhSachNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(987, 610);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(939, 577);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -564,7 +564,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmDanhMucNhanVien";
+            this.Name = "FrmDanhSachNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDanhMucNhanVien";
             this.flowLayoutPanel1.ResumeLayout(false);

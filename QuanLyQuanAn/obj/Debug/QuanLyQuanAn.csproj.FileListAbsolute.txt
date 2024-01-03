@@ -20,7 +20,6 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\bin\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.AssemblyReference.cache
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\FormCalculator.Form1.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDatDon.resources
-C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhMucNhanVien.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDoanhThu.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmMain.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FormDangNhap.resources
@@ -35,3 +34,4 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHoaDonChinh.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmKhoChinh.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThongKeChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachNhanVien.resources

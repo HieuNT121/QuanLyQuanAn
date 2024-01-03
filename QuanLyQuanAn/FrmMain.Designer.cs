@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.sideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,11 +44,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel_top = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
-            this.minBox = new System.Windows.Forms.PictureBox();
-            this.maxBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.closeBox = new System.Windows.Forms.PictureBox();
             this.sideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,11 +54,6 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel_body.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.minBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             this.SuspendLayout();
             // 
             // sideBar
@@ -77,10 +68,10 @@
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.sideBar.Location = new System.Drawing.Point(0, 0);
-            this.sideBar.MaximumSize = new System.Drawing.Size(266, 610);
+            this.sideBar.MaximumSize = new System.Drawing.Size(266, 665);
             this.sideBar.MinimumSize = new System.Drawing.Size(52, 610);
             this.sideBar.Name = "sideBar";
-            this.sideBar.Size = new System.Drawing.Size(266, 610);
+            this.sideBar.Size = new System.Drawing.Size(266, 665);
             this.sideBar.TabIndex = 0;
             // 
             // panel1
@@ -115,7 +106,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            //this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel5
             // 
@@ -232,66 +222,30 @@
             this.sideBarTimer.Interval = 10;
             this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
             // 
+            // panel_top
+            // 
+            this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_top.Location = new System.Drawing.Point(266, 0);
+            this.panel_top.Name = "panel_top";
+            this.panel_top.Size = new System.Drawing.Size(1012, 40);
+            this.panel_top.TabIndex = 2;
+            // 
             // panel_body
             // 
-            this.panel_body.Controls.Add(this.minBox);
-            this.panel_body.Controls.Add(this.maxBox);
-            this.panel_body.Controls.Add(this.pictureBox3);
-            this.panel_body.Controls.Add(this.closeBox);
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_body.Location = new System.Drawing.Point(266, 0);
+            this.panel_body.Location = new System.Drawing.Point(266, 40);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(744, 610);
-            this.panel_body.TabIndex = 1;
-            // 
-            // minBox
-            // 
-            this.minBox.Image = ((System.Drawing.Image)(resources.GetObject("minBox.Image")));
-            this.minBox.Location = new System.Drawing.Point(614, 14);
-            this.minBox.Name = "minBox";
-            this.minBox.Size = new System.Drawing.Size(35, 33);
-            this.minBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minBox.TabIndex = 3;
-            this.minBox.TabStop = false;
-            // 
-            // maxBox
-            // 
-            this.maxBox.Image = ((System.Drawing.Image)(resources.GetObject("maxBox.Image")));
-            this.maxBox.Location = new System.Drawing.Point(655, 14);
-            this.maxBox.Name = "maxBox";
-            this.maxBox.Size = new System.Drawing.Size(35, 33);
-            this.maxBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.maxBox.TabIndex = 2;
-            this.maxBox.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(46, 150);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(644, 420);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // closeBox
-            // 
-            this.closeBox.Image = ((System.Drawing.Image)(resources.GetObject("closeBox.Image")));
-            this.closeBox.Location = new System.Drawing.Point(697, 14);
-            this.closeBox.Name = "closeBox";
-            this.closeBox.Size = new System.Drawing.Size(35, 33);
-            this.closeBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeBox.TabIndex = 0;
-            this.closeBox.TabStop = false;
-            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
+            this.panel_body.Size = new System.Drawing.Size(1012, 625);
+            this.panel_body.TabIndex = 3;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1010, 610);
+            this.ClientSize = new System.Drawing.Size(1278, 665);
             this.Controls.Add(this.panel_body);
+            this.Controls.Add(this.panel_top);
             this.Controls.Add(this.sideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMain";
@@ -305,11 +259,6 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel_body.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.minBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,12 +279,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer sideBarTimer;
-        private System.Windows.Forms.Panel panel_body;
-        private System.Windows.Forms.PictureBox closeBox;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox minBox;
-        private System.Windows.Forms.PictureBox maxBox;
+        private System.Windows.Forms.Panel panel_top;
+        private System.Windows.Forms.Panel panel_body;
     }
 }
 

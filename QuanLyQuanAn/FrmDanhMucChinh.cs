@@ -17,11 +17,26 @@ namespace QuanLyQuanAn
             InitializeComponent();
         }
 
-        private void closeBox_Click(object sender, EventArgs e)
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
         {
-            this.Close();
-            FrmMain f = new FrmMain();
-            f.Show();
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_body.Controls.Add(childForm);
+            panel_body.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachNhanVien());
         }
     }
 }

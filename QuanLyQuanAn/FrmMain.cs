@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,7 +14,7 @@ namespace QuanLyQuanAn
 {
     public partial class FrmMain : Form
     {
-        
+
         public FrmMain()
         {
             InitializeComponent();
@@ -22,9 +23,9 @@ namespace QuanLyQuanAn
         bool sideBarExpand;
         private void sideBarTimer_Tick(object sender, EventArgs e)
         {
-            if(sideBarExpand)
+            if (sideBarExpand)
             {
-                sideBar.Width -= 10; 
+                sideBar.Width -= 10;
                 if (sideBar.Width == sideBar.MinimumSize.Width)
                 {
                     sideBarExpand = false;
@@ -37,72 +38,65 @@ namespace QuanLyQuanAn
                 if (sideBar.Width == sideBar.MaximumSize.Width)
                 {
                     sideBarExpand = true;
-                    sideBarTimer.Stop();    
+                    sideBarTimer.Stop();
                 }
             }
         }
 
-        //private void pictureBox1_Click(object sender, EventArgs e)
-        //{
-        //    sideBarTimer.Start();
-        //    if (currentFormChild != null)
-        //    {
-        //        currentFormChild.Close();
-        //    }
-        //}
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            sideBarTimer.Start();
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+        }
 
-        //private Form currentFormChild;
-        //private void OpenChildForm (Form childForm)
-        //{
-        //    if (currentFormChild != null)
-        //    {
-        //        currentFormChild.Close();
-        //    }
-        //    currentFormChild = childForm;
-        //    childForm.TopLevel = false;
-        //    childForm.FormBorderStyle = FormBorderStyle.None;
-        //    childForm.Dock = DockStyle.Fill;
-        //    panel_body.Controls.Add(childForm);
-        //    panel_body.Tag = childForm;
-        //    childForm.BringToFront();
-        //    childForm.Show();
-        //}
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel_body.Controls.Add(childForm);
+            panel_body.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
 
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
-            //OpenChildForm (new FrmDanhMucChinh() );
-            //sideBarTimer.Start ();
-            FrmDanhMucChinh f = new FrmDanhMucChinh();
-            f.Show();
-            this.Hide();
+            OpenChildForm(new FrmDanhMucChinh());
+            sideBarTimer.Start();
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            FrmThongKeChinh f = new FrmThongKeChinh();
-            f.Show();
-            this.Hide();
+            OpenChildForm(new FrmThongKeChinh());
+            sideBarTimer.Start();
         }
 
         private void btnHeThong_Click(object sender, EventArgs e)
         {
-            FrmHeThongChinh f = new FrmHeThongChinh();
-            f.Show();
-            this.Hide();
+            OpenChildForm(new FrmHeThongChinh());
+            sideBarTimer.Start();
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            FrmHoaDonChinh f = new FrmHoaDonChinh();
-            f.Show();
-            this.Hide();
+            OpenChildForm(new FrmHoaDonChinh());
+            sideBarTimer.Start();
         }
 
         private void btnKho_Click(object sender, EventArgs e)
         {
-            FrmKhoChinh f = new FrmKhoChinh();
-            f.Show();
-            this.Hide();
+            OpenChildForm(new FrmKhoChinh());
+            sideBarTimer.Start();
         }
 
         private void closeBox_Click(object sender, EventArgs e)
