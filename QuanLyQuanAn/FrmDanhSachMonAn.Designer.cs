@@ -1,0 +1,347 @@
+﻿namespace QuanLyQuanAn
+{
+    partial class FrmDanhSachMonAn
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnMaMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumóTenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnPhanLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnGiaCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnXem = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnTim = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTenMonAn = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtMaMon = new System.Windows.Forms.TextBox();
+            this.txtTenMon = new System.Windows.Forms.TextBox();
+            this.txtPhanLoai = new System.Windows.Forms.TextBox();
+            this.txtGiaCa = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnMaMonAn,
+            this.ColumóTenMon,
+            this.ColumnPhanLoai,
+            this.ColumnGiaCa});
+            this.dataGridView1.Location = new System.Drawing.Point(40, 55);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(559, 395);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // ColumnMaMonAn
+            // 
+            this.ColumnMaMonAn.HeaderText = "Mã món ăn";
+            this.ColumnMaMonAn.MinimumWidth = 6;
+            this.ColumnMaMonAn.Name = "ColumnMaMonAn";
+            this.ColumnMaMonAn.Width = 125;
+            // 
+            // ColumóTenMon
+            // 
+            this.ColumóTenMon.HeaderText = "Tên món";
+            this.ColumóTenMon.MinimumWidth = 6;
+            this.ColumóTenMon.Name = "ColumóTenMon";
+            this.ColumóTenMon.Width = 125;
+            // 
+            // ColumnPhanLoai
+            // 
+            this.ColumnPhanLoai.HeaderText = "Phân loại";
+            this.ColumnPhanLoai.MinimumWidth = 6;
+            this.ColumnPhanLoai.Name = "ColumnPhanLoai";
+            this.ColumnPhanLoai.Width = 125;
+            // 
+            // ColumnGiaCa
+            // 
+            this.ColumnGiaCa.HeaderText = "Giá cả";
+            this.ColumnGiaCa.MinimumWidth = 6;
+            this.ColumnGiaCa.Name = "ColumnGiaCa";
+            this.ColumnGiaCa.Width = 125;
+            // 
+            // btnXem
+            // 
+            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXem.Location = new System.Drawing.Point(40, 497);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(103, 40);
+            this.btnXem.TabIndex = 1;
+            this.btnXem.Text = "Xem";
+            this.btnXem.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(179, 497);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 40);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thêm";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(329, 497);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(103, 40);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(482, 497);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(103, 40);
+            this.btnSua.TabIndex = 4;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // btnTim
+            // 
+            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.Location = new System.Drawing.Point(639, 138);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(103, 40);
+            this.btnTim.TabIndex = 5;
+            this.btnTim.Text = "Tìm";
+            this.btnTim.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(635, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 28);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Món ăn";
+            // 
+            // txtTenMonAn
+            // 
+            this.txtTenMonAn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenMonAn.Location = new System.Drawing.Point(639, 84);
+            this.txtTenMonAn.Name = "txtTenMonAn";
+            this.txtTenMonAn.Size = new System.Drawing.Size(219, 30);
+            this.txtTenMonAn.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(640, 225);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(102, 42);
+            this.panel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã món";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(640, 282);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(102, 42);
+            this.panel2.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tên món";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Location = new System.Drawing.Point(640, 339);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(102, 42);
+            this.panel3.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Phân loại";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(640, 396);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(102, 42);
+            this.panel4.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 23);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Giá cả";
+            // 
+            // txtMaMon
+            // 
+            this.txtMaMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaMon.Location = new System.Drawing.Point(760, 232);
+            this.txtMaMon.Name = "txtMaMon";
+            this.txtMaMon.Size = new System.Drawing.Size(219, 30);
+            this.txtMaMon.TabIndex = 12;
+            // 
+            // txtTenMon
+            // 
+            this.txtTenMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenMon.Location = new System.Drawing.Point(760, 288);
+            this.txtTenMon.Name = "txtTenMon";
+            this.txtTenMon.Size = new System.Drawing.Size(219, 30);
+            this.txtTenMon.TabIndex = 13;
+            // 
+            // txtPhanLoai
+            // 
+            this.txtPhanLoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhanLoai.Location = new System.Drawing.Point(760, 346);
+            this.txtPhanLoai.Name = "txtPhanLoai";
+            this.txtPhanLoai.Size = new System.Drawing.Size(219, 30);
+            this.txtPhanLoai.TabIndex = 14;
+            // 
+            // txtGiaCa
+            // 
+            this.txtGiaCa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaCa.Location = new System.Drawing.Point(760, 403);
+            this.txtGiaCa.Name = "txtGiaCa";
+            this.txtGiaCa.Size = new System.Drawing.Size(219, 30);
+            this.txtGiaCa.TabIndex = 15;
+            // 
+            // FrmDanhSachMonAn
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1034, 600);
+            this.Controls.Add(this.txtGiaCa);
+            this.Controls.Add(this.txtPhanLoai);
+            this.Controls.Add(this.txtTenMon);
+            this.Controls.Add(this.txtMaMon);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtTenMonAn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnTim);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnXem);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FrmDanhSachMonAn";
+            this.Text = "FrmDanhSachMonAn";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaMonAn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumóTenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhanLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGiaCa;
+        private System.Windows.Forms.Button btnXem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTenMonAn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtMaMon;
+        private System.Windows.Forms.TextBox txtTenMon;
+        private System.Windows.Forms.TextBox txtPhanLoai;
+        private System.Windows.Forms.TextBox txtGiaCa;
+    }
+}

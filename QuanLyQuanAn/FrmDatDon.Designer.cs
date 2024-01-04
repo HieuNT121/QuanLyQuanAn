@@ -69,21 +69,13 @@
             this.soLuong = new System.Windows.Forms.Label();
             this.soLuongMon = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.so_luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Don_Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thanh_tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongTien = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.cbxBan = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TimeLabel = new System.Windows.Forms.Label();
-            this.btnThanhToan = new System.Windows.Forms.Button();
-            this.elipseControl1 = new QuanLyQuanAn.elipseControl();
-            this.elipseControl2 = new QuanLyQuanAn.elipseControl();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.elipseControl1 = new QuanLyQuanAn.elipseControl();
+            this.elipseControl2 = new QuanLyQuanAn.elipseControl();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -102,7 +94,6 @@
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel2
@@ -127,7 +118,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(417, 610);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(417, 600);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // panel1
@@ -462,7 +453,7 @@
             // 
             this.order.AutoSize = true;
             this.order.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.order.ForeColor = System.Drawing.Color.White;
+            this.order.ForeColor = System.Drawing.Color.Black;
             this.order.Location = new System.Drawing.Point(440, 11);
             this.order.Name = "order";
             this.order.Size = new System.Drawing.Size(124, 38);
@@ -476,7 +467,6 @@
             this.cbxLoaiMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxLoaiMon.FormattingEnabled = true;
             this.cbxLoaiMon.Items.AddRange(new object[] {
-            "",
             "Món Trung",
             "Món Hàn",
             "Món Âu",
@@ -494,7 +484,6 @@
             this.cbxTenMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxTenMon.FormattingEnabled = true;
             this.cbxTenMon.Items.AddRange(new object[] {
-            "",
             "Vịt chiên",
             "Gà chiên",
             "Rau xào",
@@ -509,18 +498,18 @@
             // soLuong
             // 
             this.soLuong.AutoSize = true;
-            this.soLuong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuong.ForeColor = System.Drawing.Color.White;
-            this.soLuong.Location = new System.Drawing.Point(670, 76);
+            this.soLuong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soLuong.ForeColor = System.Drawing.Color.Black;
+            this.soLuong.Location = new System.Drawing.Point(683, 125);
             this.soLuong.Name = "soLuong";
-            this.soLuong.Size = new System.Drawing.Size(85, 25);
+            this.soLuong.Size = new System.Drawing.Size(92, 28);
             this.soLuong.TabIndex = 6;
             this.soLuong.Text = "Số lượng";
             // 
             // soLuongMon
             // 
             this.soLuongMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuongMon.Location = new System.Drawing.Point(761, 77);
+            this.soLuongMon.Location = new System.Drawing.Point(781, 129);
             this.soLuongMon.Name = "soLuongMon";
             this.soLuongMon.Size = new System.Drawing.Size(42, 31);
             this.soLuongMon.TabIndex = 7;
@@ -528,74 +517,12 @@
             // btnThemMon
             // 
             this.btnThemMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMon.Location = new System.Drawing.Point(810, 124);
+            this.btnThemMon.Location = new System.Drawing.Point(447, 260);
             this.btnThemMon.Name = "btnThemMon";
             this.btnThemMon.Size = new System.Drawing.Size(128, 45);
             this.btnThemMon.TabIndex = 8;
             this.btnThemMon.Text = "Thêm món";
             this.btnThemMon.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TenMon,
-            this.so_luong,
-            this.Don_Gia,
-            this.Thanh_tien});
-            this.dataGridView1.Location = new System.Drawing.Point(447, 181);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(491, 288);
-            this.dataGridView1.TabIndex = 9;
-            // 
-            // TenMon
-            // 
-            this.TenMon.HeaderText = "Tên món";
-            this.TenMon.MinimumWidth = 6;
-            this.TenMon.Name = "TenMon";
-            this.TenMon.Width = 125;
-            // 
-            // so_luong
-            // 
-            this.so_luong.HeaderText = "Số lượng";
-            this.so_luong.MinimumWidth = 6;
-            this.so_luong.Name = "so_luong";
-            this.so_luong.Width = 90;
-            // 
-            // Don_Gia
-            // 
-            this.Don_Gia.HeaderText = "Đơn giá";
-            this.Don_Gia.MinimumWidth = 6;
-            this.Don_Gia.Name = "Don_Gia";
-            this.Don_Gia.Width = 125;
-            // 
-            // Thanh_tien
-            // 
-            this.Thanh_tien.HeaderText = "Thành tiền";
-            this.Thanh_tien.MinimumWidth = 6;
-            this.Thanh_tien.Name = "Thanh_tien";
-            this.Thanh_tien.Width = 125;
-            // 
-            // tongTien
-            // 
-            this.tongTien.AutoSize = true;
-            this.tongTien.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tongTien.ForeColor = System.Drawing.Color.White;
-            this.tongTien.Location = new System.Drawing.Point(449, 492);
-            this.tongTien.Name = "tongTien";
-            this.tongTien.Size = new System.Drawing.Size(115, 31);
-            this.tongTien.TabIndex = 10;
-            this.tongTien.Text = "Tổng Tiền";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(590, 492);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 31);
-            this.textBox1.TabIndex = 11;
             // 
             // cbxBan
             // 
@@ -604,7 +531,6 @@
             this.cbxBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxBan.FormattingEnabled = true;
             this.cbxBan.Items.AddRange(new object[] {
-            "",
             "Món Trung",
             "Món Hàn",
             "Món Âu",
@@ -618,23 +544,33 @@
             // TimeLabel
             // 
             this.TimeLabel.AutoSize = true;
-            this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.ForeColor = System.Drawing.Color.White;
-            this.TimeLabel.Location = new System.Drawing.Point(670, 9);
+            this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLabel.ForeColor = System.Drawing.Color.Black;
+            this.TimeLabel.Location = new System.Drawing.Point(681, 9);
             this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(93, 28);
+            this.TimeLabel.Size = new System.Drawing.Size(133, 38);
             this.TimeLabel.TabIndex = 13;
             this.TimeLabel.Text = "Thời gian";
             // 
-            // btnThanhToan
+            // btnXoa
             // 
-            this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.Location = new System.Drawing.Point(810, 532);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(128, 45);
-            this.btnThanhToan.TabIndex = 14;
-            this.btnThanhToan.Text = "Thanh toán";
-            this.btnThanhToan.UseVisualStyleBackColor = true;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(446, 192);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(128, 45);
+            this.btnXoa.TabIndex = 15;
+            this.btnXoa.Text = "Xoá món";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(688, 72);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 34);
+            this.dateTimePicker1.TabIndex = 16;
             // 
             // elipseControl1
             // 
@@ -646,40 +582,16 @@
             this.elipseControl2.CornerRadius = 25;
             this.elipseControl2.TargetControl = this.ban3;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(666, 124);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(128, 45);
-            this.btnXoa.TabIndex = 15;
-            this.btnXoa.Text = "Xoá món";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(666, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 30);
-            this.dateTimePicker1.TabIndex = 16;
-            // 
             // FrmDatDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(987, 610);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.cbxBan);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.tongTien);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnThemMon);
             this.Controls.Add(this.soLuongMon);
             this.Controls.Add(this.soLuong);
@@ -709,7 +621,6 @@
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,20 +667,12 @@
         private System.Windows.Forms.Label order;
         private System.Windows.Forms.ComboBox cbxLoaiMon;
         private System.Windows.Forms.ComboBox cbxTenMon;
-        private System.Windows.Forms.Label tongTien;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.NumericUpDown soLuongMon;
         private System.Windows.Forms.Label soLuong;
         private System.Windows.Forms.ComboBox cbxBan;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label TimeLabel;
-        private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn so_luong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Don_Gia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thanh_tien;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }

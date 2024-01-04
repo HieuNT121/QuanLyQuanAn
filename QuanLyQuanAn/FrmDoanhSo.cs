@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmDoanhThu : Form
+    public partial class FrmDoanhSo : Form
     {
-        public FrmDoanhThu()
+        public FrmDoanhSo()
         {
             InitializeComponent();
         }

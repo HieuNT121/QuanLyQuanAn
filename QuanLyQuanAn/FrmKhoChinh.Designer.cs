@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.panel_top = new System.Windows.Forms.Panel();
-            this.btnCapNhatHangHoa = new System.Windows.Forms.Button();
+            this.btnCapNhatThongTinHangHoa = new System.Windows.Forms.Button();
             this.btnSapXepHang = new System.Windows.Forms.Button();
             this.btnXuLyHangTon = new System.Windows.Forms.Button();
             this.btnNhapXuat = new System.Windows.Forms.Button();
+            this.panel_body = new System.Windows.Forms.Panel();
             this.panel_top.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.Gray;
-            this.panel_top.Controls.Add(this.btnCapNhatHangHoa);
+            this.panel_top.Controls.Add(this.btnCapNhatThongTinHangHoa);
             this.panel_top.Controls.Add(this.btnSapXepHang);
             this.panel_top.Controls.Add(this.btnXuLyHangTon);
             this.panel_top.Controls.Add(this.btnNhapXuat);
@@ -49,16 +50,17 @@
             this.panel_top.Size = new System.Drawing.Size(743, 100);
             this.panel_top.TabIndex = 0;
             // 
-            // btnCapNhatHangHoa
+            // btnCapNhatThongTinHangHoa
             // 
-            this.btnCapNhatHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCapNhatHangHoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatHangHoa.Location = new System.Drawing.Point(566, 12);
-            this.btnCapNhatHangHoa.Name = "btnCapNhatHangHoa";
-            this.btnCapNhatHangHoa.Size = new System.Drawing.Size(146, 76);
-            this.btnCapNhatHangHoa.TabIndex = 1;
-            this.btnCapNhatHangHoa.Text = "Cập nhật thông tin hàng hóa";
-            this.btnCapNhatHangHoa.UseVisualStyleBackColor = false;
+            this.btnCapNhatThongTinHangHoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCapNhatThongTinHangHoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatThongTinHangHoa.Location = new System.Drawing.Point(566, 12);
+            this.btnCapNhatThongTinHangHoa.Name = "btnCapNhatThongTinHangHoa";
+            this.btnCapNhatThongTinHangHoa.Size = new System.Drawing.Size(146, 76);
+            this.btnCapNhatThongTinHangHoa.TabIndex = 1;
+            this.btnCapNhatThongTinHangHoa.Text = "Cập nhật thông tin hàng hóa";
+            this.btnCapNhatThongTinHangHoa.UseVisualStyleBackColor = false;
+            this.btnCapNhatThongTinHangHoa.Click += new System.EventHandler(this.btnCapNhatThongTinHangHoa_Click);
             // 
             // btnSapXepHang
             // 
@@ -70,6 +72,7 @@
             this.btnSapXepHang.TabIndex = 2;
             this.btnSapXepHang.Text = "Sắp xếp hàng";
             this.btnSapXepHang.UseVisualStyleBackColor = false;
+            this.btnSapXepHang.Click += new System.EventHandler(this.btnSapXepHang_Click);
             // 
             // btnXuLyHangTon
             // 
@@ -81,6 +84,7 @@
             this.btnXuLyHangTon.TabIndex = 3;
             this.btnXuLyHangTon.Text = "Xử lý hàng tồn";
             this.btnXuLyHangTon.UseVisualStyleBackColor = false;
+            this.btnXuLyHangTon.Click += new System.EventHandler(this.btnXuLyHangTon_Click);
             // 
             // btnNhapXuat
             // 
@@ -92,12 +96,22 @@
             this.btnNhapXuat.TabIndex = 1;
             this.btnNhapXuat.Text = "Nhập, xuất";
             this.btnNhapXuat.UseVisualStyleBackColor = false;
+            this.btnNhapXuat.Click += new System.EventHandler(this.btnNhapXuat_Click);
+            // 
+            // panel_body
+            // 
+            this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_body.Location = new System.Drawing.Point(0, 100);
+            this.panel_body.Name = "panel_body";
+            this.panel_body.Size = new System.Drawing.Size(743, 515);
+            this.panel_body.TabIndex = 1;
             // 
             // FrmKhoChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 615);
+            this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(266, 40);
@@ -111,9 +125,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_top;
-        private System.Windows.Forms.Button btnCapNhatHangHoa;
+        private System.Windows.Forms.Button btnCapNhatThongTinHangHoa;
         private System.Windows.Forms.Button btnSapXepHang;
         private System.Windows.Forms.Button btnXuLyHangTon;
         private System.Windows.Forms.Button btnNhapXuat;
+        private System.Windows.Forms.Panel panel_body;
     }
 }

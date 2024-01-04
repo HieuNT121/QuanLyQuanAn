@@ -1,6 +1,6 @@
 ﻿namespace QuanLyQuanAn
 {
-    partial class FrmDoanhThu
+    partial class FrmDoanhSo
     {
         /// <summary>
         /// Required designer variable.
@@ -66,7 +66,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(176, 28);
@@ -87,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(490, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 28);
@@ -161,7 +161,7 @@
             // 
             this.TongDoanhThu.AutoSize = true;
             this.TongDoanhThu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TongDoanhThu.ForeColor = System.Drawing.Color.White;
+            this.TongDoanhThu.ForeColor = System.Drawing.Color.Black;
             this.TongDoanhThu.Location = new System.Drawing.Point(32, 523);
             this.TongDoanhThu.Name = "TongDoanhThu";
             this.TongDoanhThu.Size = new System.Drawing.Size(145, 25);
@@ -171,24 +171,24 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(246, 523);
+            this.textBox1.Location = new System.Drawing.Point(183, 523);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 31);
             this.textBox1.TabIndex = 4;
             // 
-            // FrmDoanhThu
+            // FrmDoanhSo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.ClientSize = new System.Drawing.Size(987, 610);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TongDoanhThu);
             this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmDoanhThu";
+            this.Name = "FrmDoanhSo";
             this.Text = "FrmDoanhThu";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();

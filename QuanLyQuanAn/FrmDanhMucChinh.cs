@@ -38,5 +38,30 @@ namespace QuanLyQuanAn
         {
             OpenChildForm(new FrmDanhSachNhanVien());
         }
+
+        private void btnDanhSachMonAn_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachMonAn());
+        }
+
+        private void btnDanhSachKhachHang_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachKhachHang());
+        }
+
+        private void btnDanhSachDatCho_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachDatCho());
+        }
+
+        private void btnDanhSachNhaCungCap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachNhaCungCap());
+        }
+
+        private void btnDanhSachPhanLoaiMonAn_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmDanhSachPhanLoaiMonAn());
+        }
     }
 }

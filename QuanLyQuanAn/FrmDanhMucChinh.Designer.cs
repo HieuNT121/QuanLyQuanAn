@@ -51,7 +51,7 @@
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
-            this.panel_top.Size = new System.Drawing.Size(1088, 119);
+            this.panel_top.Size = new System.Drawing.Size(1034, 110);
             this.panel_top.TabIndex = 0;
             // 
             // btnDanhSachMonAn
@@ -64,6 +64,7 @@
             this.btnDanhSachMonAn.TabIndex = 3;
             this.btnDanhSachMonAn.Text = "Danh sách món ăn";
             this.btnDanhSachMonAn.UseVisualStyleBackColor = false;
+            this.btnDanhSachMonAn.Click += new System.EventHandler(this.btnDanhSachMonAn_Click);
             // 
             // btnDanhSachLoaiMonAn
             // 
@@ -75,6 +76,7 @@
             this.btnDanhSachLoaiMonAn.TabIndex = 2;
             this.btnDanhSachLoaiMonAn.Text = "Danh sách loại món ăn";
             this.btnDanhSachLoaiMonAn.UseVisualStyleBackColor = false;
+            this.btnDanhSachLoaiMonAn.Click += new System.EventHandler(this.btnDanhSachPhanLoaiMonAn_Click);
             // 
             // btnDanhSachNhaCungCap
             // 
@@ -86,6 +88,7 @@
             this.btnDanhSachNhaCungCap.TabIndex = 1;
             this.btnDanhSachNhaCungCap.Text = "Danh sách nhà cung cấp";
             this.btnDanhSachNhaCungCap.UseVisualStyleBackColor = false;
+            this.btnDanhSachNhaCungCap.Click += new System.EventHandler(this.btnDanhSachNhaCungCap_Click);
             // 
             // btnDanhSachDatCho
             // 
@@ -97,6 +100,7 @@
             this.btnDanhSachDatCho.TabIndex = 1;
             this.btnDanhSachDatCho.Text = "Danh sách đặt chỗ";
             this.btnDanhSachDatCho.UseVisualStyleBackColor = false;
+            this.btnDanhSachDatCho.Click += new System.EventHandler(this.btnDanhSachDatCho_Click);
             // 
             // btnDanhSachKhachHang
             // 
@@ -108,6 +112,7 @@
             this.btnDanhSachKhachHang.TabIndex = 1;
             this.btnDanhSachKhachHang.Text = "Danh sách khách hàng";
             this.btnDanhSachKhachHang.UseVisualStyleBackColor = false;
+            this.btnDanhSachKhachHang.Click += new System.EventHandler(this.btnDanhSachKhachHang_Click);
             // 
             // btnDanhSachNhanVien
             // 
@@ -124,16 +129,16 @@
             // panel_body
             // 
             this.panel_body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_body.Location = new System.Drawing.Point(0, 119);
+            this.panel_body.Location = new System.Drawing.Point(0, 110);
             this.panel_body.Name = "panel_body";
-            this.panel_body.Size = new System.Drawing.Size(1088, 496);
+            this.panel_body.Size = new System.Drawing.Size(1034, 600);
             this.panel_body.TabIndex = 1;
             // 
             // FrmDanhMucChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 615);
+            this.ClientSize = new System.Drawing.Size(1034, 710);
             this.Controls.Add(this.panel_body);
             this.Controls.Add(this.panel_top);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

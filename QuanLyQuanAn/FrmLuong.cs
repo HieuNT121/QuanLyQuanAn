@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmThucDon : Form
+    public partial class FrmLuong : Form
     {
-        public FrmThucDon()
+        public FrmLuong()
         {
             InitializeComponent();
         }
-
-
     }
 }
