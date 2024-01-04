@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.elipseControl1 = new QuanLyQuanAn.elipseControl();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tenmon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhanLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Giaca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvMonAn = new System.Windows.Forms.DataGridView();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -45,20 +40,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.IDMon = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxIdFood = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.NameMon = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxFoodName = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.LoaiMon = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxCategory = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.Gia = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tbxFoodPrice = new System.Windows.Forms.TextBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.elipseControl1 = new QuanLyQuanAn.elipseControl();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,53 +67,18 @@
             this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // elipseControl1
+            // dtgvMonAn
             // 
-            this.elipseControl1.CornerRadius = 15;
-            this.elipseControl1.TargetControl = this;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaMon,
-            this.Tenmon,
-            this.PhanLoai,
-            this.Giaca});
-            this.dataGridView1.Location = new System.Drawing.Point(23, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(576, 440);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // MaMon
-            // 
-            this.MaMon.HeaderText = "Mã món ăn";
-            this.MaMon.MinimumWidth = 6;
-            this.MaMon.Name = "MaMon";
-            this.MaMon.Width = 125;
-            // 
-            // Tenmon
-            // 
-            this.Tenmon.HeaderText = "Tên món";
-            this.Tenmon.MinimumWidth = 6;
-            this.Tenmon.Name = "Tenmon";
-            this.Tenmon.Width = 150;
-            // 
-            // PhanLoai
-            // 
-            this.PhanLoai.HeaderText = "Phân loại";
-            this.PhanLoai.MinimumWidth = 6;
-            this.PhanLoai.Name = "PhanLoai";
-            this.PhanLoai.Width = 125;
-            // 
-            // Giaca
-            // 
-            this.Giaca.HeaderText = "Giá cả";
-            this.Giaca.MinimumWidth = 6;
-            this.Giaca.Name = "Giaca";
-            this.Giaca.Width = 125;
+            this.dtgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMonAn.Location = new System.Drawing.Point(23, 23);
+            this.dtgvMonAn.Name = "dtgvMonAn";
+            this.dtgvMonAn.ReadOnly = true;
+            this.dtgvMonAn.RowHeadersWidth = 51;
+            this.dtgvMonAn.RowTemplate.Height = 24;
+            this.dtgvMonAn.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dtgvMonAn.Size = new System.Drawing.Size(576, 440);
+            this.dtgvMonAn.TabIndex = 0;
+            this.dtgvMonAn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvMonAn_CellContentClick);
             // 
             // btnThem
             // 
@@ -127,6 +89,7 @@
             this.btnThem.TabIndex = 1;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSua
             // 
@@ -137,6 +100,7 @@
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
@@ -157,6 +121,7 @@
             this.btnXem.TabIndex = 4;
             this.btnXem.Text = "Xem";
             this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // MonAn
             // 
@@ -186,6 +151,7 @@
             this.btnTim.TabIndex = 7;
             this.btnTim.Text = "Tìm kiếm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -222,19 +188,19 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.tbxIdFood);
             this.panel2.Location = new System.Drawing.Point(104, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(202, 41);
             this.panel2.TabIndex = 11;
             // 
-            // textBox1
+            // tbxIdFood
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 30);
-            this.textBox1.TabIndex = 11;
+            this.tbxIdFood.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxIdFood.Location = new System.Drawing.Point(6, 5);
+            this.tbxIdFood.Name = "tbxIdFood";
+            this.tbxIdFood.Size = new System.Drawing.Size(189, 30);
+            this.tbxIdFood.TabIndex = 11;
             // 
             // panel3
             // 
@@ -256,19 +222,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.tbxFoodName);
             this.panel4.Location = new System.Drawing.Point(104, 50);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(202, 41);
             this.panel4.TabIndex = 13;
             // 
-            // textBox2
+            // tbxFoodName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(6, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(189, 30);
-            this.textBox2.TabIndex = 11;
+            this.tbxFoodName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxFoodName.Location = new System.Drawing.Point(6, 5);
+            this.tbxFoodName.Name = "tbxFoodName";
+            this.tbxFoodName.Size = new System.Drawing.Size(189, 30);
+            this.tbxFoodName.TabIndex = 11;
             // 
             // panel5
             // 
@@ -290,19 +256,19 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.tbxCategory);
             this.panel6.Location = new System.Drawing.Point(104, 97);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(202, 41);
             this.panel6.TabIndex = 15;
             // 
-            // textBox3
+            // tbxCategory
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(189, 30);
-            this.textBox3.TabIndex = 11;
+            this.tbxCategory.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxCategory.Location = new System.Drawing.Point(6, 5);
+            this.tbxCategory.Name = "tbxCategory";
+            this.tbxCategory.Size = new System.Drawing.Size(189, 30);
+            this.tbxCategory.TabIndex = 11;
             // 
             // panel7
             // 
@@ -324,19 +290,35 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.textBox4);
+            this.panel8.Controls.Add(this.tbxFoodPrice);
             this.panel8.Location = new System.Drawing.Point(104, 144);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(202, 41);
             this.panel8.TabIndex = 17;
             // 
-            // textBox4
+            // tbxFoodPrice
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(189, 30);
-            this.textBox4.TabIndex = 11;
+            this.tbxFoodPrice.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxFoodPrice.Location = new System.Drawing.Point(6, 5);
+            this.tbxFoodPrice.Name = "tbxFoodPrice";
+            this.tbxFoodPrice.Size = new System.Drawing.Size(189, 30);
+            this.tbxFoodPrice.TabIndex = 11;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(624, 495);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(89, 38);
+            this.btnThoat.TabIndex = 9;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 15;
+            this.elipseControl1.TargetControl = this;
             // 
             // FrmThucDon
             // 
@@ -344,6 +326,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(987, 610);
             this.ControlBox = false;
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.tenTimKiem);
@@ -352,11 +335,12 @@
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmThucDon";
             this.Text = " ";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmThucDon_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -382,34 +366,31 @@
         #endregion
 
         private elipseControl elipseControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvMonAn;
         private System.Windows.Forms.Label MonAn;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tenmon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhanLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Giaca;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.TextBox tenTimKiem;
         private System.Windows.Forms.Label IDMon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxIdFood;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label NameMon;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxFoodName;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label LoaiMon;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxCategory;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label Gia;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxFoodPrice;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

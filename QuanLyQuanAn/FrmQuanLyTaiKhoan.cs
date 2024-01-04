@@ -74,6 +74,10 @@ namespace QuanLyQuanAn
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            if (index < 0)
+            {
+                MessageBox.Show("Vui lòng chọn 1 cột trong bảng");
+            }
             string userName = txbTenTaiKhoan.Text;
             string password = txbMatKhau.Text;
             bool accountType = false;
@@ -90,6 +94,12 @@ namespace QuanLyQuanAn
             Danhsachtaikhoan.Instance.ListTaiKhoan[index].MatKhau = password;
             Danhsachtaikhoan.Instance.ListTaiKhoan[index].LoaiTaiKhoan = accountType;
             LoadListUser();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            Danhsachtaikhoan.Instance.ListTaiKhoan.RemoveAt(index);
+            LoadListUser() ;    
         }
     }
 }
