@@ -15,6 +15,7 @@ namespace QuanLyQuanAn
         public FrmDatDon()
         {
             InitializeComponent();
+            LoadDataDatCho();
         }
 
         private void FrmDatDon_Load(object sender, EventArgs e)
@@ -22,6 +23,26 @@ namespace QuanLyQuanAn
             DateTime currentTime = DateTime.Now;
             string formattedTime = currentTime.ToString("HH:mm:ss tt");
             TimeLabel.Text = formattedTime;
+        }
+
+        void LoadDataDatCho()
+        {
+            List<Ban> ListBan = DanhSachBanDatCho.Instance.ListBan;
+            foreach (Ban item in ListBan)
+            {
+                Button btn = new Button() { Width = 95, Height = 95 };
+                btn.Text = item.Name + Environment.NewLine + item.Status ;
+                switch (item.Status)
+                {
+                    case "Còn":
+                        btn.BackColor = Color.Azure;
+                        break;
+                    default:
+                        btn.BackColor = Color.Chartreuse;
+                        break;
+                }
+                flpBan.Controls.Add(btn);
+            }
         }
     }
 }

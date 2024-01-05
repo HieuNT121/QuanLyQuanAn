@@ -111,6 +111,7 @@
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnXem
             // 

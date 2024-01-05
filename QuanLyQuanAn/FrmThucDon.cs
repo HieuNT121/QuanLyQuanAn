@@ -19,6 +19,7 @@ namespace QuanLyQuanAn
             InitializeComponent();
             LoadDataMon();
         }
+
         void LoadDataMon()
         {
             dtgvMonAn.DataSource = null;
@@ -57,7 +58,6 @@ namespace QuanLyQuanAn
             dtgvMonAn.Refresh();
         }
 
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -81,7 +81,9 @@ namespace QuanLyQuanAn
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            int check = 0;
+            int checkIsNull = 0;
+            int checkIsExist = 0;
+            int checkIsDuplicated = 0;
             string[] bien = new string[5];
             bien[0] = tbxIdFood.Text;
             bien[1] = tbxFoodName.Text;
@@ -91,70 +93,132 @@ namespace QuanLyQuanAn
             foreach (string a in bien){
                 if ( a == "")
                 {
-                    MessageBox.Show("Vui lòng điền đủ thông tin");
+                    checkIsNull = 1;
                 }
             }
-
-            foreach (Category a in DanhSachPhanLoai.Instance.ListCategory)
+            if (checkIsNull == 1)
             {
-                if (bien[2] == a.Name)
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+            }
+            else
+            {
+                foreach (Category type in DanhSachPhanLoai.Instance.ListCategory)
                 {
-                    bien[4] = a.Id;
-                    check = 1;
+                    if (bien[2] == type.Name)
+                    {
+                        bien[4] = type.Id;
+                        checkIsExist = 1;
+                    }
+                }
+
+                if (checkIsExist == 0)
+                {
+                    MessageBox.Show("Không có loại món này trong nhà hàng");
+                }
+                else
+                {
+                    foreach (MonAn food in DanhSachPhanLoai.Instance.ListMonAn)
+                    {
+                        if (bien[1] == food.Name)
+                        {
+                            checkIsDuplicated = 1;
+                        }
+                    }
+                    if(checkIsDuplicated == 1)
+                    {
+                        MessageBox.Show("Đã có món này trong nhà hàng");
+                    }
+                    else
+                    {
+                        DanhSachPhanLoai.Instance.ListMonAn.Add(new MonAn(bien[0], bien[1], bien[4], bien[3]));
+                        LoadDataMon();
+                    } 
                 }
             }
-
-            if (check == 0)
-            {
-                MessageBox.Show("Không có loại món này trong cửa hàng");
-            }
-           
-            DanhSachPhanLoai.Instance.ListMonAn.Add(new MonAn(bien[0], bien[1], bien[4], bien[3]));
-            LoadDataMon();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (index < 0)
-            {
-                MessageBox.Show("Vui lòng chọn 1 cột trong bảng");
-            }
-            int check = 0;
+            int checkIsNull = 0;
+            int checkIsExist = 0;
+            int checkIsDuplicated = 0;
+            
             string[] bien = new string[5];
             bien[0] = tbxIdFood.Text;
             bien[1] = tbxFoodName.Text;
             bien[2] = tbxCategory.Text;
             bien[3] = tbxFoodPrice.Text;
 
-            for (int i = 0; i < 4; i++)
+            if (index < 0)
             {
-                if (bien[i] == "")
-                {
-                    MessageBox.Show("Vui lòng điền đủ thông tin");
-                }
-            }
-
-            foreach (Category a in DanhSachPhanLoai.Instance.ListCategory)
-            {
-                if (bien[2] == a.Name)
-                {
-                    bien[4] = a.Id;
-                    check = 1;
-                }
-            }
-
-            if (check == 0)
-            {
-                MessageBox.Show("Không có loại món này trong cửa hàng");
+                MessageBox.Show("Vui lòng chọn 1 cột trong bảng");
             }
             else
             {
-                DanhSachPhanLoai.Instance.ListMonAn[index].Id = bien[0];
-                DanhSachPhanLoai.Instance.ListMonAn[index].Name = bien[1];
-                DanhSachPhanLoai.Instance.ListMonAn[index].IdCategory = bien[4];
-                DanhSachPhanLoai.Instance.ListMonAn[index].Price = bien[3];
+                foreach (string a in bien)
+                {
+                    if (a == "")
+                    {
+                        checkIsNull = 1;
+                    }
+                }
+                if (checkIsNull == 1)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                }
+                else
+                {
+                    foreach (Category type in DanhSachPhanLoai.Instance.ListCategory)
+                    {
+                        if (bien[2] == type.Name)
+                        {
+                            bien[4] = type.Id;
+                            checkIsExist = 1;
+                        }
+                    }
+
+                    if (checkIsExist == 0)
+                    {
+                        MessageBox.Show("Không có loại món này trong nhà hàng");
+                    }
+                    else
+                    {
+                        foreach (MonAn food in DanhSachPhanLoai.Instance.ListMonAn)
+                        {
+                            if (bien[1] == food.Name)
+                            {
+                                checkIsDuplicated = 1;
+                            }
+                        }
+                        if (checkIsDuplicated == 1)
+                        {
+                            MessageBox.Show("Đã có món này trong nhà hàng");
+                        }
+                        else
+                        {
+                            DanhSachPhanLoai.Instance.ListMonAn[index].Id = bien[0];
+                            DanhSachPhanLoai.Instance.ListMonAn[index].Name = bien[1];
+                            DanhSachPhanLoai.Instance.ListMonAn[index].IdCategory = bien[4];
+                            DanhSachPhanLoai.Instance.ListMonAn[index].Price = bien[3];
+                            LoadDataMon();
+                        }
+                    }
+                }
             }
             LoadDataMon();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (index < 0)
+            {
+                MessageBox.Show("Vui lòng chọn 1 hàng");
+            }
+            else
+            {
+                DanhSachPhanLoai.Instance.ListMonAn.RemoveAt(index);
+                LoadDataMon();
+            }
         }
     }
 }
