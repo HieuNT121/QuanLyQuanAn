@@ -33,8 +33,6 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThongKeChinh.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachNhanVien.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmCapNhatThongTinHoaDon.resources
-C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmTaoHoaDon.resources
-C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThanhToanVaXuatHoaDon.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDoanhSo.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmChiTieu.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmLuong.resources
@@ -84,3 +82,5 @@ C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.exe
 C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.pdb
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmQuanLyTaiKhoan.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmNhapHang.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHoaDonNhap.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHoaDonThanhToan.resources

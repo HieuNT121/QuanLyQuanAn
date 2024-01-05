@@ -42,12 +42,12 @@
             this.tbxName = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.btnXem = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.btnThem = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.btnSua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCategory)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -183,30 +183,6 @@
             this.panel5.Size = new System.Drawing.Size(87, 56);
             this.panel5.TabIndex = 8;
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnThem);
-            this.panel7.Location = new System.Drawing.Point(96, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(91, 56);
-            this.panel7.TabIndex = 10;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btnXoa);
-            this.panel6.Location = new System.Drawing.Point(193, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(87, 56);
-            this.panel6.TabIndex = 9;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnSua);
-            this.panel8.Location = new System.Drawing.Point(286, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(87, 56);
-            this.panel8.TabIndex = 11;
-            // 
             // btnXem
             // 
             this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -218,6 +194,15 @@
             this.btnXem.TabIndex = 9;
             this.btnXem.Text = "    Xem";
             this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnThem);
+            this.panel7.Location = new System.Drawing.Point(96, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(91, 56);
+            this.panel7.TabIndex = 10;
             // 
             // btnThem
             // 
@@ -230,6 +215,15 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "    Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnXoa);
+            this.panel6.Location = new System.Drawing.Point(193, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(87, 56);
+            this.panel6.TabIndex = 9;
             // 
             // btnXoa
             // 
@@ -242,6 +236,15 @@
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "    Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnSua);
+            this.panel8.Location = new System.Drawing.Point(286, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(87, 56);
+            this.panel8.TabIndex = 11;
             // 
             // btnSua
             // 
@@ -254,6 +257,7 @@
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "    Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // FrmDanhSachPhanLoaiMonAn
             // 

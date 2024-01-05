@@ -148,6 +148,7 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "    Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel20
             // 
@@ -168,6 +169,7 @@
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "    Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // panel21
             // 
@@ -188,6 +190,7 @@
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "    Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // FrmQuanLyTaiKhoan
             // 

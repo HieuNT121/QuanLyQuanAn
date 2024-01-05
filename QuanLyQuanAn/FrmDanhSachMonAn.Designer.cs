@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDanhSachMonAn));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnMaMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumóTenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnPhanLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnGiaCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvMonAn = new System.Windows.Forms.DataGridView();
+            this.MaMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhanLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTenMonAn = new System.Windows.Forms.TextBox();
+            this.txtTenTimKiem = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -58,7 +58,7 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,48 +70,48 @@
             this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvMonAn
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnMaMonAn,
-            this.ColumóTenMon,
-            this.ColumnPhanLoai,
-            this.ColumnGiaCa});
-            this.dataGridView1.Location = new System.Drawing.Point(40, 55);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(559, 395);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvMonAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaMonAn,
+            this.TenMon,
+            this.PhanLoai,
+            this.GiaCa});
+            this.dtgvMonAn.Location = new System.Drawing.Point(40, 55);
+            this.dtgvMonAn.Name = "dtgvMonAn";
+            this.dtgvMonAn.RowHeadersWidth = 51;
+            this.dtgvMonAn.RowTemplate.Height = 24;
+            this.dtgvMonAn.Size = new System.Drawing.Size(559, 395);
+            this.dtgvMonAn.TabIndex = 0;
             // 
-            // ColumnMaMonAn
+            // MaMonAn
             // 
-            this.ColumnMaMonAn.HeaderText = "Mã món ăn";
-            this.ColumnMaMonAn.MinimumWidth = 6;
-            this.ColumnMaMonAn.Name = "ColumnMaMonAn";
-            this.ColumnMaMonAn.Width = 125;
+            this.MaMonAn.HeaderText = "Mã món ăn";
+            this.MaMonAn.MinimumWidth = 6;
+            this.MaMonAn.Name = "MaMonAn";
+            this.MaMonAn.Width = 125;
             // 
-            // ColumóTenMon
+            // TenMon
             // 
-            this.ColumóTenMon.HeaderText = "Tên món";
-            this.ColumóTenMon.MinimumWidth = 6;
-            this.ColumóTenMon.Name = "ColumóTenMon";
-            this.ColumóTenMon.Width = 125;
+            this.TenMon.HeaderText = "Tên món";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 125;
             // 
-            // ColumnPhanLoai
+            // PhanLoai
             // 
-            this.ColumnPhanLoai.HeaderText = "Phân loại";
-            this.ColumnPhanLoai.MinimumWidth = 6;
-            this.ColumnPhanLoai.Name = "ColumnPhanLoai";
-            this.ColumnPhanLoai.Width = 125;
+            this.PhanLoai.HeaderText = "Phân loại";
+            this.PhanLoai.MinimumWidth = 6;
+            this.PhanLoai.Name = "PhanLoai";
+            this.PhanLoai.Width = 125;
             // 
-            // ColumnGiaCa
+            // GiaCa
             // 
-            this.ColumnGiaCa.HeaderText = "Giá cả";
-            this.ColumnGiaCa.MinimumWidth = 6;
-            this.ColumnGiaCa.Name = "ColumnGiaCa";
-            this.ColumnGiaCa.Width = 125;
+            this.GiaCa.HeaderText = "Giá cả";
+            this.GiaCa.MinimumWidth = 6;
+            this.GiaCa.Name = "GiaCa";
+            this.GiaCa.Width = 125;
             // 
             // label1
             // 
@@ -123,13 +123,13 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Món ăn";
             // 
-            // txtTenMonAn
+            // txtTenTimKiem
             // 
-            this.txtTenMonAn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMonAn.Location = new System.Drawing.Point(639, 84);
-            this.txtTenMonAn.Name = "txtTenMonAn";
-            this.txtTenMonAn.Size = new System.Drawing.Size(219, 30);
-            this.txtTenMonAn.TabIndex = 7;
+            this.txtTenTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenTimKiem.Location = new System.Drawing.Point(639, 84);
+            this.txtTenTimKiem.Name = "txtTenTimKiem";
+            this.txtTenTimKiem.Size = new System.Drawing.Size(219, 30);
+            this.txtTenTimKiem.TabIndex = 7;
             // 
             // panel1
             // 
@@ -269,6 +269,7 @@
             this.btnXem.TabIndex = 9;
             this.btnXem.Text = "    Xem";
             this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // panel19
             // 
@@ -289,6 +290,7 @@
             this.btnThem.TabIndex = 4;
             this.btnThem.Text = "    Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel20
             // 
@@ -309,6 +311,7 @@
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "    Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // panel21
             // 
@@ -329,6 +332,7 @@
             this.btnSua.TabIndex = 6;
             this.btnSua.Text = "    Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTim
             // 
@@ -358,13 +362,13 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtTenMonAn);
+            this.Controls.Add(this.txtTenTimKiem);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDanhSachMonAn";
             this.Text = "FrmDanhSachMonAn";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -385,13 +389,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaMonAn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumóTenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPhanLoai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGiaCa;
+        private System.Windows.Forms.DataGridView dtgvMonAn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtTenMonAn;
+        private System.Windows.Forms.TextBox txtTenTimKiem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -414,5 +414,9 @@
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaMonAn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhanLoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaCa;
     }
 }

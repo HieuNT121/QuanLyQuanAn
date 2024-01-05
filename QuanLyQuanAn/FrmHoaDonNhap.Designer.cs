@@ -1,6 +1,6 @@
 ﻿namespace QuanLyQuanAn
 {
-    partial class FrmTaoHoaDon
+    partial class FrmHoaDonNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -270,8 +270,8 @@
             this.Controls.Add(this.txtTenKhachHang);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmTaoHoaDon";
-            this.Text = "FrmTaoHoaDon";
+            this.Name = "FrmHoaDonNhap";
+            this.Text = "FrmHoaDonNhap";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
