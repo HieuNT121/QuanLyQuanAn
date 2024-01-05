@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDanhSachDatCho));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,9 +54,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.cbxSoLuong = new System.Windows.Forms.ComboBox();
             this.panel16 = new System.Windows.Forms.Panel();
             this.timeThoiGian = new System.Windows.Forms.DateTimePicker();
-            this.cbxSoLuong = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,11 +64,15 @@
             this.MaMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel18 = new System.Windows.Forms.Panel();
             this.btnXem = new System.Windows.Forms.Button();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.btnSua = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -85,6 +90,11 @@
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -327,24 +337,6 @@
             this.panel15.Size = new System.Drawing.Size(272, 51);
             this.panel15.TabIndex = 1;
             // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.timeThoiGian);
-            this.panel16.Location = new System.Drawing.Point(3, 3);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(272, 51);
-            this.panel16.TabIndex = 0;
-            // 
-            // timeThoiGian
-            // 
-            this.timeThoiGian.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeThoiGian.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.timeThoiGian.Location = new System.Drawing.Point(0, 14);
-            this.timeThoiGian.Name = "timeThoiGian";
-            this.timeThoiGian.Size = new System.Drawing.Size(269, 31);
-            this.timeThoiGian.TabIndex = 0;
-            // 
             // cbxSoLuong
             // 
             this.cbxSoLuong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -364,6 +356,24 @@
             this.cbxSoLuong.Name = "cbxSoLuong";
             this.cbxSoLuong.Size = new System.Drawing.Size(266, 31);
             this.cbxSoLuong.TabIndex = 0;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.timeThoiGian);
+            this.panel16.Location = new System.Drawing.Point(3, 3);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(272, 51);
+            this.panel16.TabIndex = 0;
+            // 
+            // timeThoiGian
+            // 
+            this.timeThoiGian.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeThoiGian.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.timeThoiGian.Location = new System.Drawing.Point(0, 14);
+            this.timeThoiGian.Name = "timeThoiGian";
+            this.timeThoiGian.Size = new System.Drawing.Size(269, 31);
+            this.timeThoiGian.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -425,65 +435,96 @@
             this.SoLuong.Name = "SoLuong";
             this.SoLuong.Width = 125;
             // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.panel18);
+            this.flowLayoutPanel3.Controls.Add(this.panel19);
+            this.flowLayoutPanel3.Controls.Add(this.panel20);
+            this.flowLayoutPanel3.Controls.Add(this.panel21);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(71, 259);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(619, 57);
+            this.flowLayoutPanel3.TabIndex = 23;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.btnXem);
+            this.panel18.Location = new System.Drawing.Point(3, 3);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(107, 56);
+            this.panel18.TabIndex = 8;
+            // 
             // btnXem
             // 
-            this.btnXem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Location = new System.Drawing.Point(92, 278);
+            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
+            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXem.Location = new System.Drawing.Point(9, 5);
             this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(86, 36);
-            this.btnXem.TabIndex = 23;
-            this.btnXem.Text = "Xem";
+            this.btnXem.Size = new System.Drawing.Size(83, 40);
+            this.btnXem.TabIndex = 9;
+            this.btnXem.Text = "    Xem";
             this.btnXem.UseVisualStyleBackColor = true;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.btnThem);
+            this.panel19.Location = new System.Drawing.Point(116, 3);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(114, 56);
+            this.panel19.TabIndex = 10;
             // 
             // btnThem
             // 
-            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(220, 278);
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(13, 5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(86, 36);
-            this.btnThem.TabIndex = 24;
-            this.btnThem.Text = "Thêm";
+            this.btnThem.Size = new System.Drawing.Size(91, 40);
+            this.btnThem.TabIndex = 4;
+            this.btnThem.Text = "    Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // btnSua
+            // panel20
             // 
-            this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(351, 278);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(86, 36);
-            this.btnSua.TabIndex = 25;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.panel20.Controls.Add(this.btnXoa);
+            this.panel20.Location = new System.Drawing.Point(236, 3);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(106, 56);
+            this.panel20.TabIndex = 9;
             // 
             // btnXoa
             // 
-            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(477, 278);
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(3, 5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(86, 36);
-            this.btnXoa.TabIndex = 26;
-            this.btnXoa.Text = "Xoá";
+            this.btnXoa.Size = new System.Drawing.Size(89, 40);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "    Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // btnThoat
+            // panel21
             // 
-            this.btnThoat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(598, 278);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(86, 36);
-            this.btnThoat.TabIndex = 27;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.panel21.Controls.Add(this.btnSua);
+            this.panel21.Location = new System.Drawing.Point(348, 3);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(87, 56);
+            this.panel21.TabIndex = 11;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(0, 5);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(83, 40);
+            this.btnSua.TabIndex = 6;
+            this.btnSua.Text = "    Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
             // 
             // FrmDanhSachDatCho
             // 
@@ -491,11 +532,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.btnXem);
+            this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -531,6 +568,11 @@
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -572,10 +614,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMonAn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button btnXem;
+        private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Button btnSua;
     }
 }

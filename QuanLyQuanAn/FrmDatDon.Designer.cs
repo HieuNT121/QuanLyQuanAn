@@ -72,7 +72,7 @@
             this.cbxBan = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TimeLabel = new System.Windows.Forms.Label();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnXoaMon = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.elipseControl2 = new QuanLyQuanAn.elipseControl();
@@ -552,15 +552,15 @@
             this.TimeLabel.TabIndex = 13;
             this.TimeLabel.Text = "Thời gian";
             // 
-            // btnXoa
+            // btnXoaMon
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(446, 192);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(128, 45);
-            this.btnXoa.TabIndex = 15;
-            this.btnXoa.Text = "Xoá món";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoaMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMon.Location = new System.Drawing.Point(446, 192);
+            this.btnXoaMon.Name = "btnXoaMon";
+            this.btnXoaMon.Size = new System.Drawing.Size(128, 45);
+            this.btnXoaMon.TabIndex = 15;
+            this.btnXoaMon.Text = "Xoá món";
+            this.btnXoaMon.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
@@ -589,7 +589,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnXoaMon);
             this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.cbxBan);
             this.Controls.Add(this.btnThemMon);
@@ -673,7 +673,7 @@
         private System.Windows.Forms.ComboBox cbxBan;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label TimeLabel;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnXoaMon;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

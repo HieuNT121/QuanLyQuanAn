@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCapNhatThongTinHangHoa));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnMaHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColuhnTenHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMaNhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXem = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -105,41 +106,49 @@
             // btnXem
             // 
             this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Location = new System.Drawing.Point(71, 496);
+            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
+            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXem.Location = new System.Drawing.Point(106, 496);
             this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(103, 40);
+            this.btnXem.Size = new System.Drawing.Size(86, 40);
             this.btnXem.TabIndex = 2;
-            this.btnXem.Text = "Xem";
+            this.btnXem.Text = "    Xem";
             this.btnXem.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(215, 496);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 40);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(215, 496);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(99, 40);
+            this.btnThem.TabIndex = 3;
+            this.btnThem.Text = "    Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(365, 496);
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(335, 496);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(103, 40);
+            this.btnXoa.Size = new System.Drawing.Size(89, 40);
             this.btnXoa.TabIndex = 4;
-            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Text = "    Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(506, 496);
+            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(446, 496);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(103, 40);
+            this.btnSua.Size = new System.Drawing.Size(83, 40);
             this.btnSua.TabIndex = 5;
-            this.btnSua.Text = "Sửa";
+            this.btnSua.Text = "    Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -163,11 +172,13 @@
             // btnTim
             // 
             this.btnTim.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTim.Image = ((System.Drawing.Image)(resources.GetObject("btnTim.Image")));
+            this.btnTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTim.Location = new System.Drawing.Point(664, 167);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(103, 40);
             this.btnTim.TabIndex = 9;
-            this.btnTim.Text = "Tìm";
+            this.btnTim.Text = "    Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -297,7 +308,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnXem);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -325,7 +336,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaNhaCungCap;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSoLuong;
         private System.Windows.Forms.Button btnXem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Label label1;

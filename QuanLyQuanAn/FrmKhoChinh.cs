@@ -36,7 +36,7 @@ namespace QuanLyQuanAn
 
         private void btnNhapXuat_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmNhapXuat());
+            OpenChildForm(new FrmNhapHang());
         }
 
         private void btnXuLyHangTon_Click(object sender, EventArgs e)

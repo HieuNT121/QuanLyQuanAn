@@ -1,6 +1,6 @@
 ﻿namespace QuanLyQuanAn
 {
-    partial class FrmNhapXuat
+    partial class FrmNhapHang
     {
         /// <summary>
         /// Required designer variable.
