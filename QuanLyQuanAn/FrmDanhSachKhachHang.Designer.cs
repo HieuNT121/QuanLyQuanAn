@@ -97,7 +97,7 @@
             this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(43, 49);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 238);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(166, 225);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // panel1
@@ -190,7 +190,7 @@
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Location = new System.Drawing.Point(216, 49);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(282, 238);
+            this.panel5.Size = new System.Drawing.Size(282, 225);
             this.panel5.TabIndex = 11;
             // 
             // panel11
@@ -269,7 +269,7 @@
             this.panel6.Controls.Add(this.panel12);
             this.panel6.Location = new System.Drawing.Point(534, 52);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(166, 235);
+            this.panel6.Size = new System.Drawing.Size(166, 111);
             this.panel6.TabIndex = 12;
             // 
             // panel13
@@ -320,7 +320,7 @@
             this.panel7.Controls.Add(this.panel17);
             this.panel7.Location = new System.Drawing.Point(706, 52);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(282, 238);
+            this.panel7.Size = new System.Drawing.Size(282, 111);
             this.panel7.TabIndex = 13;
             // 
             // panel16
@@ -427,11 +427,11 @@
             this.DiaChi,
             this.NgaySinh,
             this.SoDienThoai});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 357);
+            this.dataGridView1.Location = new System.Drawing.Point(43, 357);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 247);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 247);
             this.dataGridView1.TabIndex = 20;
             // 
             // ColumnMaSo

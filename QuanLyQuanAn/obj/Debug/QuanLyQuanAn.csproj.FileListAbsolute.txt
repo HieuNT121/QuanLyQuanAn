@@ -18,7 +18,6 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\bin\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.exe
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.pdb
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.AssemblyReference.cache
-C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\FormCalculator.Form1.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDatDon.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmMain.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FormDangNhap.resources
@@ -49,3 +48,39 @@ C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmXuLyHangTon.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachPhanLoaiMonAn.resources
 C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachMonAn.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.exe.config
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.exe
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\bin\Debug\QuanLyQuanAn.pdb
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\FormCalculator.Form1.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmCapNhatThongTinHangHoa.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmCapNhatThongTinHoaDon.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmChiTieu.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhMucChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachDatCho.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachKhachHang.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachMonAn.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachNhaCungCap.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachPhanLoaiMonAn.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDatDon.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDanhSachNhanVien.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmDoanhSo.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHeThongChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmHoaDonChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmKhoChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmLuong.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmLuongKhach.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmMain.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FormDangNhap.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmNhapXuat.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmSapXepHang.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmTaoHoaDon.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThanhToanVaXuatHoaDon.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmThongKeChinh.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmXuLyHangTon.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.Properties.Resources.resources
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.GenerateResource.cache
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.exe
+C:\Users\Admin\Downloads\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.pdb
+C:\Users\Admin\Downloads\QuanLyQuanAn - Viet\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmQuanLyTaiKhoan.resources

@@ -16,5 +16,10 @@ namespace QuanLyQuanAn
         {
             InitializeComponent();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
