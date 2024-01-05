@@ -31,3 +31,4 @@ D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\QuanLyQuanAn\QuanLyQ
 D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.exe
 D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.pdb
 D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmQuanLyTaiKhoan.resources
+D:\HUST\Hướng đối tượng\Bai_thuc_hanh\QuanLyQuanAn\QuanLyQuanAn\QuanLyQuanAn\obj\Debug\QuanLyQuanAn.FrmPhanLoaiMon.resources

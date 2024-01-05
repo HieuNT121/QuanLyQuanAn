@@ -66,4 +66,48 @@ namespace QuanLyQuanAn
             this.name = name;
         }
     }
+
+    public class DanhSachPhanLoai
+    {
+        private static DanhSachPhanLoai instance;
+        public static DanhSachPhanLoai Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new DanhSachPhanLoai();
+                return instance;
+            }
+            set => instance = value;
+        }
+
+        List<MonAn> listMonAn;
+
+        public List<MonAn> ListMonAn
+        {
+            get => listMonAn;
+            set => listMonAn = value;
+        }
+
+        List<Category> listCategory;
+
+        public List<Category> ListCategory
+        {
+            get => listCategory;
+            set => listCategory = value;
+        }
+
+        DanhSachPhanLoai()
+        {
+            listMonAn = new List<MonAn>();
+            listCategory = new List<Category>();
+            listMonAn.Add(new MonAn("1", "cá hồi", "1", "45000"));
+            listMonAn.Add(new MonAn("2", "Khoa", "1", "90000"));
+            listMonAn.Add(new MonAn("3", "Bo", "2", "180000"));
+
+            listCategory.Add(new Category("1", "Hai san"));
+            listCategory.Add(new Category("2", "Nong San"));
+        }
+    }
+    
 }

@@ -14,25 +14,16 @@ namespace QuanLyQuanAn
     public partial class FrmThucDon : Form
     {
         int index = -1;
-        List<MonAn> ListMonAn = new List<MonAn>();
-        List<Category> ListCategory = new List<Category>();
         public FrmThucDon()
         {
             InitializeComponent();
-            ListMonAn.Add(new MonAn("1", "cá hồi", "1", "45000"));
-            ListMonAn.Add(new MonAn("2", "Khoa", "1", "90000"));
-            ListMonAn.Add(new MonAn("3", "Bo", "2", "180000"));
-
-            ListCategory.Add(new Category("1", "Hai san"));
-            ListCategory.Add(new Category("2", "Nong San"));
-
             LoadDataMon();
         }
         void LoadDataMon()
         {
             dtgvMonAn.DataSource = null;
-            dtgvMonAn.DataSource = (from mon in ListMonAn
-                                   from cate in ListCategory
+            dtgvMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
+                                   from cate in DanhSachPhanLoai.Instance.ListCategory
                                    where mon.IdCategory == cate.Id
                                    select new
                                    {
@@ -52,8 +43,8 @@ namespace QuanLyQuanAn
         private void btnTim_Click(object sender, EventArgs e)
         {
             LoadDataMon() ;
-            dtgvMonAn.DataSource = (from mon in ListMonAn
-                                    from cate in ListCategory
+            dtgvMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
+                                    from cate in DanhSachPhanLoai.Instance.ListCategory
                                     where mon.IdCategory == cate.Id
                                     && mon.Name == tenTimKiem.Text 
                                     select new
@@ -97,14 +88,14 @@ namespace QuanLyQuanAn
             bien[2] = tbxCategory.Text;
             bien[3] = tbxFoodPrice.Text;
 
-            for (int i =0; i<4; i++){
-                if (bien[i] == null)
+            foreach (string a in bien){
+                if ( a == "")
                 {
                     MessageBox.Show("Vui lòng điền đủ thông tin");
                 }
             }
 
-            foreach (Category a in ListCategory)
+            foreach (Category a in DanhSachPhanLoai.Instance.ListCategory)
             {
                 if (bien[2] == a.Name)
                 {
@@ -118,7 +109,7 @@ namespace QuanLyQuanAn
                 MessageBox.Show("Không có loại món này trong cửa hàng");
             }
            
-            ListMonAn.Add(new MonAn(bien[0], bien[1], bien[4], bien[3]));
+            DanhSachPhanLoai.Instance.ListMonAn.Add(new MonAn(bien[0], bien[1], bien[4], bien[3]));
             LoadDataMon();
         }
 
@@ -143,7 +134,7 @@ namespace QuanLyQuanAn
                 }
             }
 
-            foreach (Category a in ListCategory)
+            foreach (Category a in DanhSachPhanLoai.Instance.ListCategory)
             {
                 if (bien[2] == a.Name)
                 {
@@ -158,10 +149,10 @@ namespace QuanLyQuanAn
             }
             else
             {
-                ListMonAn[index].Id = bien[0];
-                ListMonAn[index].Name = bien[1];
-                ListMonAn[index].IdCategory = bien[4];
-                ListMonAn[index].Price = bien[3];
+                DanhSachPhanLoai.Instance.ListMonAn[index].Id = bien[0];
+                DanhSachPhanLoai.Instance.ListMonAn[index].Name = bien[1];
+                DanhSachPhanLoai.Instance.ListMonAn[index].IdCategory = bien[4];
+                DanhSachPhanLoai.Instance.ListMonAn[index].Price = bien[3];
             }
             LoadDataMon();
         }
