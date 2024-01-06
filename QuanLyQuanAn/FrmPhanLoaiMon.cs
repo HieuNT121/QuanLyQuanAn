@@ -27,6 +27,32 @@ namespace QuanLyQuanAn
             dtgvCategory.Refresh();
         }
 
+        static void IsNull(string[] a, int b)
+        {
+            foreach (string item in a)
+            {
+                if (item == "")
+                {
+                    b = 1;
+                }
+            }
+            if (b == 1)
+            {
+                MessageBox.Show("Vui lòng điền đủ thông tin");
+            }
+        }
+        static void IsDuplicated(string a, int b)
+        {
+            foreach (Category item in DanhSachPhanLoai.Instance.ListCategory)
+            {
+                if (a == item.Name)
+                {
+                    MessageBox.Show("Đã tồn tại phân loại món này!");
+                    b = 1;
+                }
+            }
+        }
+
         private void dtgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             index = e.RowIndex;

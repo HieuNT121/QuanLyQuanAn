@@ -17,7 +17,7 @@ namespace QuanLyQuanAn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDatDon());
+            Application.Run(new FrmPhanLoaiMon());
         }
     }
 
