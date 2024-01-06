@@ -1,5 +1,4 @@
-﻿using FormCalculator;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -94,12 +93,6 @@ namespace QuanLyQuanAn
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Form1());
-            sideBarTimer.Start();
         }
     }
 }

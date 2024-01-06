@@ -159,7 +159,6 @@
             this.button4.Text = "  3.   Quản lý Vật tư";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel4
             // 
