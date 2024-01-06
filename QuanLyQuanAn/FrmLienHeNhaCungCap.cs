@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmXuLyHangTon : Form
+    public partial class FrmLienHeNhaCungCap : Form
     {
-        public FrmXuLyHangTon()
+        public FrmLienHeNhaCungCap()
         {
             InitializeComponent();
         }

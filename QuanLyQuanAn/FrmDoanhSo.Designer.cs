@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDoanhSo));
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgayBatDau = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtpkNgayKetThuc = new System.Windows.Forms.DateTimePicker();
+            this.dtgvDoanhSo = new System.Windows.Forms.DataGridView();
             this.Ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tong_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thoi_gian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btThongKe = new System.Windows.Forms.Button();
             this.TongDoanhThu = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhSo)).BeginInit();
             this.SuspendLayout();
             // 
             // elipseControl1
@@ -54,9 +55,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.dateTimePicker1);
+            this.flowLayoutPanel1.Controls.Add(this.dtpkNgayBatDau);
             this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.dateTimePicker2);
+            this.flowLayoutPanel1.Controls.Add(this.dtpkNgayKetThuc);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 38);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(901, 37);
@@ -74,14 +75,14 @@
             this.label1.Text = "Doanh thu từ ngày";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dateTimePicker1
+            // dtpkNgayBatDau
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(299, 28);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dtpkNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayBatDau.Location = new System.Drawing.Point(185, 3);
+            this.dtpkNgayBatDau.Name = "dtpkNgayBatDau";
+            this.dtpkNgayBatDau.Size = new System.Drawing.Size(299, 28);
+            this.dtpkNgayBatDau.TabIndex = 2;
             // 
             // label2
             // 
@@ -95,29 +96,29 @@
             this.label2.Text = "đến ngày";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dateTimePicker2
+            // dtpkNgayKetThuc
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(589, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(292, 28);
-            this.dateTimePicker2.TabIndex = 4;
+            this.dtpkNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayKetThuc.Location = new System.Drawing.Point(589, 3);
+            this.dtpkNgayKetThuc.Name = "dtpkNgayKetThuc";
+            this.dtpkNgayKetThuc.Size = new System.Drawing.Size(292, 28);
+            this.dtpkNgayKetThuc.TabIndex = 4;
             // 
-            // dataGridView1
+            // dtgvDoanhSo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvDoanhSo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDoanhSo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Ban,
             this.Tong_Tien,
             this.Thoi_gian,
             this.Ngay});
-            this.dataGridView1.Location = new System.Drawing.Point(37, 135);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(893, 339);
-            this.dataGridView1.TabIndex = 1;
+            this.dtgvDoanhSo.Location = new System.Drawing.Point(172, 135);
+            this.dtgvDoanhSo.Name = "dtgvDoanhSo";
+            this.dtgvDoanhSo.RowHeadersWidth = 51;
+            this.dtgvDoanhSo.RowTemplate.Height = 24;
+            this.dtgvDoanhSo.Size = new System.Drawing.Size(677, 339);
+            this.dtgvDoanhSo.TabIndex = 1;
             // 
             // Ban
             // 
@@ -147,22 +148,24 @@
             this.Ngay.Name = "Ngay";
             this.Ngay.Width = 210;
             // 
-            // btnThongKe
+            // btThongKe
             // 
-            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.Location = new System.Drawing.Point(433, 88);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(130, 36);
-            this.btnThongKe.TabIndex = 2;
-            this.btnThongKe.Text = "Thống kê";
-            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btThongKe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btThongKe.Image")));
+            this.btThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThongKe.Location = new System.Drawing.Point(436, 81);
+            this.btThongKe.Name = "btThongKe";
+            this.btThongKe.Size = new System.Drawing.Size(130, 36);
+            this.btThongKe.TabIndex = 2;
+            this.btThongKe.Text = "   Thống kê";
+            this.btThongKe.UseVisualStyleBackColor = true;
             // 
             // TongDoanhThu
             // 
             this.TongDoanhThu.AutoSize = true;
             this.TongDoanhThu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TongDoanhThu.ForeColor = System.Drawing.Color.Black;
-            this.TongDoanhThu.Location = new System.Drawing.Point(32, 523);
+            this.TongDoanhThu.Location = new System.Drawing.Point(271, 517);
             this.TongDoanhThu.Name = "TongDoanhThu";
             this.TongDoanhThu.Size = new System.Drawing.Size(145, 25);
             this.TongDoanhThu.TabIndex = 3;
@@ -171,7 +174,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(183, 523);
+            this.textBox1.Location = new System.Drawing.Point(422, 517);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(317, 31);
             this.textBox1.TabIndex = 4;
@@ -184,15 +187,15 @@
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TongDoanhThu);
-            this.Controls.Add(this.btnThongKe);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btThongKe);
+            this.Controls.Add(this.dtgvDoanhSo);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDoanhSo";
             this.Text = "FrmDoanhThu";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhSo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,12 +206,12 @@
         private elipseControl elipseControl1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dtpkNgayBatDau;
+        private System.Windows.Forms.DataGridView dtgvDoanhSo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpkNgayKetThuc;
         private System.Windows.Forms.Label TongDoanhThu;
-        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btThongKe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ban;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tong_Tien;
         private System.Windows.Forms.DataGridViewTextBoxColumn Thoi_gian;

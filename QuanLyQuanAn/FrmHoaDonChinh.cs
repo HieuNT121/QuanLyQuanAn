@@ -34,9 +34,9 @@ namespace QuanLyQuanAn
             childForm.Show();
         }
 
-        private void btnTaoHoaDon_Click(object sender, EventArgs e)
+        private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmHoaDonNhap());
+            OpenChildForm(new FrmHoaDonThanhToan());
         }
 
         private void btnDatDon_Click(object sender, EventArgs e)
@@ -44,9 +44,9 @@ namespace QuanLyQuanAn
             OpenChildForm(new FrmDatDon());
         }
 
-        private void btnThanhToanVaXuatHoaDon_Click(object sender, EventArgs e)
+        private void btnHoaDonThanhToan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmHoaDonThanhToan());
+            OpenChildForm(new FrmHoaDonNhap());
         }
 
         private void btnCapNhatHoaDon_Click(object sender, EventArgs e)

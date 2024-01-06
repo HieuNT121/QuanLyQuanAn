@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDanhSachMonAn));
-            this.dtgvMonAn = new System.Windows.Forms.DataGridView();
+            this.dtgvDanhSachMonAn = new System.Windows.Forms.DataGridView();
             this.MaMonAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhanLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTenTimKiem = new System.Windows.Forms.TextBox();
+            this.txtMonAn = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -44,21 +44,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtMaMon = new System.Windows.Forms.TextBox();
-            this.txtTenMon = new System.Windows.Forms.TextBox();
-            this.txtPhanLoai = new System.Windows.Forms.TextBox();
-            this.txtGiaCa = new System.Windows.Forms.TextBox();
+            this.tbMaMon = new System.Windows.Forms.TextBox();
+            this.tbTenMon = new System.Windows.Forms.TextBox();
+            this.tbPhanLoai = new System.Windows.Forms.TextBox();
+            this.tbGiaCa = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btnXem = new System.Windows.Forms.Button();
+            this.btXem = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnTim = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).BeginInit();
+            this.btSua = new System.Windows.Forms.Button();
+            this.btTim = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachMonAn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,20 +70,20 @@
             this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgvMonAn
+            // dtgvDanhSachMonAn
             // 
-            this.dtgvMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvMonAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvDanhSachMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhSachMonAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaMonAn,
             this.TenMon,
             this.PhanLoai,
             this.GiaCa});
-            this.dtgvMonAn.Location = new System.Drawing.Point(40, 55);
-            this.dtgvMonAn.Name = "dtgvMonAn";
-            this.dtgvMonAn.RowHeadersWidth = 51;
-            this.dtgvMonAn.RowTemplate.Height = 24;
-            this.dtgvMonAn.Size = new System.Drawing.Size(559, 395);
-            this.dtgvMonAn.TabIndex = 0;
+            this.dtgvDanhSachMonAn.Location = new System.Drawing.Point(40, 55);
+            this.dtgvDanhSachMonAn.Name = "dtgvDanhSachMonAn";
+            this.dtgvDanhSachMonAn.RowHeadersWidth = 51;
+            this.dtgvDanhSachMonAn.RowTemplate.Height = 24;
+            this.dtgvDanhSachMonAn.Size = new System.Drawing.Size(559, 395);
+            this.dtgvDanhSachMonAn.TabIndex = 0;
             // 
             // MaMonAn
             // 
@@ -123,13 +123,13 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Món ăn";
             // 
-            // txtTenTimKiem
+            // txtMonAn
             // 
-            this.txtTenTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenTimKiem.Location = new System.Drawing.Point(639, 84);
-            this.txtTenTimKiem.Name = "txtTenTimKiem";
-            this.txtTenTimKiem.Size = new System.Drawing.Size(219, 30);
-            this.txtTenTimKiem.TabIndex = 7;
+            this.txtMonAn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonAn.Location = new System.Drawing.Point(639, 84);
+            this.txtMonAn.Name = "txtMonAn";
+            this.txtMonAn.Size = new System.Drawing.Size(219, 30);
+            this.txtMonAn.TabIndex = 7;
             // 
             // panel1
             // 
@@ -207,37 +207,37 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Giá cả";
             // 
-            // txtMaMon
+            // tbMaMon
             // 
-            this.txtMaMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaMon.Location = new System.Drawing.Point(760, 232);
-            this.txtMaMon.Name = "txtMaMon";
-            this.txtMaMon.Size = new System.Drawing.Size(219, 30);
-            this.txtMaMon.TabIndex = 12;
+            this.tbMaMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaMon.Location = new System.Drawing.Point(760, 232);
+            this.tbMaMon.Name = "tbMaMon";
+            this.tbMaMon.Size = new System.Drawing.Size(219, 30);
+            this.tbMaMon.TabIndex = 12;
             // 
-            // txtTenMon
+            // tbTenMon
             // 
-            this.txtTenMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMon.Location = new System.Drawing.Point(760, 288);
-            this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.Size = new System.Drawing.Size(219, 30);
-            this.txtTenMon.TabIndex = 13;
+            this.tbTenMon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTenMon.Location = new System.Drawing.Point(760, 288);
+            this.tbTenMon.Name = "tbTenMon";
+            this.tbTenMon.Size = new System.Drawing.Size(219, 30);
+            this.tbTenMon.TabIndex = 13;
             // 
-            // txtPhanLoai
+            // tbPhanLoai
             // 
-            this.txtPhanLoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhanLoai.Location = new System.Drawing.Point(760, 346);
-            this.txtPhanLoai.Name = "txtPhanLoai";
-            this.txtPhanLoai.Size = new System.Drawing.Size(219, 30);
-            this.txtPhanLoai.TabIndex = 14;
+            this.tbPhanLoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPhanLoai.Location = new System.Drawing.Point(760, 346);
+            this.tbPhanLoai.Name = "tbPhanLoai";
+            this.tbPhanLoai.Size = new System.Drawing.Size(219, 30);
+            this.tbPhanLoai.TabIndex = 14;
             // 
-            // txtGiaCa
+            // tbGiaCa
             // 
-            this.txtGiaCa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaCa.Location = new System.Drawing.Point(760, 403);
-            this.txtGiaCa.Name = "txtGiaCa";
-            this.txtGiaCa.Size = new System.Drawing.Size(219, 30);
-            this.txtGiaCa.TabIndex = 15;
+            this.tbGiaCa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGiaCa.Location = new System.Drawing.Point(760, 403);
+            this.tbGiaCa.Name = "tbGiaCa";
+            this.tbGiaCa.Size = new System.Drawing.Size(219, 30);
+            this.tbGiaCa.TabIndex = 15;
             // 
             // flowLayoutPanel2
             // 
@@ -252,99 +252,99 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.btnXem);
+            this.panel18.Controls.Add(this.btXem);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(107, 56);
             this.panel18.TabIndex = 8;
             // 
-            // btnXem
+            // btXem
             // 
-            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
-            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXem.Location = new System.Drawing.Point(9, 5);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(83, 40);
-            this.btnXem.TabIndex = 9;
-            this.btnXem.Text = "    Xem";
-            this.btnXem.UseVisualStyleBackColor = true;
-            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            this.btXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXem.Image = ((System.Drawing.Image)(resources.GetObject("btXem.Image")));
+            this.btXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXem.Location = new System.Drawing.Point(9, 5);
+            this.btXem.Name = "btXem";
+            this.btXem.Size = new System.Drawing.Size(83, 40);
+            this.btXem.TabIndex = 9;
+            this.btXem.Text = "    Xem";
+            this.btXem.UseVisualStyleBackColor = true;
+            this.btXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.btnThem);
+            this.panel19.Controls.Add(this.btThem);
             this.panel19.Location = new System.Drawing.Point(116, 3);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(114, 56);
             this.panel19.TabIndex = 10;
             // 
-            // btnThem
+            // btThem
             // 
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(13, 5);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(91, 40);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "    Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            this.btThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(13, 5);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(91, 40);
+            this.btThem.TabIndex = 4;
+            this.btThem.Text = "    Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.btnXoa);
+            this.panel20.Controls.Add(this.btXoa);
             this.panel20.Location = new System.Drawing.Point(236, 3);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(106, 56);
             this.panel20.TabIndex = 9;
             // 
-            // btnXoa
+            // btXoa
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(3, 5);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 40);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "    Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Image = ((System.Drawing.Image)(resources.GetObject("btXoa.Image")));
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.Location = new System.Drawing.Point(3, 5);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(89, 40);
+            this.btXoa.TabIndex = 5;
+            this.btXoa.Text = "    Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.btnSua);
+            this.panel21.Controls.Add(this.btSua);
             this.panel21.Location = new System.Drawing.Point(348, 3);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(87, 56);
             this.panel21.TabIndex = 11;
             // 
-            // btnSua
+            // btSua
             // 
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(0, 5);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(83, 40);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "    Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.btSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.Image = ((System.Drawing.Image)(resources.GetObject("btSua.Image")));
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.Location = new System.Drawing.Point(0, 5);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(83, 40);
+            this.btSua.TabIndex = 6;
+            this.btSua.Text = "    Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // btnTim
+            // btTim
             // 
-            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Image = ((System.Drawing.Image)(resources.GetObject("btnTim.Image")));
-            this.btnTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTim.Location = new System.Drawing.Point(639, 149);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(103, 40);
-            this.btnTim.TabIndex = 21;
-            this.btnTim.Text = "    Tìm";
-            this.btnTim.UseVisualStyleBackColor = true;
+            this.btTim.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTim.Image = ((System.Drawing.Image)(resources.GetObject("btTim.Image")));
+            this.btTim.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTim.Location = new System.Drawing.Point(639, 149);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(103, 40);
+            this.btTim.TabIndex = 21;
+            this.btTim.Text = "    Tìm";
+            this.btTim.UseVisualStyleBackColor = true;
             // 
             // FrmDanhSachMonAn
             // 
@@ -352,23 +352,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
-            this.Controls.Add(this.btnTim);
+            this.Controls.Add(this.btTim);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.txtGiaCa);
-            this.Controls.Add(this.txtPhanLoai);
-            this.Controls.Add(this.txtTenMon);
-            this.Controls.Add(this.txtMaMon);
+            this.Controls.Add(this.tbGiaCa);
+            this.Controls.Add(this.tbPhanLoai);
+            this.Controls.Add(this.tbTenMon);
+            this.Controls.Add(this.tbMaMon);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtTenTimKiem);
+            this.Controls.Add(this.txtMonAn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtgvMonAn);
+            this.Controls.Add(this.dtgvDanhSachMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDanhSachMonAn";
             this.Text = "FrmDanhSachMonAn";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvMonAn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachMonAn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -389,9 +389,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgvMonAn;
+        private System.Windows.Forms.DataGridView dtgvDanhSachMonAn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtTenTimKiem;
+        private System.Windows.Forms.TextBox txtMonAn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -400,20 +400,20 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtMaMon;
-        private System.Windows.Forms.TextBox txtTenMon;
-        private System.Windows.Forms.TextBox txtPhanLoai;
-        private System.Windows.Forms.TextBox txtGiaCa;
+        private System.Windows.Forms.TextBox tbMaMon;
+        private System.Windows.Forms.TextBox tbTenMon;
+        private System.Windows.Forms.TextBox tbPhanLoai;
+        private System.Windows.Forms.TextBox tbGiaCa;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button btnXem;
+        private System.Windows.Forms.Button btXem;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btSua;
+        private System.Windows.Forms.Button btTim;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMonAn;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn PhanLoai;

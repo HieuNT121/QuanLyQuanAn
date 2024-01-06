@@ -40,13 +40,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.txtMaMonAn = new System.Windows.Forms.TextBox();
+            this.tbMaMonAn = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.txtMaNhanVien = new System.Windows.Forms.TextBox();
+            this.tbMaNhanVien = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtMaKhachHang = new System.Windows.Forms.TextBox();
+            this.tbMaKhachHang = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.txtMaBan = new System.Windows.Forms.TextBox();
+            this.tbMaBan = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,10 +54,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.cbxSoLuong = new System.Windows.Forms.ComboBox();
+            this.cbSoLuong = new System.Windows.Forms.ComboBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.timeThoiGian = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtpkThoiGIan = new System.Windows.Forms.DateTimePicker();
+            this.dtgvDanhSachDatCho = new System.Windows.Forms.DataGridView();
             this.MaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,13 +66,13 @@
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btnXem = new System.Windows.Forms.Button();
+            this.btXem = new System.Windows.Forms.Button();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.btThem = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.btSua = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -89,7 +89,7 @@
             this.panel12.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachDatCho)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -205,67 +205,67 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.txtMaMonAn);
+            this.panel11.Controls.Add(this.tbMaMonAn);
             this.panel11.Location = new System.Drawing.Point(3, 174);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(272, 51);
             this.panel11.TabIndex = 3;
             // 
-            // txtMaMonAn
+            // tbMaMonAn
             // 
-            this.txtMaMonAn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaMonAn.Location = new System.Drawing.Point(5, 9);
-            this.txtMaMonAn.Name = "txtMaMonAn";
-            this.txtMaMonAn.Size = new System.Drawing.Size(265, 31);
-            this.txtMaMonAn.TabIndex = 5;
+            this.tbMaMonAn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaMonAn.Location = new System.Drawing.Point(5, 9);
+            this.tbMaMonAn.Name = "tbMaMonAn";
+            this.tbMaMonAn.Size = new System.Drawing.Size(265, 31);
+            this.tbMaMonAn.TabIndex = 5;
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.txtMaNhanVien);
+            this.panel10.Controls.Add(this.tbMaNhanVien);
             this.panel10.Location = new System.Drawing.Point(3, 117);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(272, 51);
             this.panel10.TabIndex = 2;
             // 
-            // txtMaNhanVien
+            // tbMaNhanVien
             // 
-            this.txtMaNhanVien.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNhanVien.Location = new System.Drawing.Point(5, 11);
-            this.txtMaNhanVien.Name = "txtMaNhanVien";
-            this.txtMaNhanVien.Size = new System.Drawing.Size(265, 31);
-            this.txtMaNhanVien.TabIndex = 13;
+            this.tbMaNhanVien.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaNhanVien.Location = new System.Drawing.Point(5, 11);
+            this.tbMaNhanVien.Name = "tbMaNhanVien";
+            this.tbMaNhanVien.Size = new System.Drawing.Size(265, 31);
+            this.tbMaNhanVien.TabIndex = 13;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.txtMaKhachHang);
+            this.panel9.Controls.Add(this.tbMaKhachHang);
             this.panel9.Location = new System.Drawing.Point(3, 60);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(272, 51);
             this.panel9.TabIndex = 1;
             // 
-            // txtMaKhachHang
+            // tbMaKhachHang
             // 
-            this.txtMaKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKhachHang.Location = new System.Drawing.Point(5, 11);
-            this.txtMaKhachHang.Name = "txtMaKhachHang";
-            this.txtMaKhachHang.Size = new System.Drawing.Size(265, 31);
-            this.txtMaKhachHang.TabIndex = 4;
+            this.tbMaKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaKhachHang.Location = new System.Drawing.Point(5, 11);
+            this.tbMaKhachHang.Name = "tbMaKhachHang";
+            this.tbMaKhachHang.Size = new System.Drawing.Size(265, 31);
+            this.tbMaKhachHang.TabIndex = 4;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.txtMaBan);
+            this.panel8.Controls.Add(this.tbMaBan);
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(272, 51);
             this.panel8.TabIndex = 0;
             // 
-            // txtMaBan
+            // tbMaBan
             // 
-            this.txtMaBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaBan.Location = new System.Drawing.Point(5, 11);
-            this.txtMaBan.Name = "txtMaBan";
-            this.txtMaBan.Size = new System.Drawing.Size(265, 31);
-            this.txtMaBan.TabIndex = 3;
+            this.tbMaBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaBan.Location = new System.Drawing.Point(5, 11);
+            this.tbMaBan.Name = "tbMaBan";
+            this.tbMaBan.Size = new System.Drawing.Size(265, 31);
+            this.tbMaBan.TabIndex = 3;
             // 
             // flowLayoutPanel2
             // 
@@ -331,17 +331,17 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.cbxSoLuong);
+            this.panel15.Controls.Add(this.cbSoLuong);
             this.panel15.Location = new System.Drawing.Point(3, 60);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(272, 51);
             this.panel15.TabIndex = 1;
             // 
-            // cbxSoLuong
+            // cbSoLuong
             // 
-            this.cbxSoLuong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSoLuong.FormattingEnabled = true;
-            this.cbxSoLuong.Items.AddRange(new object[] {
+            this.cbSoLuong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSoLuong.FormattingEnabled = true;
+            this.cbSoLuong.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -352,46 +352,46 @@
             "8",
             "9",
             "10"});
-            this.cbxSoLuong.Location = new System.Drawing.Point(3, 14);
-            this.cbxSoLuong.Name = "cbxSoLuong";
-            this.cbxSoLuong.Size = new System.Drawing.Size(266, 31);
-            this.cbxSoLuong.TabIndex = 0;
+            this.cbSoLuong.Location = new System.Drawing.Point(3, 14);
+            this.cbSoLuong.Name = "cbSoLuong";
+            this.cbSoLuong.Size = new System.Drawing.Size(266, 31);
+            this.cbSoLuong.TabIndex = 0;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.timeThoiGian);
+            this.panel16.Controls.Add(this.dtpkThoiGIan);
             this.panel16.Location = new System.Drawing.Point(3, 3);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(272, 51);
             this.panel16.TabIndex = 0;
             // 
-            // timeThoiGian
+            // dtpkThoiGIan
             // 
-            this.timeThoiGian.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeThoiGian.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.timeThoiGian.Location = new System.Drawing.Point(0, 14);
-            this.timeThoiGian.Name = "timeThoiGian";
-            this.timeThoiGian.Size = new System.Drawing.Size(269, 31);
-            this.timeThoiGian.TabIndex = 0;
+            this.dtpkThoiGIan.CalendarFont = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThoiGIan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThoiGIan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkThoiGIan.Location = new System.Drawing.Point(0, 14);
+            this.dtpkThoiGIan.Name = "dtpkThoiGIan";
+            this.dtpkThoiGIan.Size = new System.Drawing.Size(269, 31);
+            this.dtpkThoiGIan.TabIndex = 0;
             // 
-            // dataGridView1
+            // dtgvDanhSachDatCho
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvDanhSachDatCho.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtgvDanhSachDatCho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhSachDatCho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBan,
             this.MaKhachHang,
             this.MaNhanVien,
             this.MaMonAn,
             this.ThoiGian,
             this.SoLuong});
-            this.dataGridView1.Location = new System.Drawing.Point(64, 338);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(804, 260);
-            this.dataGridView1.TabIndex = 22;
+            this.dtgvDanhSachDatCho.Location = new System.Drawing.Point(64, 338);
+            this.dtgvDanhSachDatCho.Name = "dtgvDanhSachDatCho";
+            this.dtgvDanhSachDatCho.RowHeadersWidth = 51;
+            this.dtgvDanhSachDatCho.RowTemplate.Height = 24;
+            this.dtgvDanhSachDatCho.Size = new System.Drawing.Size(804, 260);
+            this.dtgvDanhSachDatCho.TabIndex = 22;
             // 
             // MaBan
             // 
@@ -448,83 +448,83 @@
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.btnXem);
+            this.panel18.Controls.Add(this.btXem);
             this.panel18.Location = new System.Drawing.Point(3, 3);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(107, 56);
             this.panel18.TabIndex = 8;
             // 
-            // btnXem
+            // btXem
             // 
-            this.btnXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXem.Image = ((System.Drawing.Image)(resources.GetObject("btnXem.Image")));
-            this.btnXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXem.Location = new System.Drawing.Point(9, 5);
-            this.btnXem.Name = "btnXem";
-            this.btnXem.Size = new System.Drawing.Size(83, 40);
-            this.btnXem.TabIndex = 9;
-            this.btnXem.Text = "    Xem";
-            this.btnXem.UseVisualStyleBackColor = true;
+            this.btXem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXem.Image = ((System.Drawing.Image)(resources.GetObject("btXem.Image")));
+            this.btXem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXem.Location = new System.Drawing.Point(9, 5);
+            this.btXem.Name = "btXem";
+            this.btXem.Size = new System.Drawing.Size(83, 40);
+            this.btXem.TabIndex = 9;
+            this.btXem.Text = "    Xem";
+            this.btXem.UseVisualStyleBackColor = true;
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.btnThem);
+            this.panel19.Controls.Add(this.btThem);
             this.panel19.Location = new System.Drawing.Point(116, 3);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(114, 56);
             this.panel19.TabIndex = 10;
             // 
-            // btnThem
+            // btThem
             // 
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(13, 5);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(91, 40);
-            this.btnThem.TabIndex = 4;
-            this.btnThem.Text = "    Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btThem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThem.Image = ((System.Drawing.Image)(resources.GetObject("btThem.Image")));
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.Location = new System.Drawing.Point(13, 5);
+            this.btThem.Name = "btThem";
+            this.btThem.Size = new System.Drawing.Size(91, 40);
+            this.btThem.TabIndex = 4;
+            this.btThem.Text = "    Thêm";
+            this.btThem.UseVisualStyleBackColor = true;
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.btnXoa);
+            this.panel20.Controls.Add(this.btXoa);
             this.panel20.Location = new System.Drawing.Point(236, 3);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(106, 56);
             this.panel20.TabIndex = 9;
             // 
-            // btnXoa
+            // btXoa
             // 
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(3, 5);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(89, 40);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "    Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoa.Image = ((System.Drawing.Image)(resources.GetObject("btXoa.Image")));
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.Location = new System.Drawing.Point(3, 5);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(89, 40);
+            this.btXoa.TabIndex = 5;
+            this.btXoa.Text = "    Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
             // 
             // panel21
             // 
-            this.panel21.Controls.Add(this.btnSua);
+            this.panel21.Controls.Add(this.btSua);
             this.panel21.Location = new System.Drawing.Point(348, 3);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(87, 56);
             this.panel21.TabIndex = 11;
             // 
-            // btnSua
+            // btSua
             // 
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(0, 5);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(83, 40);
-            this.btnSua.TabIndex = 6;
-            this.btnSua.Text = "    Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.btSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSua.Image = ((System.Drawing.Image)(resources.GetObject("btSua.Image")));
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.Location = new System.Drawing.Point(0, 5);
+            this.btSua.Name = "btSua";
+            this.btSua.Size = new System.Drawing.Size(83, 40);
+            this.btSua.TabIndex = 6;
+            this.btSua.Text = "    Sửa";
+            this.btSua.UseVisualStyleBackColor = true;
             // 
             // FrmDanhSachDatCho
             // 
@@ -533,7 +533,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvDanhSachDatCho);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.panel5);
@@ -567,7 +567,7 @@
             this.panel12.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachDatCho)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
@@ -590,13 +590,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox txtMaMonAn;
+        private System.Windows.Forms.TextBox tbMaMonAn;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox txtMaNhanVien;
+        private System.Windows.Forms.TextBox tbMaNhanVien;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtMaKhachHang;
+        private System.Windows.Forms.TextBox tbMaKhachHang;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtMaBan;
+        private System.Windows.Forms.TextBox tbMaBan;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
@@ -604,10 +604,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.ComboBox cbxSoLuong;
+        private System.Windows.Forms.ComboBox cbSoLuong;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.DateTimePicker timeThoiGian;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dtpkThoiGIan;
+        private System.Windows.Forms.DataGridView dtgvDanhSachDatCho;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhachHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNhanVien;
@@ -616,12 +616,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button btnXem;
+        private System.Windows.Forms.Button btXem;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btSua;
     }
 }

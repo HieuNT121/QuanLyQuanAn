@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel_top = new System.Windows.Forms.Panel();
-            this.btnQuanLyTaiKhoan = new System.Windows.Forms.Button();
-            this.btnPhanQuyen = new System.Windows.Forms.Button();
-            this.btnBaoTri = new System.Windows.Forms.Button();
-            this.btnCapNhatTaiKhoan = new System.Windows.Forms.Button();
+            this.btQuanLyTaiKhoan = new System.Windows.Forms.Button();
+            this.btPhanQuyen = new System.Windows.Forms.Button();
+            this.btBaoTri = new System.Windows.Forms.Button();
+            this.btCapNhatTaiKhoan = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_top.SuspendLayout();
@@ -42,60 +42,60 @@
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.Gray;
-            this.panel_top.Controls.Add(this.btnQuanLyTaiKhoan);
-            this.panel_top.Controls.Add(this.btnPhanQuyen);
-            this.panel_top.Controls.Add(this.btnBaoTri);
-            this.panel_top.Controls.Add(this.btnCapNhatTaiKhoan);
+            this.panel_top.Controls.Add(this.btQuanLyTaiKhoan);
+            this.panel_top.Controls.Add(this.btPhanQuyen);
+            this.panel_top.Controls.Add(this.btBaoTri);
+            this.panel_top.Controls.Add(this.btCapNhatTaiKhoan);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
             this.panel_top.Size = new System.Drawing.Size(743, 100);
             this.panel_top.TabIndex = 0;
             // 
-            // btnQuanLyTaiKhoan
+            // btQuanLyTaiKhoan
             // 
-            this.btnQuanLyTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnQuanLyTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLyTaiKhoan.Location = new System.Drawing.Point(34, 12);
-            this.btnQuanLyTaiKhoan.Name = "btnQuanLyTaiKhoan";
-            this.btnQuanLyTaiKhoan.Size = new System.Drawing.Size(141, 76);
-            this.btnQuanLyTaiKhoan.TabIndex = 4;
-            this.btnQuanLyTaiKhoan.Text = "Quản lý tài khoản";
-            this.btnQuanLyTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnQuanLyTaiKhoan.Click += new System.EventHandler(this.btnQuanLyTaiKhoan_Click);
+            this.btQuanLyTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btQuanLyTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuanLyTaiKhoan.Location = new System.Drawing.Point(34, 12);
+            this.btQuanLyTaiKhoan.Name = "btQuanLyTaiKhoan";
+            this.btQuanLyTaiKhoan.Size = new System.Drawing.Size(141, 76);
+            this.btQuanLyTaiKhoan.TabIndex = 4;
+            this.btQuanLyTaiKhoan.Text = "Quản lý tài khoản";
+            this.btQuanLyTaiKhoan.UseVisualStyleBackColor = false;
+            this.btQuanLyTaiKhoan.Click += new System.EventHandler(this.btnQuanLyTaiKhoan_Click);
             // 
-            // btnPhanQuyen
+            // btPhanQuyen
             // 
-            this.btnPhanQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPhanQuyen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhanQuyen.Location = new System.Drawing.Point(222, 12);
-            this.btnPhanQuyen.Name = "btnPhanQuyen";
-            this.btnPhanQuyen.Size = new System.Drawing.Size(141, 76);
-            this.btnPhanQuyen.TabIndex = 3;
-            this.btnPhanQuyen.Text = "Phân quyền";
-            this.btnPhanQuyen.UseVisualStyleBackColor = false;
+            this.btPhanQuyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btPhanQuyen.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPhanQuyen.Location = new System.Drawing.Point(222, 12);
+            this.btPhanQuyen.Name = "btPhanQuyen";
+            this.btPhanQuyen.Size = new System.Drawing.Size(141, 76);
+            this.btPhanQuyen.TabIndex = 3;
+            this.btPhanQuyen.Text = "Phân quyền";
+            this.btPhanQuyen.UseVisualStyleBackColor = false;
             // 
-            // btnBaoTri
+            // btBaoTri
             // 
-            this.btnBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnBaoTri.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoTri.Location = new System.Drawing.Point(578, 12);
-            this.btnBaoTri.Name = "btnBaoTri";
-            this.btnBaoTri.Size = new System.Drawing.Size(141, 76);
-            this.btnBaoTri.TabIndex = 2;
-            this.btnBaoTri.Text = "Bảo trì";
-            this.btnBaoTri.UseVisualStyleBackColor = false;
+            this.btBaoTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btBaoTri.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBaoTri.Location = new System.Drawing.Point(578, 12);
+            this.btBaoTri.Name = "btBaoTri";
+            this.btBaoTri.Size = new System.Drawing.Size(141, 76);
+            this.btBaoTri.TabIndex = 2;
+            this.btBaoTri.Text = "Bảo trì";
+            this.btBaoTri.UseVisualStyleBackColor = false;
             // 
-            // btnCapNhatTaiKhoan
+            // btCapNhatTaiKhoan
             // 
-            this.btnCapNhatTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCapNhatTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatTaiKhoan.Location = new System.Drawing.Point(406, 12);
-            this.btnCapNhatTaiKhoan.Name = "btnCapNhatTaiKhoan";
-            this.btnCapNhatTaiKhoan.Size = new System.Drawing.Size(141, 76);
-            this.btnCapNhatTaiKhoan.TabIndex = 1;
-            this.btnCapNhatTaiKhoan.Text = "Cập nhật tài khoản";
-            this.btnCapNhatTaiKhoan.UseVisualStyleBackColor = false;
+            this.btCapNhatTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btCapNhatTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapNhatTaiKhoan.Location = new System.Drawing.Point(406, 12);
+            this.btCapNhatTaiKhoan.Name = "btCapNhatTaiKhoan";
+            this.btCapNhatTaiKhoan.Size = new System.Drawing.Size(141, 76);
+            this.btCapNhatTaiKhoan.TabIndex = 1;
+            this.btCapNhatTaiKhoan.Text = "Cập nhật tài khoản";
+            this.btCapNhatTaiKhoan.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -135,10 +135,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_top;
-        private System.Windows.Forms.Button btnQuanLyTaiKhoan;
-        private System.Windows.Forms.Button btnPhanQuyen;
-        private System.Windows.Forms.Button btnBaoTri;
-        private System.Windows.Forms.Button btnCapNhatTaiKhoan;
+        private System.Windows.Forms.Button btQuanLyTaiKhoan;
+        private System.Windows.Forms.Button btPhanQuyen;
+        private System.Windows.Forms.Button btBaoTri;
+        private System.Windows.Forms.Button btCapNhatTaiKhoan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel_body;
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanAn;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,11 @@ namespace QuanLyQuanAn
         {
             InitializeComponent();
         }
+
+        //private void FrmMain_Load(object sender, EventArgs e)
+        //{
+        //    loginUser.Text = MainClass.USER;
+        //}
 
         bool sideBarExpand;
         private void sideBarTimer_Tick(object sender, EventArgs e)

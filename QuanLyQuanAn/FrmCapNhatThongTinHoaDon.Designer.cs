@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnCapNhat = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // BtnCapNhat
+            // btnCapNhat
             // 
-            this.BtnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BtnCapNhat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCapNhat.Location = new System.Drawing.Point(459, 536);
-            this.BtnCapNhat.Name = "BtnCapNhat";
-            this.BtnCapNhat.Size = new System.Drawing.Size(110, 41);
-            this.BtnCapNhat.TabIndex = 0;
-            this.BtnCapNhat.Text = "Cập nhật";
-            this.BtnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.Location = new System.Drawing.Point(459, 536);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(110, 41);
+            this.btnCapNhat.TabIndex = 0;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = false;
             // 
             // FrmCapNhatThongTinHoaDon
             // 
@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
-            this.Controls.Add(this.BtnCapNhat);
+            this.Controls.Add(this.btnCapNhat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCapNhatThongTinHoaDon";
             this.Text = "FrmCapNhatThongTinHoaDon";
@@ -58,6 +58,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BtnCapNhat;
+        private System.Windows.Forms.Button btnCapNhat;
     }
 }

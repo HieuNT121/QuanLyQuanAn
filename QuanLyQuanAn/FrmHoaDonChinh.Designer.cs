@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel_top = new System.Windows.Forms.Panel();
-            this.btnDatDon = new System.Windows.Forms.Button();
-            this.btnCapNhatHoaDon = new System.Windows.Forms.Button();
-            this.btnThanhToanVaXuatHoaDon = new System.Windows.Forms.Button();
-            this.btnTaoHoaDon = new System.Windows.Forms.Button();
+            this.btDatDon = new System.Windows.Forms.Button();
+            this.btCapNhatThongTin = new System.Windows.Forms.Button();
+            this.btHoaDonThanhToan = new System.Windows.Forms.Button();
+            this.btHoaDonNhap = new System.Windows.Forms.Button();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_top.SuspendLayout();
             this.SuspendLayout();
@@ -40,63 +40,63 @@
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.Gray;
-            this.panel_top.Controls.Add(this.btnDatDon);
-            this.panel_top.Controls.Add(this.btnCapNhatHoaDon);
-            this.panel_top.Controls.Add(this.btnThanhToanVaXuatHoaDon);
-            this.panel_top.Controls.Add(this.btnTaoHoaDon);
+            this.panel_top.Controls.Add(this.btDatDon);
+            this.panel_top.Controls.Add(this.btCapNhatThongTin);
+            this.panel_top.Controls.Add(this.btHoaDonThanhToan);
+            this.panel_top.Controls.Add(this.btHoaDonNhap);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
             this.panel_top.Size = new System.Drawing.Size(1034, 110);
             this.panel_top.TabIndex = 0;
             // 
-            // btnDatDon
+            // btDatDon
             // 
-            this.btnDatDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDatDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatDon.Location = new System.Drawing.Point(37, 17);
-            this.btnDatDon.Name = "btnDatDon";
-            this.btnDatDon.Size = new System.Drawing.Size(143, 63);
-            this.btnDatDon.TabIndex = 2;
-            this.btnDatDon.Text = "Đặt đơn";
-            this.btnDatDon.UseVisualStyleBackColor = false;
-            this.btnDatDon.Click += new System.EventHandler(this.btnDatDon_Click);
+            this.btDatDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btDatDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDatDon.Location = new System.Drawing.Point(37, 17);
+            this.btDatDon.Name = "btDatDon";
+            this.btDatDon.Size = new System.Drawing.Size(143, 63);
+            this.btDatDon.TabIndex = 2;
+            this.btDatDon.Text = "Đặt đơn";
+            this.btDatDon.UseVisualStyleBackColor = false;
+            this.btDatDon.Click += new System.EventHandler(this.btnDatDon_Click);
             // 
-            // btnCapNhatHoaDon
+            // btCapNhatThongTin
             // 
-            this.btnCapNhatHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnCapNhatHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhatHoaDon.Location = new System.Drawing.Point(567, 17);
-            this.btnCapNhatHoaDon.Name = "btnCapNhatHoaDon";
-            this.btnCapNhatHoaDon.Size = new System.Drawing.Size(155, 63);
-            this.btnCapNhatHoaDon.TabIndex = 1;
-            this.btnCapNhatHoaDon.Text = "Cập nhật thông tin";
-            this.btnCapNhatHoaDon.UseVisualStyleBackColor = false;
-            this.btnCapNhatHoaDon.Click += new System.EventHandler(this.btnCapNhatHoaDon_Click);
+            this.btCapNhatThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btCapNhatThongTin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCapNhatThongTin.Location = new System.Drawing.Point(567, 17);
+            this.btCapNhatThongTin.Name = "btCapNhatThongTin";
+            this.btCapNhatThongTin.Size = new System.Drawing.Size(155, 63);
+            this.btCapNhatThongTin.TabIndex = 1;
+            this.btCapNhatThongTin.Text = "Cập nhật thông tin";
+            this.btCapNhatThongTin.UseVisualStyleBackColor = false;
+            this.btCapNhatThongTin.Click += new System.EventHandler(this.btnCapNhatHoaDon_Click);
             // 
-            // btnThanhToanVaXuatHoaDon
+            // btHoaDonThanhToan
             // 
-            this.btnThanhToanVaXuatHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnThanhToanVaXuatHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToanVaXuatHoaDon.Location = new System.Drawing.Point(400, 17);
-            this.btnThanhToanVaXuatHoaDon.Name = "btnThanhToanVaXuatHoaDon";
-            this.btnThanhToanVaXuatHoaDon.Size = new System.Drawing.Size(143, 63);
-            this.btnThanhToanVaXuatHoaDon.TabIndex = 1;
-            this.btnThanhToanVaXuatHoaDon.Text = "Thanh toán và xuất hóa đơn";
-            this.btnThanhToanVaXuatHoaDon.UseVisualStyleBackColor = false;
-            this.btnThanhToanVaXuatHoaDon.Click += new System.EventHandler(this.btnThanhToanVaXuatHoaDon_Click);
+            this.btHoaDonThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btHoaDonThanhToan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHoaDonThanhToan.Location = new System.Drawing.Point(400, 17);
+            this.btHoaDonThanhToan.Name = "btHoaDonThanhToan";
+            this.btHoaDonThanhToan.Size = new System.Drawing.Size(143, 63);
+            this.btHoaDonThanhToan.TabIndex = 1;
+            this.btHoaDonThanhToan.Text = "Hóa đơn thanh toán";
+            this.btHoaDonThanhToan.UseVisualStyleBackColor = false;
+            this.btHoaDonThanhToan.Click += new System.EventHandler(this.btnHoaDonThanhToan_Click);
             // 
-            // btnTaoHoaDon
+            // btHoaDonNhap
             // 
-            this.btnTaoHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnTaoHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaoHoaDon.Location = new System.Drawing.Point(220, 17);
-            this.btnTaoHoaDon.Name = "btnTaoHoaDon";
-            this.btnTaoHoaDon.Size = new System.Drawing.Size(146, 67);
-            this.btnTaoHoaDon.TabIndex = 0;
-            this.btnTaoHoaDon.Text = "Tạo hóa đơn";
-            this.btnTaoHoaDon.UseVisualStyleBackColor = false;
-            this.btnTaoHoaDon.Click += new System.EventHandler(this.btnTaoHoaDon_Click);
+            this.btHoaDonNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btHoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHoaDonNhap.Location = new System.Drawing.Point(220, 17);
+            this.btHoaDonNhap.Name = "btHoaDonNhap";
+            this.btHoaDonNhap.Size = new System.Drawing.Size(146, 67);
+            this.btHoaDonNhap.TabIndex = 0;
+            this.btHoaDonNhap.Text = "Hóa đơn nhập ";
+            this.btHoaDonNhap.UseVisualStyleBackColor = false;
+            this.btHoaDonNhap.Click += new System.EventHandler(this.btnHoaDonNhap_Click);
             // 
             // panel_body
             // 
@@ -125,10 +125,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel_top;
-        private System.Windows.Forms.Button btnThanhToanVaXuatHoaDon;
-        private System.Windows.Forms.Button btnTaoHoaDon;
-        private System.Windows.Forms.Button btnCapNhatHoaDon;
+        private System.Windows.Forms.Button btHoaDonThanhToan;
+        private System.Windows.Forms.Button btHoaDonNhap;
+        private System.Windows.Forms.Button btCapNhatThongTin;
         private System.Windows.Forms.Panel panel_body;
-        private System.Windows.Forms.Button btnDatDon;
+        private System.Windows.Forms.Button btDatDon;
     }
 }

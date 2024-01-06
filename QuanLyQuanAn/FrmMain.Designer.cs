@@ -34,15 +34,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnHeThong = new System.Windows.Forms.Button();
+            this.btQuantriHeThong = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnDanhMuc = new System.Windows.Forms.Button();
+            this.btQuanLyDanhMuc = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnVatTu = new System.Windows.Forms.Button();
+            this.btQuanLyKho = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btQuanlyHoaDon = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btBaoCaoThongKe = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panel_top = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
@@ -109,113 +109,113 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnHeThong);
+            this.panel5.Controls.Add(this.btQuantriHeThong);
             this.panel5.Location = new System.Drawing.Point(3, 178);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(263, 101);
             this.panel5.TabIndex = 5;
             // 
-            // btnHeThong
+            // btQuantriHeThong
             // 
-            this.btnHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHeThong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHeThong.Location = new System.Drawing.Point(9, 33);
-            this.btnHeThong.Name = "btnHeThong";
-            this.btnHeThong.Size = new System.Drawing.Size(250, 45);
-            this.btnHeThong.TabIndex = 1;
-            this.btnHeThong.Text = "  1.  Quản trị Hệ thống";
-            this.btnHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHeThong.UseVisualStyleBackColor = false;
-            this.btnHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
+            this.btQuantriHeThong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btQuantriHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQuantriHeThong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuantriHeThong.Location = new System.Drawing.Point(9, 33);
+            this.btQuantriHeThong.Name = "btQuantriHeThong";
+            this.btQuantriHeThong.Size = new System.Drawing.Size(250, 45);
+            this.btQuantriHeThong.TabIndex = 1;
+            this.btQuantriHeThong.Text = "  1.  Quản trị Hệ thống";
+            this.btQuantriHeThong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btQuantriHeThong.UseVisualStyleBackColor = false;
+            this.btQuantriHeThong.Click += new System.EventHandler(this.btnHeThong_Click);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.btnDanhMuc);
+            this.panel6.Controls.Add(this.btQuanLyDanhMuc);
             this.panel6.Location = new System.Drawing.Point(3, 285);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(263, 93);
             this.panel6.TabIndex = 2;
             // 
-            // btnDanhMuc
+            // btQuanLyDanhMuc
             // 
-            this.btnDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDanhMuc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhMuc.Location = new System.Drawing.Point(7, 21);
-            this.btnDanhMuc.Name = "btnDanhMuc";
-            this.btnDanhMuc.Size = new System.Drawing.Size(250, 45);
-            this.btnDanhMuc.TabIndex = 3;
-            this.btnDanhMuc.Text = "  2.  Quản lý Danh mục";
-            this.btnDanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDanhMuc.UseVisualStyleBackColor = false;
-            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            this.btQuanLyDanhMuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btQuanLyDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQuanLyDanhMuc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuanLyDanhMuc.Location = new System.Drawing.Point(7, 21);
+            this.btQuanLyDanhMuc.Name = "btQuanLyDanhMuc";
+            this.btQuanLyDanhMuc.Size = new System.Drawing.Size(250, 45);
+            this.btQuanLyDanhMuc.TabIndex = 3;
+            this.btQuanLyDanhMuc.Text = "  2.  Quản lý Danh mục";
+            this.btQuanLyDanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btQuanLyDanhMuc.UseVisualStyleBackColor = false;
+            this.btQuanLyDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnVatTu);
+            this.panel3.Controls.Add(this.btQuanLyKho);
             this.panel3.Location = new System.Drawing.Point(3, 384);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(263, 102);
             this.panel3.TabIndex = 5;
             // 
-            // btnVatTu
+            // btQuanLyKho
             // 
-            this.btnVatTu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnVatTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVatTu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVatTu.Location = new System.Drawing.Point(7, 26);
-            this.btnVatTu.Name = "btnVatTu";
-            this.btnVatTu.Size = new System.Drawing.Size(250, 45);
-            this.btnVatTu.TabIndex = 4;
-            this.btnVatTu.Text = "  3.  Quản lý Kho";
-            this.btnVatTu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVatTu.UseVisualStyleBackColor = false;
-            this.btnVatTu.Click += new System.EventHandler(this.btnKho_Click);
+            this.btQuanLyKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btQuanLyKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQuanLyKho.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuanLyKho.Location = new System.Drawing.Point(7, 26);
+            this.btQuanLyKho.Name = "btQuanLyKho";
+            this.btQuanLyKho.Size = new System.Drawing.Size(250, 45);
+            this.btQuanLyKho.TabIndex = 4;
+            this.btQuanLyKho.Text = "  3.  Quản lý Kho";
+            this.btQuanLyKho.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btQuanLyKho.UseVisualStyleBackColor = false;
+            this.btQuanLyKho.Click += new System.EventHandler(this.btnKho_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button5);
+            this.panel4.Controls.Add(this.btQuanlyHoaDon);
             this.panel4.Location = new System.Drawing.Point(3, 492);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(263, 94);
             this.panel4.TabIndex = 5;
             // 
-            // button5
+            // btQuanlyHoaDon
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(7, 23);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 45);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "  4.  Quản lý Hóa đơn";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.btnHoaDon_Click);
+            this.btQuanlyHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btQuanlyHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btQuanlyHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btQuanlyHoaDon.Location = new System.Drawing.Point(7, 23);
+            this.btQuanlyHoaDon.Name = "btQuanlyHoaDon";
+            this.btQuanlyHoaDon.Size = new System.Drawing.Size(250, 45);
+            this.btQuanlyHoaDon.TabIndex = 5;
+            this.btQuanlyHoaDon.Text = "  4.  Quản lý Hóa đơn";
+            this.btQuanlyHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btQuanlyHoaDon.UseVisualStyleBackColor = false;
+            this.btQuanlyHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnThongKe);
+            this.panel2.Controls.Add(this.btBaoCaoThongKe);
             this.panel2.Location = new System.Drawing.Point(3, 592);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(263, 85);
             this.panel2.TabIndex = 1;
             // 
-            // btnThongKe
+            // btBaoCaoThongKe
             // 
-            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.Location = new System.Drawing.Point(7, 17);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(250, 45);
-            this.btnThongKe.TabIndex = 2;
-            this.btnThongKe.Text = "  5.  Báo cáo thống kê";
-            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.UseVisualStyleBackColor = false;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            this.btBaoCaoThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btBaoCaoThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBaoCaoThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBaoCaoThongKe.Location = new System.Drawing.Point(7, 17);
+            this.btBaoCaoThongKe.Name = "btBaoCaoThongKe";
+            this.btBaoCaoThongKe.Size = new System.Drawing.Size(250, 45);
+            this.btBaoCaoThongKe.TabIndex = 2;
+            this.btBaoCaoThongKe.Text = "  5.  Báo cáo thống kê";
+            this.btBaoCaoThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btBaoCaoThongKe.UseVisualStyleBackColor = false;
+            this.btBaoCaoThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // sideBarTimer
             // 
@@ -268,15 +268,15 @@
         private System.Windows.Forms.FlowLayoutPanel sideBar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnHeThong;
-        private System.Windows.Forms.Button btnThongKe;
-        private System.Windows.Forms.Button btnDanhMuc;
-        private System.Windows.Forms.Button btnVatTu;
+        private System.Windows.Forms.Button btQuantriHeThong;
+        private System.Windows.Forms.Button btBaoCaoThongKe;
+        private System.Windows.Forms.Button btQuanLyDanhMuc;
+        private System.Windows.Forms.Button btQuanLyKho;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btQuanlyHoaDon;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer sideBarTimer;
         private System.Windows.Forms.Label label1;

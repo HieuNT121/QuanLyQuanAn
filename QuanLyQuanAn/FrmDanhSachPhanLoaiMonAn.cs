@@ -23,9 +23,9 @@ namespace QuanLyQuanAn
 
         void LoadDataPhanLoai()
         {
-            dtgvCategory.DataSource = null;
-            dtgvCategory.DataSource = DanhSachPhanLoai.Instance.ListCategory;
-            dtgvCategory.Refresh();
+            dtgvDanhSachPhanLoaiMonAn.DataSource = null;
+            dtgvDanhSachPhanLoaiMonAn.DataSource = DanhSachPhanLoai.Instance.ListCategory;
+            dtgvDanhSachPhanLoaiMonAn.Refresh();
         }
 
         static void IsNull(string[] a, int b)
@@ -58,8 +58,8 @@ namespace QuanLyQuanAn
         {
             index = e.RowIndex;
 
-            tbxID.Text = dtgvCategory.Rows[index].Cells[0].Value.ToString();
-            tbxName.Text = dtgvCategory.Rows[index].Cells[1].Value.ToString();
+            tbxID.Text = dtgvDanhSachPhanLoaiMonAn.Rows[index].Cells[0].Value.ToString();
+            tbTenPhanLoai.Text = dtgvDanhSachPhanLoaiMonAn.Rows[index].Cells[1].Value.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace QuanLyQuanAn
             int checkIsDuplicated = 0;
             string[] bien = new string[2];
             bien[0] = tbxID.Text;
-            bien[1] = tbxName.Text;
+            bien[1] = tbTenPhanLoai.Text;
 
             foreach (string a in bien)
             {
@@ -105,7 +105,7 @@ namespace QuanLyQuanAn
             int checkIsDuplicated = 0;
             string[] bien = new string[2];
             bien[0] = tbxID.Text;
-            bien[1] = tbxName.Text;
+            bien[1] = tbTenPhanLoai.Text;
 
             if (index < 0)
             {

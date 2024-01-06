@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmSapXepHang : Form
+    public partial class FrmCapNhatKho : Form
     {
-        public FrmSapXepHang()
+        public FrmCapNhatKho()
         {
             InitializeComponent();
+        }
+
+        private void FrmNhapXuat_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

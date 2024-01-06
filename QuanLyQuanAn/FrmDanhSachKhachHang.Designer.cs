@@ -40,13 +40,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.cbxGioiTinh = new System.Windows.Forms.ComboBox();
+            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.txtTenKhachHang = new System.Windows.Forms.TextBox();
+            this.tbTenKhachHang = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.txtMaKhachHang = new System.Windows.Forms.TextBox();
+            this.tbMaKhachHang = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,10 +54,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.txtSoDienThoai = new System.Windows.Forms.TextBox();
+            this.tbSoDienThoai = new System.Windows.Forms.TextBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.timeNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtpkNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.dtgvDanhSachKhachHang = new System.Windows.Forms.DataGridView();
             this.ColumnMaSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,7 +89,7 @@
             this.panel7.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachKhachHang)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel19.SuspendLayout();
@@ -205,71 +205,71 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.txtDiaChi);
+            this.panel11.Controls.Add(this.tbDiaChi);
             this.panel11.Location = new System.Drawing.Point(3, 174);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(272, 51);
             this.panel11.TabIndex = 3;
             // 
-            // txtDiaChi
+            // tbDiaChi
             // 
-            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(5, 9);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(265, 31);
-            this.txtDiaChi.TabIndex = 5;
+            this.tbDiaChi.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDiaChi.Location = new System.Drawing.Point(5, 9);
+            this.tbDiaChi.Name = "tbDiaChi";
+            this.tbDiaChi.Size = new System.Drawing.Size(265, 31);
+            this.tbDiaChi.TabIndex = 5;
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.cbxGioiTinh);
+            this.panel10.Controls.Add(this.cbGioiTinh);
             this.panel10.Location = new System.Drawing.Point(3, 117);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(272, 51);
             this.panel10.TabIndex = 2;
             // 
-            // cbxGioiTinh
+            // cbGioiTinh
             // 
-            this.cbxGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxGioiTinh.FormattingEnabled = true;
-            this.cbxGioiTinh.Items.AddRange(new object[] {
+            this.cbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGioiTinh.FormattingEnabled = true;
+            this.cbGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbxGioiTinh.Location = new System.Drawing.Point(5, 8);
-            this.cbxGioiTinh.Name = "cbxGioiTinh";
-            this.cbxGioiTinh.Size = new System.Drawing.Size(264, 31);
-            this.cbxGioiTinh.TabIndex = 2;
+            this.cbGioiTinh.Location = new System.Drawing.Point(5, 8);
+            this.cbGioiTinh.Name = "cbGioiTinh";
+            this.cbGioiTinh.Size = new System.Drawing.Size(264, 31);
+            this.cbGioiTinh.TabIndex = 2;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.txtTenKhachHang);
+            this.panel9.Controls.Add(this.tbTenKhachHang);
             this.panel9.Location = new System.Drawing.Point(3, 60);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(272, 51);
             this.panel9.TabIndex = 1;
             // 
-            // txtTenKhachHang
+            // tbTenKhachHang
             // 
-            this.txtTenKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenKhachHang.Location = new System.Drawing.Point(5, 11);
-            this.txtTenKhachHang.Name = "txtTenKhachHang";
-            this.txtTenKhachHang.Size = new System.Drawing.Size(265, 31);
-            this.txtTenKhachHang.TabIndex = 4;
+            this.tbTenKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTenKhachHang.Location = new System.Drawing.Point(5, 11);
+            this.tbTenKhachHang.Name = "tbTenKhachHang";
+            this.tbTenKhachHang.Size = new System.Drawing.Size(265, 31);
+            this.tbTenKhachHang.TabIndex = 4;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.txtMaKhachHang);
+            this.panel8.Controls.Add(this.tbMaKhachHang);
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(272, 51);
             this.panel8.TabIndex = 0;
             // 
-            // txtMaKhachHang
+            // tbMaKhachHang
             // 
-            this.txtMaKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaKhachHang.Location = new System.Drawing.Point(5, 11);
-            this.txtMaKhachHang.Name = "txtMaKhachHang";
-            this.txtMaKhachHang.Size = new System.Drawing.Size(265, 31);
-            this.txtMaKhachHang.TabIndex = 3;
+            this.tbMaKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMaKhachHang.Location = new System.Drawing.Point(5, 11);
+            this.tbMaKhachHang.Name = "tbMaKhachHang";
+            this.tbMaKhachHang.Size = new System.Drawing.Size(265, 31);
+            this.tbMaKhachHang.TabIndex = 3;
             // 
             // panel6
             // 
@@ -335,54 +335,54 @@
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.txtSoDienThoai);
+            this.panel16.Controls.Add(this.tbSoDienThoai);
             this.panel16.Location = new System.Drawing.Point(3, 60);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(272, 51);
             this.panel16.TabIndex = 1;
             // 
-            // txtSoDienThoai
+            // tbSoDienThoai
             // 
-            this.txtSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoDienThoai.Location = new System.Drawing.Point(5, 11);
-            this.txtSoDienThoai.Name = "txtSoDienThoai";
-            this.txtSoDienThoai.Size = new System.Drawing.Size(265, 31);
-            this.txtSoDienThoai.TabIndex = 4;
+            this.tbSoDienThoai.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSoDienThoai.Location = new System.Drawing.Point(5, 11);
+            this.tbSoDienThoai.Name = "tbSoDienThoai";
+            this.tbSoDienThoai.Size = new System.Drawing.Size(265, 31);
+            this.tbSoDienThoai.TabIndex = 4;
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.timeNgaySinh);
+            this.panel17.Controls.Add(this.dtpkNgaySinh);
             this.panel17.Location = new System.Drawing.Point(3, 3);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(272, 51);
             this.panel17.TabIndex = 0;
             // 
-            // timeNgaySinh
+            // dtpkNgaySinh
             // 
-            this.timeNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.timeNgaySinh.Location = new System.Drawing.Point(3, 10);
-            this.timeNgaySinh.Name = "timeNgaySinh";
-            this.timeNgaySinh.Size = new System.Drawing.Size(266, 30);
-            this.timeNgaySinh.TabIndex = 7;
+            this.dtpkNgaySinh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgaySinh.Location = new System.Drawing.Point(3, 10);
+            this.dtpkNgaySinh.Name = "dtpkNgaySinh";
+            this.dtpkNgaySinh.Size = new System.Drawing.Size(266, 30);
+            this.dtpkNgaySinh.TabIndex = 7;
             // 
-            // dataGridView1
+            // dtgvDanhSachKhachHang
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgvDanhSachKhachHang.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtgvDanhSachKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDanhSachKhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMaSo,
             this.TenKhachHang,
             this.GioiTinh,
             this.DiaChi,
             this.NgaySinh,
             this.SoDienThoai});
-            this.dataGridView1.Location = new System.Drawing.Point(43, 357);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(789, 247);
-            this.dataGridView1.TabIndex = 20;
+            this.dtgvDanhSachKhachHang.Location = new System.Drawing.Point(43, 357);
+            this.dtgvDanhSachKhachHang.Name = "dtgvDanhSachKhachHang";
+            this.dtgvDanhSachKhachHang.RowHeadersWidth = 51;
+            this.dtgvDanhSachKhachHang.RowTemplate.Height = 24;
+            this.dtgvDanhSachKhachHang.Size = new System.Drawing.Size(789, 247);
+            this.dtgvDanhSachKhachHang.TabIndex = 20;
             // 
             // ColumnMaSo
             // 
@@ -524,7 +524,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvDanhSachKhachHang);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -558,7 +558,7 @@
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDanhSachKhachHang)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
@@ -581,13 +581,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.TextBox tbDiaChi;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.ComboBox cbxGioiTinh;
+        private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtTenKhachHang;
+        private System.Windows.Forms.TextBox tbTenKhachHang;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtMaKhachHang;
+        private System.Windows.Forms.TextBox tbMaKhachHang;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label5;
@@ -595,10 +595,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox txtSoDienThoai;
+        private System.Windows.Forms.TextBox tbSoDienThoai;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.DateTimePicker timeNgaySinh;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DateTimePicker dtpkNgaySinh;
+        private System.Windows.Forms.DataGridView dtgvDanhSachKhachHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaSo;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKhachHang;
         private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;

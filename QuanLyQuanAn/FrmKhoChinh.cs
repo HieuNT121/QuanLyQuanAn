@@ -34,24 +34,24 @@ namespace QuanLyQuanAn
             childForm.Show();
         }
 
-        private void btnNhapXuat_Click(object sender, EventArgs e)
+        private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmNhapHang());
+            OpenChildForm(new FrmCapNhatKho());
         }
 
-        private void btnXuLyHangTon_Click(object sender, EventArgs e)
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmXuLyHangTon());
+            OpenChildForm(new FrmTimKiemVatTu());
         }
 
-        private void btnSapXepHang_Click(object sender, EventArgs e)
+        private void btnTrinhTrang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmSapXepHang());
+            OpenChildForm(new FrmTinhTrangKho());
         }
 
-        private void btnCapNhatThongTinHangHoa_Click(object sender, EventArgs e)
+        private void btnLienHe_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmCapNhatThongTinHangHoa());
+            OpenChildForm(new FrmLienHeNhaCungCap());
         }
     }
 }

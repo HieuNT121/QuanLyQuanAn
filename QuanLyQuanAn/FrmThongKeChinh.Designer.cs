@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel_top = new System.Windows.Forms.Panel();
-            this.btnDoanhSo = new System.Windows.Forms.Button();
-            this.btnChiTieu = new System.Windows.Forms.Button();
-            this.btnLuong = new System.Windows.Forms.Button();
-            this.btnLuongKhach = new System.Windows.Forms.Button();
+            this.btDoanhSo = new System.Windows.Forms.Button();
+            this.btChiTieu = new System.Windows.Forms.Button();
+            this.btLuong = new System.Windows.Forms.Button();
+            this.btLuongKhach = new System.Windows.Forms.Button();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_top.SuspendLayout();
             this.SuspendLayout();
@@ -40,63 +40,63 @@
             // panel_top
             // 
             this.panel_top.BackColor = System.Drawing.Color.Gray;
-            this.panel_top.Controls.Add(this.btnDoanhSo);
-            this.panel_top.Controls.Add(this.btnChiTieu);
-            this.panel_top.Controls.Add(this.btnLuong);
-            this.panel_top.Controls.Add(this.btnLuongKhach);
+            this.panel_top.Controls.Add(this.btDoanhSo);
+            this.panel_top.Controls.Add(this.btChiTieu);
+            this.panel_top.Controls.Add(this.btLuong);
+            this.panel_top.Controls.Add(this.btLuongKhach);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
             this.panel_top.Name = "panel_top";
             this.panel_top.Size = new System.Drawing.Size(1034, 110);
             this.panel_top.TabIndex = 0;
             // 
-            // btnDoanhSo
+            // btDoanhSo
             // 
-            this.btnDoanhSo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDoanhSo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoanhSo.Location = new System.Drawing.Point(555, 24);
-            this.btnDoanhSo.Name = "btnDoanhSo";
-            this.btnDoanhSo.Size = new System.Drawing.Size(128, 58);
-            this.btnDoanhSo.TabIndex = 1;
-            this.btnDoanhSo.Text = "Doanh số";
-            this.btnDoanhSo.UseVisualStyleBackColor = false;
-            this.btnDoanhSo.Click += new System.EventHandler(this.btnDoanhSo_Click);
+            this.btDoanhSo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btDoanhSo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDoanhSo.Location = new System.Drawing.Point(555, 24);
+            this.btDoanhSo.Name = "btDoanhSo";
+            this.btDoanhSo.Size = new System.Drawing.Size(128, 58);
+            this.btDoanhSo.TabIndex = 1;
+            this.btDoanhSo.Text = "Doanh số";
+            this.btDoanhSo.UseVisualStyleBackColor = false;
+            this.btDoanhSo.Click += new System.EventHandler(this.btDoanhSo_Click);
             // 
-            // btnChiTieu
+            // btChiTieu
             // 
-            this.btnChiTieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnChiTieu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChiTieu.Location = new System.Drawing.Point(209, 24);
-            this.btnChiTieu.Name = "btnChiTieu";
-            this.btnChiTieu.Size = new System.Drawing.Size(128, 58);
-            this.btnChiTieu.TabIndex = 2;
-            this.btnChiTieu.Text = "Chi tiêu";
-            this.btnChiTieu.UseVisualStyleBackColor = false;
-            this.btnChiTieu.Click += new System.EventHandler(this.btnChiTieu_Click);
+            this.btChiTieu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btChiTieu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChiTieu.Location = new System.Drawing.Point(209, 24);
+            this.btChiTieu.Name = "btChiTieu";
+            this.btChiTieu.Size = new System.Drawing.Size(128, 58);
+            this.btChiTieu.TabIndex = 2;
+            this.btChiTieu.Text = "Chi tiêu";
+            this.btChiTieu.UseVisualStyleBackColor = false;
+            this.btChiTieu.Click += new System.EventHandler(this.btChiTieu_Click);
             // 
-            // btnLuong
+            // btLuong
             // 
-            this.btnLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnLuong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuong.Location = new System.Drawing.Point(385, 24);
-            this.btnLuong.Name = "btnLuong";
-            this.btnLuong.Size = new System.Drawing.Size(128, 58);
-            this.btnLuong.TabIndex = 1;
-            this.btnLuong.Text = "Lương";
-            this.btnLuong.UseVisualStyleBackColor = false;
-            this.btnLuong.Click += new System.EventHandler(this.btnLuong_Click);
+            this.btLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btLuong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLuong.Location = new System.Drawing.Point(385, 24);
+            this.btLuong.Name = "btLuong";
+            this.btLuong.Size = new System.Drawing.Size(128, 58);
+            this.btLuong.TabIndex = 1;
+            this.btLuong.Text = "Lương";
+            this.btLuong.UseVisualStyleBackColor = false;
+            this.btLuong.Click += new System.EventHandler(this.btLuong_Click);
             // 
-            // btnLuongKhach
+            // btLuongKhach
             // 
-            this.btnLuongKhach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnLuongKhach.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuongKhach.Location = new System.Drawing.Point(28, 24);
-            this.btnLuongKhach.Name = "btnLuongKhach";
-            this.btnLuongKhach.Size = new System.Drawing.Size(128, 58);
-            this.btnLuongKhach.TabIndex = 0;
-            this.btnLuongKhach.Text = "Lượng khách";
-            this.btnLuongKhach.UseVisualStyleBackColor = false;
-            this.btnLuongKhach.Click += new System.EventHandler(this.btnLuongKhach_Click);
+            this.btLuongKhach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btLuongKhach.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btLuongKhach.Location = new System.Drawing.Point(28, 24);
+            this.btLuongKhach.Name = "btLuongKhach";
+            this.btLuongKhach.Size = new System.Drawing.Size(128, 58);
+            this.btLuongKhach.TabIndex = 0;
+            this.btLuongKhach.Text = "Lượng khách";
+            this.btLuongKhach.UseVisualStyleBackColor = false;
+            this.btLuongKhach.Click += new System.EventHandler(this.btLuongKhach_Click);
             // 
             // panel_body
             // 
@@ -127,9 +127,9 @@
 
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Panel panel_body;
-        private System.Windows.Forms.Button btnDoanhSo;
-        private System.Windows.Forms.Button btnChiTieu;
-        private System.Windows.Forms.Button btnLuong;
-        private System.Windows.Forms.Button btnLuongKhach;
+        private System.Windows.Forms.Button btDoanhSo;
+        private System.Windows.Forms.Button btChiTieu;
+        private System.Windows.Forms.Button btLuong;
+        private System.Windows.Forms.Button btLuongKhach;
     }
 }

@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowpanel_left = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ban1 = new System.Windows.Forms.Button();
+            this.btBan1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ban2 = new System.Windows.Forms.Button();
+            this.btBan2 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ban3 = new System.Windows.Forms.Button();
+            this.btBan3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.ban4 = new System.Windows.Forms.Button();
+            this.btBan4 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.ban5 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -64,19 +64,19 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.ban16 = new System.Windows.Forms.Button();
             this.order = new System.Windows.Forms.Label();
-            this.cbxLoaiMon = new System.Windows.Forms.ComboBox();
-            this.cbxTenMon = new System.Windows.Forms.ComboBox();
+            this.cbLoaiMon = new System.Windows.Forms.ComboBox();
+            this.cbTenMon = new System.Windows.Forms.ComboBox();
             this.soLuong = new System.Windows.Forms.Label();
-            this.soLuongMon = new System.Windows.Forms.NumericUpDown();
-            this.btnThemMon = new System.Windows.Forms.Button();
+            this.numericUpDownSoLuongMon = new System.Windows.Forms.NumericUpDown();
+            this.btThemMon = new System.Windows.Forms.Button();
             this.cbxBan = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.TimeLabel = new System.Windows.Forms.Label();
-            this.btnXoaMon = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btXoaMon = new System.Windows.Forms.Button();
+            this.dtpkThoiGian = new System.Windows.Forms.DateTimePicker();
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.elipseControl2 = new QuanLyQuanAn.elipseControl();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.flowpanel_left.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -93,94 +93,94 @@
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSoLuongMon)).BeginInit();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel2
+            // flowpanel_left
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel2.Controls.Add(this.panel1);
-            this.flowLayoutPanel2.Controls.Add(this.panel2);
-            this.flowLayoutPanel2.Controls.Add(this.panel3);
-            this.flowLayoutPanel2.Controls.Add(this.panel5);
-            this.flowLayoutPanel2.Controls.Add(this.panel6);
-            this.flowLayoutPanel2.Controls.Add(this.panel7);
-            this.flowLayoutPanel2.Controls.Add(this.panel8);
-            this.flowLayoutPanel2.Controls.Add(this.panel9);
-            this.flowLayoutPanel2.Controls.Add(this.panel10);
-            this.flowLayoutPanel2.Controls.Add(this.panel11);
-            this.flowLayoutPanel2.Controls.Add(this.panel12);
-            this.flowLayoutPanel2.Controls.Add(this.panel13);
-            this.flowLayoutPanel2.Controls.Add(this.panel14);
-            this.flowLayoutPanel2.Controls.Add(this.panel15);
-            this.flowLayoutPanel2.Controls.Add(this.panel16);
-            this.flowLayoutPanel2.Controls.Add(this.panel17);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(417, 600);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.flowpanel_left.BackColor = System.Drawing.Color.White;
+            this.flowpanel_left.Controls.Add(this.panel1);
+            this.flowpanel_left.Controls.Add(this.panel2);
+            this.flowpanel_left.Controls.Add(this.panel3);
+            this.flowpanel_left.Controls.Add(this.panel5);
+            this.flowpanel_left.Controls.Add(this.panel6);
+            this.flowpanel_left.Controls.Add(this.panel7);
+            this.flowpanel_left.Controls.Add(this.panel8);
+            this.flowpanel_left.Controls.Add(this.panel9);
+            this.flowpanel_left.Controls.Add(this.panel10);
+            this.flowpanel_left.Controls.Add(this.panel11);
+            this.flowpanel_left.Controls.Add(this.panel12);
+            this.flowpanel_left.Controls.Add(this.panel13);
+            this.flowpanel_left.Controls.Add(this.panel14);
+            this.flowpanel_left.Controls.Add(this.panel15);
+            this.flowpanel_left.Controls.Add(this.panel16);
+            this.flowpanel_left.Controls.Add(this.panel17);
+            this.flowpanel_left.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowpanel_left.Location = new System.Drawing.Point(0, 0);
+            this.flowpanel_left.Name = "flowpanel_left";
+            this.flowpanel_left.Size = new System.Drawing.Size(417, 600);
+            this.flowpanel_left.TabIndex = 1;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.ban1);
+            this.panel1.Controls.Add(this.btBan1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(98, 93);
             this.panel1.TabIndex = 2;
             // 
-            // ban1
+            // btBan1
             // 
-            this.ban1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ban1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ban1.ForeColor = System.Drawing.Color.White;
-            this.ban1.Location = new System.Drawing.Point(11, 8);
-            this.ban1.Name = "ban1";
-            this.ban1.Size = new System.Drawing.Size(78, 77);
-            this.ban1.TabIndex = 0;
-            this.ban1.Text = "Bàn 1";
-            this.ban1.UseVisualStyleBackColor = false;
+            this.btBan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btBan1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBan1.ForeColor = System.Drawing.Color.White;
+            this.btBan1.Location = new System.Drawing.Point(11, 8);
+            this.btBan1.Name = "btBan1";
+            this.btBan1.Size = new System.Drawing.Size(78, 77);
+            this.btBan1.TabIndex = 0;
+            this.btBan1.Text = "Bàn 1";
+            this.btBan1.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.ban2);
+            this.panel2.Controls.Add(this.btBan2);
             this.panel2.Location = new System.Drawing.Point(107, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(98, 93);
             this.panel2.TabIndex = 3;
             // 
-            // ban2
+            // btBan2
             // 
-            this.ban2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ban2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ban2.ForeColor = System.Drawing.Color.White;
-            this.ban2.Location = new System.Drawing.Point(12, 8);
-            this.ban2.Name = "ban2";
-            this.ban2.Size = new System.Drawing.Size(78, 77);
-            this.ban2.TabIndex = 2;
-            this.ban2.Text = "Bàn 2";
-            this.ban2.UseVisualStyleBackColor = false;
+            this.btBan2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btBan2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBan2.ForeColor = System.Drawing.Color.White;
+            this.btBan2.Location = new System.Drawing.Point(12, 8);
+            this.btBan2.Name = "btBan2";
+            this.btBan2.Size = new System.Drawing.Size(78, 77);
+            this.btBan2.TabIndex = 2;
+            this.btBan2.Text = "Bàn 2";
+            this.btBan2.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.ban3);
+            this.panel3.Controls.Add(this.btBan3);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(211, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(98, 93);
             this.panel3.TabIndex = 3;
             // 
-            // ban3
+            // btBan3
             // 
-            this.ban3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ban3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ban3.ForeColor = System.Drawing.Color.White;
-            this.ban3.Location = new System.Drawing.Point(10, 8);
-            this.ban3.Name = "ban3";
-            this.ban3.Size = new System.Drawing.Size(78, 77);
-            this.ban3.TabIndex = 4;
-            this.ban3.Text = "Bàn 3";
-            this.ban3.UseVisualStyleBackColor = false;
+            this.btBan3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btBan3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBan3.ForeColor = System.Drawing.Color.White;
+            this.btBan3.Location = new System.Drawing.Point(10, 8);
+            this.btBan3.Name = "btBan3";
+            this.btBan3.Size = new System.Drawing.Size(78, 77);
+            this.btBan3.TabIndex = 4;
+            this.btBan3.Text = "Bàn 3";
+            this.btBan3.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -191,23 +191,23 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.ban4);
+            this.panel5.Controls.Add(this.btBan4);
             this.panel5.Location = new System.Drawing.Point(315, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(98, 93);
             this.panel5.TabIndex = 4;
             // 
-            // ban4
+            // btBan4
             // 
-            this.ban4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.ban4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ban4.ForeColor = System.Drawing.Color.White;
-            this.ban4.Location = new System.Drawing.Point(10, 8);
-            this.ban4.Name = "ban4";
-            this.ban4.Size = new System.Drawing.Size(78, 77);
-            this.ban4.TabIndex = 3;
-            this.ban4.Text = "Bàn 4";
-            this.ban4.UseVisualStyleBackColor = false;
+            this.btBan4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btBan4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBan4.ForeColor = System.Drawing.Color.White;
+            this.btBan4.Location = new System.Drawing.Point(10, 8);
+            this.btBan4.Name = "btBan4";
+            this.btBan4.Size = new System.Drawing.Size(78, 77);
+            this.btBan4.TabIndex = 3;
+            this.btBan4.Text = "Bàn 4";
+            this.btBan4.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -460,40 +460,40 @@
             this.order.TabIndex = 3;
             this.order.Text = "Đặt món";
             // 
-            // cbxLoaiMon
+            // cbLoaiMon
             // 
-            this.cbxLoaiMon.AccessibleDescription = "Loại món";
-            this.cbxLoaiMon.AccessibleName = "Loại món";
-            this.cbxLoaiMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxLoaiMon.FormattingEnabled = true;
-            this.cbxLoaiMon.Items.AddRange(new object[] {
+            this.cbLoaiMon.AccessibleDescription = "Loại món";
+            this.cbLoaiMon.AccessibleName = "Loại món";
+            this.cbLoaiMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoaiMon.FormattingEnabled = true;
+            this.cbLoaiMon.Items.AddRange(new object[] {
             "Món Trung",
             "Món Hàn",
             "Món Âu",
             "Món Việt"});
-            this.cbxLoaiMon.Location = new System.Drawing.Point(447, 72);
-            this.cbxLoaiMon.Name = "cbxLoaiMon";
-            this.cbxLoaiMon.Size = new System.Drawing.Size(184, 36);
-            this.cbxLoaiMon.TabIndex = 4;
-            this.cbxLoaiMon.Text = "Loại món";
+            this.cbLoaiMon.Location = new System.Drawing.Point(447, 72);
+            this.cbLoaiMon.Name = "cbLoaiMon";
+            this.cbLoaiMon.Size = new System.Drawing.Size(184, 36);
+            this.cbLoaiMon.TabIndex = 4;
+            this.cbLoaiMon.Text = "Loại món";
             // 
-            // cbxTenMon
+            // cbTenMon
             // 
-            this.cbxTenMon.AccessibleDescription = "";
-            this.cbxTenMon.AccessibleName = "";
-            this.cbxTenMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxTenMon.FormattingEnabled = true;
-            this.cbxTenMon.Items.AddRange(new object[] {
+            this.cbTenMon.AccessibleDescription = "";
+            this.cbTenMon.AccessibleName = "";
+            this.cbTenMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTenMon.FormattingEnabled = true;
+            this.cbTenMon.Items.AddRange(new object[] {
             "Vịt chiên",
             "Gà chiên",
             "Rau xào",
             "Cơm rang",
             "Đỗ luộc"});
-            this.cbxTenMon.Location = new System.Drawing.Point(447, 129);
-            this.cbxTenMon.Name = "cbxTenMon";
-            this.cbxTenMon.Size = new System.Drawing.Size(184, 36);
-            this.cbxTenMon.TabIndex = 5;
-            this.cbxTenMon.Text = "Tên món";
+            this.cbTenMon.Location = new System.Drawing.Point(447, 129);
+            this.cbTenMon.Name = "cbTenMon";
+            this.cbTenMon.Size = new System.Drawing.Size(184, 36);
+            this.cbTenMon.TabIndex = 5;
+            this.cbTenMon.Text = "Tên món";
             // 
             // soLuong
             // 
@@ -506,23 +506,23 @@
             this.soLuong.TabIndex = 6;
             this.soLuong.Text = "Số lượng";
             // 
-            // soLuongMon
+            // numericUpDownSoLuongMon
             // 
-            this.soLuongMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soLuongMon.Location = new System.Drawing.Point(781, 129);
-            this.soLuongMon.Name = "soLuongMon";
-            this.soLuongMon.Size = new System.Drawing.Size(42, 31);
-            this.soLuongMon.TabIndex = 7;
+            this.numericUpDownSoLuongMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownSoLuongMon.Location = new System.Drawing.Point(781, 129);
+            this.numericUpDownSoLuongMon.Name = "numericUpDownSoLuongMon";
+            this.numericUpDownSoLuongMon.Size = new System.Drawing.Size(42, 31);
+            this.numericUpDownSoLuongMon.TabIndex = 7;
             // 
-            // btnThemMon
+            // btThemMon
             // 
-            this.btnThemMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMon.Location = new System.Drawing.Point(447, 260);
-            this.btnThemMon.Name = "btnThemMon";
-            this.btnThemMon.Size = new System.Drawing.Size(128, 45);
-            this.btnThemMon.TabIndex = 8;
-            this.btnThemMon.Text = "Thêm món";
-            this.btnThemMon.UseVisualStyleBackColor = true;
+            this.btThemMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThemMon.Location = new System.Drawing.Point(447, 260);
+            this.btThemMon.Name = "btThemMon";
+            this.btThemMon.Size = new System.Drawing.Size(128, 45);
+            this.btThemMon.TabIndex = 8;
+            this.btThemMon.Text = "Thêm món";
+            this.btThemMon.UseVisualStyleBackColor = true;
             // 
             // cbxBan
             // 
@@ -552,25 +552,25 @@
             this.TimeLabel.TabIndex = 13;
             this.TimeLabel.Text = "Thời gian";
             // 
-            // btnXoaMon
+            // btXoaMon
             // 
-            this.btnXoaMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaMon.Location = new System.Drawing.Point(446, 192);
-            this.btnXoaMon.Name = "btnXoaMon";
-            this.btnXoaMon.Size = new System.Drawing.Size(128, 45);
-            this.btnXoaMon.TabIndex = 15;
-            this.btnXoaMon.Text = "Xoá món";
-            this.btnXoaMon.UseVisualStyleBackColor = true;
+            this.btXoaMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoaMon.Location = new System.Drawing.Point(446, 192);
+            this.btXoaMon.Name = "btXoaMon";
+            this.btXoaMon.Size = new System.Drawing.Size(128, 45);
+            this.btXoaMon.TabIndex = 15;
+            this.btXoaMon.Text = "Xoá món";
+            this.btXoaMon.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpkThoiGian
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(688, 72);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(224, 34);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dtpkThoiGian.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThoiGian.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThoiGian.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkThoiGian.Location = new System.Drawing.Point(688, 72);
+            this.dtpkThoiGian.Name = "dtpkThoiGian";
+            this.dtpkThoiGian.Size = new System.Drawing.Size(224, 34);
+            this.dtpkThoiGian.TabIndex = 16;
             // 
             // elipseControl1
             // 
@@ -580,7 +580,7 @@
             // elipseControl2
             // 
             this.elipseControl2.CornerRadius = 25;
-            this.elipseControl2.TargetControl = this.ban3;
+            this.elipseControl2.TargetControl = this.btBan3;
             // 
             // FrmDatDon
             // 
@@ -588,22 +588,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.btnXoaMon);
+            this.Controls.Add(this.dtpkThoiGian);
+            this.Controls.Add(this.btXoaMon);
             this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.cbxBan);
-            this.Controls.Add(this.btnThemMon);
-            this.Controls.Add(this.soLuongMon);
+            this.Controls.Add(this.btThemMon);
+            this.Controls.Add(this.numericUpDownSoLuongMon);
             this.Controls.Add(this.soLuong);
-            this.Controls.Add(this.cbxTenMon);
-            this.Controls.Add(this.cbxLoaiMon);
+            this.Controls.Add(this.cbTenMon);
+            this.Controls.Add(this.cbLoaiMon);
             this.Controls.Add(this.order);
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowpanel_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDatDon";
             this.Text = "Quản lý Đặt Đơn";
             this.Load += new System.EventHandler(this.FrmDatDon_Load);
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowpanel_left.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -620,7 +620,7 @@
             this.panel15.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSoLuongMon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -628,7 +628,7 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowpanel_left;
         private elipseControl elipseControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -647,11 +647,11 @@
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button ban1;
+        private System.Windows.Forms.Button btBan1;
         private elipseControl elipseControl2;
-        private System.Windows.Forms.Button ban2;
-        private System.Windows.Forms.Button ban3;
-        private System.Windows.Forms.Button ban4;
+        private System.Windows.Forms.Button btBan2;
+        private System.Windows.Forms.Button btBan3;
+        private System.Windows.Forms.Button btBan4;
         private System.Windows.Forms.Button ban5;
         private System.Windows.Forms.Button ban6;
         private System.Windows.Forms.Button ban7;
@@ -665,15 +665,15 @@
         private System.Windows.Forms.Button ban15;
         private System.Windows.Forms.Button ban16;
         private System.Windows.Forms.Label order;
-        private System.Windows.Forms.ComboBox cbxLoaiMon;
-        private System.Windows.Forms.ComboBox cbxTenMon;
-        private System.Windows.Forms.Button btnThemMon;
-        private System.Windows.Forms.NumericUpDown soLuongMon;
+        private System.Windows.Forms.ComboBox cbLoaiMon;
+        private System.Windows.Forms.ComboBox cbTenMon;
+        private System.Windows.Forms.Button btThemMon;
+        private System.Windows.Forms.NumericUpDown numericUpDownSoLuongMon;
         private System.Windows.Forms.Label soLuong;
         private System.Windows.Forms.ComboBox cbxBan;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label TimeLabel;
-        private System.Windows.Forms.Button btnXoaMon;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btXoaMon;
+        private System.Windows.Forms.DateTimePicker dtpkThoiGian;
     }
 }

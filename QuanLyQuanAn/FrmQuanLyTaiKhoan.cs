@@ -34,7 +34,7 @@ namespace QuanLyQuanAn
 
         private void FrmQuanLyTaiKhoan_Load(object sender, EventArgs e)
         {
-            cbxLoaiTaiKhoan.DataSource = listAccountType;
+            cbLoaiTaiKhoan.DataSource = listAccountType;
             LoadListUser();
         }
 
@@ -45,10 +45,10 @@ namespace QuanLyQuanAn
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            string userName = txbTenTaiKhoan.Text;
-            string password = txbMatKhau.Text;
+            string userName = tbTenTaiKhoan.Text;
+            string password = tbMatKhau.Text;
             bool accountType = false;
-            switch (cbxLoaiTaiKhoan.Text)
+            switch (cbLoaiTaiKhoan.Text)
             {
                 case "Quản lý":
                     accountType = true;
@@ -63,10 +63,10 @@ namespace QuanLyQuanAn
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string userName = txbTenTaiKhoan.Text;
-            string password = txbMatKhau.Text;
+            string userName = tbTenTaiKhoan.Text;
+            string password = tbMatKhau.Text;
             bool accountType = false;
-            switch (cbxLoaiTaiKhoan.Text)
+            switch (cbLoaiTaiKhoan.Text)
             {
                 case "Quản lý":
                     accountType = true;
@@ -85,15 +85,15 @@ namespace QuanLyQuanAn
         {
             index = e.RowIndex;
 
-            txbTenTaiKhoan.Text = dtvgUser.Rows[index].Cells[0].Value.ToString();
-            txbMatKhau.Text = dtvgUser.Rows[index].Cells[1].Value.ToString();
+            tbTenTaiKhoan.Text = dtvgUser.Rows[index].Cells[0].Value.ToString();
+            tbMatKhau.Text = dtvgUser.Rows[index].Cells[1].Value.ToString();
             switch (Danhsachtaikhoan.Instance.ListTaiKhoan[index].LoaiTaiKhoan)
             {
                 case true:
-                    cbxLoaiTaiKhoan.Text = "Quản lý";
+                    cbLoaiTaiKhoan.Text = "Quản lý";
                     break;
                 case false:
-                    cbxLoaiTaiKhoan.Text = "Nhân viên";
+                    cbLoaiTaiKhoan.Text = "Nhân viên";
                     break;
             }
         }
