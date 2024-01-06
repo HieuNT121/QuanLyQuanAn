@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyQuanAn
 {
+
     public class DanhSachBanDatCho
     {
         private static DanhSachBanDatCho instance;
@@ -30,17 +31,17 @@ namespace QuanLyQuanAn
         //    get => ListBan;
         //    set => ListBan = value; 
         //}
-
+        public DatabaseExtract amn = new DatabaseExtract();
         DanhSachBanDatCho()
         {
-            ListBan = new List<Ban>();
-            ListBan.Add(new Ban(1, "Bàn 1", "Còn"));
-            ListBan.Add(new Ban(2, "Bàn 2", "Có người"));
-            ListBan.Add(new Ban(3, "Bàn 3", "Còn"));
-            ListBan.Add(new Ban(4, "Bàn 4", "Có người"));
-            ListBan.Add(new Ban(5, "Bàn 5", "Còn"));
+            ListBan = amn.GetAllBans();
+            //ListBan.Add(new Ban(1, "Bàn 1", "Còn"));
+            //ListBan.Add(new Ban(2, "Bàn 2", "Có người"));
+            //ListBan.Add(new Ban(3, "Bàn 3", "Còn"));
+            //ListBan.Add(new Ban(4, "Bàn 4", "Có người"));
+            //ListBan.Add(new Ban(5, "Bàn 5", "Còn"));
         }
-
+        
     }
 
     public class Ban

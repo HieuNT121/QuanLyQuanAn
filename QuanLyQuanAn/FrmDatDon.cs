@@ -12,6 +12,8 @@ namespace QuanLyQuanAn
 {
     public partial class FrmDatDon : Form
     {
+
+        private DatabaseExtract databaseExtract = new DatabaseExtract();
         public FrmDatDon()
         {
             InitializeComponent();
@@ -32,6 +34,8 @@ namespace QuanLyQuanAn
             {
                 Button btn = new Button() { Width = 95, Height = 95 };
                 btn.Text = item.Name + Environment.NewLine + item.Status ;
+                btn.Tag = item;
+                btn.Click += btn_Click;
                 switch (item.Status)
                 {
                     case "Còn":
@@ -45,6 +49,17 @@ namespace QuanLyQuanAn
             }
         }
 
+        void HienHoaDon(int id)
+        {
+            
+        }
+        void btn_Click(object sender, EventArgs e)
+        {
+            int IdBan = (sender as Ban).Id; 
+            HienHoaDon(IdBan);
+        }
+
+ 
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
