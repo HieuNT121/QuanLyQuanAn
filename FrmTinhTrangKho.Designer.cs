@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lbThongBao = new System.Windows.Forms.Label();
-            this.dGVThongBao = new System.Windows.Forms.DataGridView();
-            this.btnHienThi = new System.Windows.Forms.Button();
+            this.dgvThongBao = new System.Windows.Forms.DataGridView();
             this.ColumnMaHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColuhnTenHangHoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMaNhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSoLuongToiThieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVThongBao)).BeginInit();
+            this.btnHienThi = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongBao)).BeginInit();
             this.SuspendLayout();
             // 
             // lbThongBao
@@ -50,30 +50,21 @@
             this.lbThongBao.TabIndex = 0;
             this.lbThongBao.Text = "Danh sách vật tư sắp hết";
             // 
-            // dGVThongBao
+            // dgvThongBao
             // 
-            this.dGVThongBao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVThongBao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvThongBao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThongBao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMaHangHoa,
             this.ColuhnTenHangHoa,
             this.ColumnMaNhaCungCap,
             this.ColumnSoLuong,
             this.ColumnSoLuongToiThieu});
-            this.dGVThongBao.Location = new System.Drawing.Point(115, 94);
-            this.dGVThongBao.Name = "dGVThongBao";
-            this.dGVThongBao.RowHeadersWidth = 51;
-            this.dGVThongBao.RowTemplate.Height = 24;
-            this.dGVThongBao.Size = new System.Drawing.Size(698, 346);
-            this.dGVThongBao.TabIndex = 2;
-            // 
-            // btnHienThi
-            // 
-            this.btnHienThi.Location = new System.Drawing.Point(609, 482);
-            this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(136, 36);
-            this.btnHienThi.TabIndex = 3;
-            this.btnHienThi.Text = "Hiển Thị";
-            this.btnHienThi.UseVisualStyleBackColor = true;
+            this.dgvThongBao.Location = new System.Drawing.Point(115, 94);
+            this.dgvThongBao.Name = "dgvThongBao";
+            this.dgvThongBao.RowHeadersWidth = 51;
+            this.dgvThongBao.RowTemplate.Height = 24;
+            this.dgvThongBao.Size = new System.Drawing.Size(698, 346);
+            this.dgvThongBao.TabIndex = 2;
             // 
             // ColumnMaHangHoa
             // 
@@ -110,19 +101,29 @@
             this.ColumnSoLuongToiThieu.Name = "ColumnSoLuongToiThieu";
             this.ColumnSoLuongToiThieu.Width = 125;
             // 
-            // FrmXuLyHangTon
+            // btnHienThi
+            // 
+            this.btnHienThi.Location = new System.Drawing.Point(609, 482);
+            this.btnHienThi.Name = "btnHienThi";
+            this.btnHienThi.Size = new System.Drawing.Size(136, 36);
+            this.btnHienThi.TabIndex = 3;
+            this.btnHienThi.Text = "Hiển Thị";
+            this.btnHienThi.UseVisualStyleBackColor = true;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
+            // 
+            // FrmTinhTrangKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.btnHienThi);
-            this.Controls.Add(this.dGVThongBao);
+            this.Controls.Add(this.dgvThongBao);
             this.Controls.Add(this.lbThongBao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmXuLyHangTon";
+            this.Name = "FrmTinhTrangKho";
             this.Text = "FrmXuLyHangTon";
-            ((System.ComponentModel.ISupportInitialize)(this.dGVThongBao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThongBao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +132,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbThongBao;
-        private System.Windows.Forms.DataGridView dGVThongBao;
+        private System.Windows.Forms.DataGridView dgvThongBao;
         private System.Windows.Forms.Button btnHienThi;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaHangHoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColuhnTenHangHoa;

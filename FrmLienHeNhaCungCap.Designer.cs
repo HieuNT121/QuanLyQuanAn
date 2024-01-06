@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvNhaCungCap = new System.Windows.Forms.DataGridView();
             this.lbTenNhaCungCap = new System.Windows.Forms.Label();
             this.tbTenNhaCungCap = new System.Windows.Forms.TextBox();
             this.btnTim = new System.Windows.Forms.Button();
-            this.ColumnMaNhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTenNhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvNhaCungCap
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnMaNhaCungCap,
-            this.ColumnTenNhaCungCap,
-            this.ColumnSDT,
-            this.ColumnDiaChi});
-            this.dataGridView1.Location = new System.Drawing.Point(62, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(550, 395);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhaCungCap.Location = new System.Drawing.Point(62, 90);
+            this.dgvNhaCungCap.Name = "dgvNhaCungCap";
+            this.dgvNhaCungCap.RowHeadersWidth = 51;
+            this.dgvNhaCungCap.RowTemplate.Height = 24;
+            this.dgvNhaCungCap.Size = new System.Drawing.Size(550, 395);
+            this.dgvNhaCungCap.TabIndex = 1;
             // 
             // lbTenNhaCungCap
             // 
@@ -82,34 +73,7 @@
             this.btnTim.TabIndex = 9;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
-            // 
-            // ColumnMaNhaCungCap
-            // 
-            this.ColumnMaNhaCungCap.HeaderText = "Mã Nhà Cung Cấp";
-            this.ColumnMaNhaCungCap.MinimumWidth = 6;
-            this.ColumnMaNhaCungCap.Name = "ColumnMaNhaCungCap";
-            this.ColumnMaNhaCungCap.Width = 125;
-            // 
-            // ColumnTenNhaCungCap
-            // 
-            this.ColumnTenNhaCungCap.HeaderText = "Tên Nhà Cung Cấp";
-            this.ColumnTenNhaCungCap.MinimumWidth = 6;
-            this.ColumnTenNhaCungCap.Name = "ColumnTenNhaCungCap";
-            this.ColumnTenNhaCungCap.Width = 125;
-            // 
-            // ColumnSDT
-            // 
-            this.ColumnSDT.HeaderText = "SĐT";
-            this.ColumnSDT.MinimumWidth = 6;
-            this.ColumnSDT.Name = "ColumnSDT";
-            this.ColumnSDT.Width = 125;
-            // 
-            // ColumnDiaChi
-            // 
-            this.ColumnDiaChi.HeaderText = "Địa Chỉ";
-            this.ColumnDiaChi.MinimumWidth = 6;
-            this.ColumnDiaChi.Name = "ColumnDiaChi";
-            this.ColumnDiaChi.Width = 125;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // label1
             // 
@@ -120,7 +84,7 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Thông tin nhà cung cấp";
             // 
-            // FrmCapNhatThongTinHangHoa
+            // FrmLienHeNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,11 +94,11 @@
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.tbTenNhaCungCap);
             this.Controls.Add(this.lbTenNhaCungCap);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvNhaCungCap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmCapNhatThongTinHangHoa";
+            this.Name = "FrmLienHeNhaCungCap";
             this.Text = "FrmCapNhatThongTinHangHoa";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,13 +106,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvNhaCungCap;
         private System.Windows.Forms.Label lbTenNhaCungCap;
         private System.Windows.Forms.TextBox tbTenNhaCungCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaNhaCungCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTenNhaCungCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDiaChi;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.Label label1;
     }
