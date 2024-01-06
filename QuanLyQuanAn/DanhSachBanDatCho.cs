@@ -22,24 +22,11 @@ namespace QuanLyQuanAn
             set { instance = value; }
         }
 
-        public static int btnWidth = 85;
-        public static int btnHeight = 85;
-
         public List<Ban> ListBan;
-        //public List<Ban> ListBan 
-        //{ 
-        //    get => ListBan;
-        //    set => ListBan = value; 
-        //}
         public DatabaseExtract amn = new DatabaseExtract();
         DanhSachBanDatCho()
         {
             ListBan = amn.GetAllBans();
-            //ListBan.Add(new Ban(1, "Bàn 1", "Còn"));
-            //ListBan.Add(new Ban(2, "Bàn 2", "Có người"));
-            //ListBan.Add(new Ban(3, "Bàn 3", "Còn"));
-            //ListBan.Add(new Ban(4, "Bàn 4", "Có người"));
-            //ListBan.Add(new Ban(5, "Bàn 5", "Còn"));
         }
         
     }
