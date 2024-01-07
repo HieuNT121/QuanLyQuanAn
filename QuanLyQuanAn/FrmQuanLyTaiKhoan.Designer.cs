@@ -38,16 +38,19 @@
             this.dtvgUser = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.btThem = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btXoa = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.btThem = new System.Windows.Forms.Button();
+            this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtvgUser)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbTenTaiKhoan
@@ -124,9 +127,10 @@
             this.flowLayoutPanel3.Controls.Add(this.panel19);
             this.flowLayoutPanel3.Controls.Add(this.panel20);
             this.flowLayoutPanel3.Controls.Add(this.panel21);
+            this.flowLayoutPanel3.Controls.Add(this.panel1);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(64, 345);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(381, 57);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(445, 65);
             this.flowLayoutPanel3.TabIndex = 24;
             // 
             // panel19
@@ -136,6 +140,22 @@
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(114, 56);
             this.panel19.TabIndex = 10;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.btXoa);
+            this.panel20.Location = new System.Drawing.Point(123, 3);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(106, 56);
+            this.panel20.TabIndex = 9;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.btSua);
+            this.panel21.Location = new System.Drawing.Point(235, 3);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(87, 56);
+            this.panel21.TabIndex = 11;
             // 
             // btThem
             // 
@@ -150,14 +170,6 @@
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.btXoa);
-            this.panel20.Location = new System.Drawing.Point(123, 3);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(106, 56);
-            this.panel20.TabIndex = 9;
-            // 
             // btXoa
             // 
             this.btXoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -171,14 +183,6 @@
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.btSua);
-            this.panel21.Location = new System.Drawing.Point(235, 3);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(87, 56);
-            this.panel21.TabIndex = 11;
-            // 
             // btSua
             // 
             this.btSua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,6 +195,26 @@
             this.btSua.Text = "    Sửa";
             this.btSua.UseVisualStyleBackColor = true;
             this.btSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Location = new System.Drawing.Point(328, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(106, 56);
+            this.panel1.TabIndex = 12;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(3, 5);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(89, 40);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
             // FrmQuanLyTaiKhoan
             // 
@@ -215,6 +239,7 @@
             this.panel19.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +261,7 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Button btSua;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnThoat;
     }
 }

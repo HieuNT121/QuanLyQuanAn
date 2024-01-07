@@ -30,12 +30,12 @@
         {
             this.lbTenDangNhap = new System.Windows.Forms.Label();
             this.lbMatKhau = new System.Windows.Forms.Label();
-            this.tbTenDangNhap = new System.Windows.Forms.TextBox();
-            this.tbMatKhau = new System.Windows.Forms.TextBox();
-            this.btDangNhap = new System.Windows.Forms.Button();
-            this.btThoat = new System.Windows.Forms.Button();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.chbMatKhau = new System.Windows.Forms.CheckBox();
+            this.cbxMatKhau = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbTenDangNhap
@@ -62,48 +62,48 @@
             this.lbMatKhau.TabIndex = 1;
             this.lbMatKhau.Text = "Mật khẩu";
             // 
-            // tbTenDangNhap
+            // txtTaiKhoan
             // 
-            this.tbTenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTenDangNhap.Location = new System.Drawing.Point(395, 165);
-            this.tbTenDangNhap.Name = "tbTenDangNhap";
-            this.tbTenDangNhap.Size = new System.Drawing.Size(250, 34);
-            this.tbTenDangNhap.TabIndex = 2;
+            this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTaiKhoan.Location = new System.Drawing.Point(395, 165);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(250, 34);
+            this.txtTaiKhoan.TabIndex = 2;
             // 
-            // tbMatKhau
+            // txtMatKhau
             // 
-            this.tbMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMatKhau.Location = new System.Drawing.Point(395, 247);
-            this.tbMatKhau.Name = "tbMatKhau";
-            this.tbMatKhau.Size = new System.Drawing.Size(250, 34);
-            this.tbMatKhau.TabIndex = 3;
-            this.tbMatKhau.UseSystemPasswordChar = true;
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(395, 247);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(250, 34);
+            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.UseSystemPasswordChar = true;
             // 
-            // btDangNhap
+            // btnSignIn
             // 
-            this.btDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDangNhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btDangNhap.Location = new System.Drawing.Point(300, 309);
-            this.btDangNhap.Name = "btDangNhap";
-            this.btDangNhap.Size = new System.Drawing.Size(121, 52);
-            this.btDangNhap.TabIndex = 4;
-            this.btDangNhap.Text = "Đăng nhập";
-            this.btDangNhap.UseVisualStyleBackColor = false;
-            this.btDangNhap.Click += new System.EventHandler(this.btnSignIn_Click);
+            this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSignIn.Location = new System.Drawing.Point(300, 309);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(121, 52);
+            this.btnSignIn.TabIndex = 4;
+            this.btnSignIn.Text = "Đăng nhập";
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
-            // btThoat
+            // btnExit
             // 
-            this.btThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btThoat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btThoat.Location = new System.Drawing.Point(474, 309);
-            this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(114, 52);
-            this.btThoat.TabIndex = 5;
-            this.btThoat.Text = "Thoát";
-            this.btThoat.UseVisualStyleBackColor = false;
-            this.btThoat.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExit.Location = new System.Drawing.Point(474, 309);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(114, 52);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label4
             // 
@@ -118,14 +118,14 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Welcome";
             // 
-            // chbMatKhau
+            // cbxMatKhau
             // 
-            this.chbMatKhau.AutoSize = true;
-            this.chbMatKhau.Location = new System.Drawing.Point(668, 253);
-            this.chbMatKhau.Name = "chbMatKhau";
-            this.chbMatKhau.Size = new System.Drawing.Size(18, 17);
-            this.chbMatKhau.TabIndex = 8;
-            this.chbMatKhau.UseVisualStyleBackColor = true;
+            this.cbxMatKhau.AutoSize = true;
+            this.cbxMatKhau.Location = new System.Drawing.Point(668, 253);
+            this.cbxMatKhau.Name = "cbxMatKhau";
+            this.cbxMatKhau.Size = new System.Drawing.Size(18, 17);
+            this.cbxMatKhau.TabIndex = 8;
+            this.cbxMatKhau.UseVisualStyleBackColor = true;
             // 
             // FrmDangNhap
             // 
@@ -134,12 +134,12 @@
             this.BackgroundImage = global::QuanLyQuanAn.Properties.Resources.Ресторан_настенные_обои___Бесплатно_векторы;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(799, 450);
-            this.Controls.Add(this.chbMatKhau);
+            this.Controls.Add(this.cbxMatKhau);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btThoat);
-            this.Controls.Add(this.btDangNhap);
-            this.Controls.Add(this.tbMatKhau);
-            this.Controls.Add(this.tbTenDangNhap);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnSignIn);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.lbMatKhau);
             this.Controls.Add(this.lbTenDangNhap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -155,11 +155,11 @@
 
         private System.Windows.Forms.Label lbTenDangNhap;
         private System.Windows.Forms.Label lbMatKhau;
-        private System.Windows.Forms.TextBox tbTenDangNhap;
-        private System.Windows.Forms.TextBox tbMatKhau;
-        private System.Windows.Forms.Button btDangNhap;
-        private System.Windows.Forms.Button btThoat;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox chbMatKhau;
+        private System.Windows.Forms.CheckBox cbxMatKhau;
     }
 }

@@ -38,11 +38,6 @@ namespace QuanLyQuanAn
             LoadListUser();
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
             string userName = tbTenTaiKhoan.Text;
@@ -98,5 +93,9 @@ namespace QuanLyQuanAn
             }
         }
 
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

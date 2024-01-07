@@ -23,43 +23,9 @@ namespace QuanLyQuanAn
 
         void LoadDataPhanLoai()
         {
-            dtgvDanhSachPhanLoaiMonAn.DataSource = null;
-            dtgvDanhSachPhanLoaiMonAn.DataSource = DanhSachPhanLoai.Instance.ListCategory;
-            dtgvDanhSachPhanLoaiMonAn.Refresh();
-        }
-
-        static void IsNull(string[] a, int b)
-        {
-            foreach (string item in a)
-            {
-                if (item == "")
-                {
-                    b = 1;
-                }
-            }
-            if (b == 1)
-            {
-                MessageBox.Show("Vui lòng điền đủ thông tin");
-            }
-        }
-        static void IsDuplicated(string a, int b)
-        {
-            foreach (Category item in DanhSachPhanLoai.Instance.ListCategory)
-            {
-                if (a == item.Name)
-                {
-                    MessageBox.Show("Đã tồn tại phân loại món này!");
-                    b = 1;
-                }
-            }
-        }
-
-        private void dtgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            index = e.RowIndex;
-
-            tbxID.Text = dtgvDanhSachPhanLoaiMonAn.Rows[index].Cells[0].Value.ToString();
-            tbTenPhanLoai.Text = dtgvDanhSachPhanLoaiMonAn.Rows[index].Cells[1].Value.ToString();
+            dtgvCategory.DataSource = null;
+            dtgvCategory.DataSource = DanhSachPhanLoai.Instance.ListCategory;
+            dtgvCategory.Refresh();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -68,7 +34,7 @@ namespace QuanLyQuanAn
             int checkIsDuplicated = 0;
             string[] bien = new string[2];
             bien[0] = tbxID.Text;
-            bien[1] = tbTenPhanLoai.Text;
+            bien[1] = tbxName.Text;
 
             foreach (string a in bien)
             {
@@ -105,7 +71,7 @@ namespace QuanLyQuanAn
             int checkIsDuplicated = 0;
             string[] bien = new string[2];
             bien[0] = tbxID.Text;
-            bien[1] = tbTenPhanLoai.Text;
+            bien[1] = tbxName.Text;
 
             if (index < 0)
             {
@@ -162,5 +128,12 @@ namespace QuanLyQuanAn
 
         }
 
+        private void dtgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            index = e.RowIndex;
+
+            tbxID.Text = dtgvCategory.Rows[index].Cells[0].Value.ToString();
+            tbxName.Text = dtgvCategory.Rows[index].Cells[1].Value.ToString();
+        }
     }
 }

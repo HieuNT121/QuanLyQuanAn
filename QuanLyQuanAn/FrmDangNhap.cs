@@ -17,19 +17,19 @@ namespace QuanLyQuanAn
             InitializeComponent();
         }
 
-        //List<Taikhoan> listTaiKhoan = Danhsachtaikhoan.Instance.ListTaiKhoan;
-        //bool KiemtraDangNhap(string tentaikhoan, string matkhau)
-        //{
-        //    for(int i=0; i < listTaiKhoan.Count; i++)
-        //    {
-        //        if(tentaikhoan == listTaiKhoan[i].TenTaikhoan && matkhau == listTaiKhoan[i].MatKhau)
-        //        {
-        //            Const.loaiTaiKhoan = listTaiKhoan[i].LoaiTaiKhoan;
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
+        List<Taikhoan> listTaiKhoan = Danhsachtaikhoan.Instance.ListTaiKhoan;
+        bool KiemtraDangNhap(string tentaikhoan, string matkhau)
+        {
+            for (int i = 0; i < listTaiKhoan.Count; i++)
+            {
+                if (tentaikhoan == listTaiKhoan[i].TenTaikhoan && matkhau == listTaiKhoan[i].MatKhau)
+                {
+                    Const.loaiTaiKhoan = listTaiKhoan[i].LoaiTaiKhoan;
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -38,41 +38,29 @@ namespace QuanLyQuanAn
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            //if (KiemtraDangNhap(txtTaiKhoan.Text, txtMatKhau.Text))
-            //{
-            //    FrmMain formMain = new FrmMain();
-            //    formMain.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu", "Lỗi");
-            //    txtTaiKhoan.Focus();
-            //}
-
-            if (MainClass.isValidUser(tbTenDangNhap.Text, tbMatKhau.Text) == false)
+            if (KiemtraDangNhap(txtTaiKhoan.Text, txtMatKhau.Text))
             {
-                MessageBox.Show("Thông tin chưa chính xác");
-                return;
+                FrmMain formMain = new FrmMain();
+                formMain.Show();
+                this.Hide();
             }
             else
             {
-                this.Hide();
-                FrmMain form0 = new FrmMain();
-                form0.Show();
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu", "Lỗi");
+                txtTaiKhoan.Focus();
             }
         }
 
-        //private void cbxMatKhau_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    if (cbxMatKhau.Checked)
-        //    {
-        //        txtMatKhau.UseSystemPasswordChar = false;
-        //    }
-        //    if (!cbxMatKhau.Checked)
-        //    {
-        //        txtMatKhau.UseSystemPasswordChar = true;
-        //    }
-        //}
+        private void cbxMatKhau_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxMatKhau.Checked)
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+            }
+            if (!cbxMatKhau.Checked)
+            {
+                txtMatKhau.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

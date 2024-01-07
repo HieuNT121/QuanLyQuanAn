@@ -46,6 +46,7 @@
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panel_top = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.sideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,6 +66,7 @@
             this.sideBar.Controls.Add(this.panel3);
             this.sideBar.Controls.Add(this.panel4);
             this.sideBar.Controls.Add(this.panel2);
+            this.sideBar.Controls.Add(this.btnExit);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.sideBar.Location = new System.Drawing.Point(0, 0);
@@ -238,6 +240,16 @@
             this.panel_body.Size = new System.Drawing.Size(1034, 710);
             this.panel_body.TabIndex = 3;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(3, 683);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,6 +294,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel_top;
         private System.Windows.Forms.Panel panel_body;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
