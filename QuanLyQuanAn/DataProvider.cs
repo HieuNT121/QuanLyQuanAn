@@ -10,18 +10,98 @@ namespace QuanLyQuanAn
 {
     public class DataProvider
     {
+        
         private string connectionSTR = @"Data Source=.\\sqlexpress;Initial Catalog=QuanlyQuanAn;Integrated Security=True";
+        
+        private DataProvider instance;
 
-        public DataTable ExecuteQuery(string query)
+        public static DataProvider Instance 
         {
-            SqlConnection connection =new SqlConnection(connectionSTR);
-            connection.Open();
-            SqlCommand cmd =new SqlCommand(query, connection);
-            DataTable data =new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            adapter.Fill(data);
-            connection.Close();
+            get
+            {
+                if(Instance == null)
+                    Instance = new DataProvider();
+                return Instance;
+            }
+            set { DataProvider.Instance = value; }
+        }
 
+        public DataTable ExecuteQuery(string query, object[] param = null)
+        {
+            DataTable data =new DataTable();
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                if (param != null)
+                {
+                    string[] listPara =query.Split(' ');
+                    int i = 0;
+                    foreach(string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            cmd.Parameters.AddWithValue(item, param[i]);
+                            i++;
+                        }
+                    }
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(data);
+                    connection.Close();
+                }
+            }
+            return data;
+        }
+
+        public int ExecuteNonQuery(string query, object[] param = null)
+        {
+            int data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                if (param != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            cmd.Parameters.AddWithValue(item, param[i]);
+                            i++;
+                        }
+                    }
+                    data = cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            return data;
+        }
+
+        public object ExecuteScalar(string query, object[] param = null)
+        {
+            object data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand(query, connection);
+                if (param != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            cmd.Parameters.AddWithValue(item, param[i]);
+                            i++;
+                        }
+                    }
+                    data = cmd.ExecuteScalar();
+                    connection.Close();
+                }
+            }
             return data;
         }
     }
