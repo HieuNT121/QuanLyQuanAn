@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -51,11 +52,18 @@ namespace QuanLyQuanAn
 
         void HienHoaDon(int id)
         {
-            
+            List<HoaDon> danhSachHoaDon = DanhSachHoaDon.Instance.ListHoaDon;
+            foreach(HoaDon item in danhSachHoaDon)
+            {
+                if(item.Id == id)
+                {
+                    dtgvHoaDon.DataSource = item.ThongTin;
+                }
+            }
         }
         void btn_Click(object sender, EventArgs e)
         {
-            int IdBan = (sender as Ban).Id; 
+            int IdBan = ((sender as Button).Tag as Ban).Id; 
             HienHoaDon(IdBan);
         }
 

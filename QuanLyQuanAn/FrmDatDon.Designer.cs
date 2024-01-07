@@ -36,11 +36,7 @@
             this.soLuong = new System.Windows.Forms.Label();
             this.soLuongMon = new System.Windows.Forms.NumericUpDown();
             this.btnThemMon = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.so_luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Don_Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thanh_tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgvHoaDon = new System.Windows.Forms.DataGridView();
             this.tongTien = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cbxBan = new System.Windows.Forms.ComboBox();
@@ -48,11 +44,11 @@
             this.TimeLabel = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.elipseControl2 = new QuanLyQuanAn.elipseControl();
-            this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
             // flpBan
@@ -138,48 +134,15 @@
             this.btnThemMon.Text = "Thêm món";
             this.btnThemMon.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgvHoaDon
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TenMon,
-            this.so_luong,
-            this.Don_Gia,
-            this.Thanh_tien});
-            this.dataGridView1.Location = new System.Drawing.Point(447, 181);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(491, 288);
-            this.dataGridView1.TabIndex = 9;
-            // 
-            // TenMon
-            // 
-            this.TenMon.HeaderText = "Tên món";
-            this.TenMon.MinimumWidth = 6;
-            this.TenMon.Name = "TenMon";
-            this.TenMon.Width = 125;
-            // 
-            // so_luong
-            // 
-            this.so_luong.HeaderText = "Số lượng";
-            this.so_luong.MinimumWidth = 6;
-            this.so_luong.Name = "so_luong";
-            this.so_luong.Width = 90;
-            // 
-            // Don_Gia
-            // 
-            this.Don_Gia.HeaderText = "Đơn giá";
-            this.Don_Gia.MinimumWidth = 6;
-            this.Don_Gia.Name = "Don_Gia";
-            this.Don_Gia.Width = 125;
-            // 
-            // Thanh_tien
-            // 
-            this.Thanh_tien.HeaderText = "Thành tiền";
-            this.Thanh_tien.MinimumWidth = 6;
-            this.Thanh_tien.Name = "Thanh_tien";
-            this.Thanh_tien.Width = 125;
+            this.dtgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHoaDon.Location = new System.Drawing.Point(447, 175);
+            this.dtgvHoaDon.Name = "dtgvHoaDon";
+            this.dtgvHoaDon.RowHeadersWidth = 51;
+            this.dtgvHoaDon.RowTemplate.Height = 24;
+            this.dtgvHoaDon.Size = new System.Drawing.Size(491, 288);
+            this.dtgvHoaDon.TabIndex = 9;
             // 
             // tongTien
             // 
@@ -247,16 +210,6 @@
             this.btnXoa.Text = "Xoá món";
             this.btnXoa.UseVisualStyleBackColor = true;
             // 
-            // elipseControl1
-            // 
-            this.elipseControl1.CornerRadius = 20;
-            this.elipseControl1.TargetControl = this;
-            // 
-            // elipseControl2
-            // 
-            this.elipseControl2.CornerRadius = 25;
-            this.elipseControl2.TargetControl = null;
-            // 
             // btnThoat
             // 
             this.btnThoat.Location = new System.Drawing.Point(639, 541);
@@ -266,6 +219,16 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 20;
+            this.elipseControl1.TargetControl = this;
+            // 
+            // elipseControl2
+            // 
+            this.elipseControl2.CornerRadius = 25;
+            this.elipseControl2.TargetControl = null;
             // 
             // FrmDatDon
             // 
@@ -279,7 +242,7 @@
             this.Controls.Add(this.cbxBan);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tongTien);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvHoaDon);
             this.Controls.Add(this.btnThemMon);
             this.Controls.Add(this.soLuongMon);
             this.Controls.Add(this.soLuong);
@@ -292,7 +255,7 @@
             this.Text = "Quản lý Đặt Đơn";
             this.Load += new System.EventHandler(this.FrmDatDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.soLuongMon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +270,7 @@
         private System.Windows.Forms.ComboBox cbxLoaiMon;
         private System.Windows.Forms.ComboBox cbxTenMon;
         private System.Windows.Forms.Label tongTien;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvHoaDon;
         private System.Windows.Forms.Button btnThemMon;
         private System.Windows.Forms.NumericUpDown soLuongMon;
         private System.Windows.Forms.Label soLuong;
@@ -316,10 +279,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label TimeLabel;
         private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn so_luong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Don_Gia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thanh_tien;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThoat;
     }

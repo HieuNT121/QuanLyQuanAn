@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
@@ -135,6 +136,75 @@ namespace QuanLyQuanAn
             }
 
             return ListBan;
+        }
+
+        public List<HoaDon> LayHoaDon()
+        {
+            List<HoaDon> HoaDon = new List<HoaDon>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.Bill", connection))
+                {
+                    List<thongTin> DanhSachMon = LayThongTin();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int id = Convert.ToInt32(reader["id"]);
+                            string dateCheckIn = reader["Date"].ToString();
+                            int status = Convert.ToInt32(reader["status"]); ;
+                            int idTable = Convert.ToInt32(reader["idTable"]);
+                            HoaDon hoaDon = new HoaDon (id, dateCheckIn, idTable, status);
+                            foreach (thongTin info in DanhSachMon)
+                            {
+                                if(info.IdBill == id)
+                                {
+                                    hoaDon.ThemMon(info);
+                                }
+                            }
+                            HoaDon.Add(hoaDon);
+                        }
+                    }
+                }
+            }
+
+            return HoaDon;
+        }
+
+        public List<thongTin> LayThongTin()
+        {
+            List<thongTin> ListThongTin = new List<thongTin>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT dbo.BillInfo.idBill, dbo.Food.name, dbo.Food.price, dbo.BillInfo.count" +
+                                "FROM dbo.BillInfo" +
+                                "JOIN dbo.Food ON dbo.Food.id = dbo.BillInfo.idFood;";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int idBill = Convert.ToInt32(reader["idBill"]);
+                            string tenMon = reader["name"].ToString();
+                            float price = Convert.ToInt32(reader["price"]);
+                            int soLuong = Convert.ToInt32(reader["count"]);
+                            float thanhTien = price * soLuong;
+
+                            thongTin info = new thongTin(idBill, tenMon, price, soLuong, thanhTien);
+                            ListThongTin.Add(info);
+                        }
+                    }
+                }
+            }
+
+            return ListThongTin;
         }
     }
 }
