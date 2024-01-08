@@ -44,5 +44,16 @@ namespace QuanLyQuanAn
         {
             LoadDataNhaCungCap();
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            Danhsachtaikhoan.Instance.ListTaiKhoan.RemoveAt(index);
+            LoadDataNhaCungCap();
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

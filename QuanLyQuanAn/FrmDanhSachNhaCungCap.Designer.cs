@@ -310,6 +310,7 @@
             this.btThem.TabIndex = 4;
             this.btThem.Text = "    Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // panel20
             // 
@@ -330,6 +331,7 @@
             this.btXoa.TabIndex = 5;
             this.btXoa.Text = "    Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // panel21
             // 
