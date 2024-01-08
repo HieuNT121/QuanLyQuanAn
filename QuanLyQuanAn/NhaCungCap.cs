@@ -25,13 +25,6 @@ namespace QuanLyQuanAn
         List<NhaCungCap> listNhaCungCap;
         public List<NhaCungCap> ListNhaCungCap { get => listNhaCungCap; set => listNhaCungCap = value; }
 
-        DanhSachNhaCungCap()
-        {
-            ListNhaCungCap = new List<NhaCungCap>();
-            ListNhaCungCap.Add(new NhaCungCap("1", "name", "1000", "123456789"));
-        }
-
-
     }
 
     public class NhaCungCap

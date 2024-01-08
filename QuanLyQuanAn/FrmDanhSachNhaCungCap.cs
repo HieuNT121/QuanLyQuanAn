@@ -23,8 +23,9 @@ namespace QuanLyQuanAn
 
         void LoadDataNhaCungCap()
         {
+            List<NhaCungCap> ListNhaCungCap = TruyenDuLieuVaoList(connectionStr);
             dtgvNhaCungCap.DataSource = null;
-            dtgvNhaCungCap.DataSource = DanhSachNhaCungCap.Instance.ListNhaCungCap;
+            dtgvNhaCungCap.DataSource = ListNhaCungCap;
             dtgvNhaCungCap.Columns["MaNhaCungCap"].HeaderText = "Mã nhà cung cấp";
             dtgvNhaCungCap.Columns["TenNhaCungCap"].HeaderText = "Tên nhà cung cấp";
             dtgvNhaCungCap.Columns["DiaChi"].HeaderText = "Địa chỉ";
@@ -197,6 +198,42 @@ namespace QuanLyQuanAn
 
                 themCmd.ExecuteNonQuery();
             }
+        }
+
+        public static List<NhaCungCap> TruyenDuLieuVaoList(string connectionStr)
+        {
+            List<NhaCungCap> ListNhaCungCap = DanhSachNhaCungCap.Instance.ListNhaCungCap;
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+
+                string query = $"SELECT * FROM NhaCungCap";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string MaNhaCungCap = reader["MaNhaCungCap"].ToString();
+                                string TenNhaCungCap = reader["TenNhaCungCap"].ToString();
+                                string DiaChi = reader["DiaChi"].ToString();
+                                string SoDienThoai = reader["SoDienThoai"].ToString();
+
+                                ListNhaCungCap.Add(new NhaCungCap(MaNhaCungCap, TenNhaCungCap, DiaChi, SoDienThoai));
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi: {ex.Message}");
+                    }
+                }
+            }
+
+            return ListNhaCungCap;
         }
     }
 }
