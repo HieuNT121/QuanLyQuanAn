@@ -289,6 +289,7 @@
             this.btXem.TabIndex = 9;
             this.btXem.Text = "    Xem";
             this.btXem.UseVisualStyleBackColor = true;
+            this.btXem.Click += new System.EventHandler(this.btXem_Click);
             // 
             // panel19
             // 

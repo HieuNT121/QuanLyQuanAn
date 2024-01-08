@@ -40,6 +40,9 @@ namespace QuanLyQuanAn
 
         }
 
-
+        private void btXem_Click(object sender, EventArgs e)
+        {
+            LoadDataNhaCungCap();
+        }
     }
 }

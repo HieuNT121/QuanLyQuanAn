@@ -120,11 +120,11 @@
     <Compile Include="FrmDoanhSo.Designer.cs">
       <DependentUpon>FrmDoanhSo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHeThongChinh.cs">
+    <Compile Include="`.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHeThongChinh.Designer.cs">
-      <DependentUpon>FrmHeThongChinh.cs</DependentUpon>
+    <Compile Include="`.Designer.cs">
+      <DependentUpon>`.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmHoaDonChinh.cs">
       <SubType>Form</SubType>
@@ -252,8 +252,8 @@
     <EmbeddedResource Include="FrmDoanhSo.resx">
       <DependentUpon>FrmDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHeThongChinh.resx">
-      <DependentUpon>FrmHeThongChinh.cs</DependentUpon>
+    <EmbeddedResource Include="`.resx">
+      <DependentUpon>`.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHoaDonChinh.resx">
       <DependentUpon>FrmHoaDonChinh.cs</DependentUpon>
