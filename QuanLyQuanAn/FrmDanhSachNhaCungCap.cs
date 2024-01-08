@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace QuanLyQuanAn
 {
@@ -47,13 +49,154 @@ namespace QuanLyQuanAn
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-            Danhsachtaikhoan.Instance.ListTaiKhoan.RemoveAt(index);
+            DanhSachNhaCungCap.Instance.ListNhaCungCap.RemoveAt(index);
             LoadDataNhaCungCap();
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
+            int checkedIsNull = 0;
+            int checkIsDuplictated = 0;
+            string[] bien = new string[4];
+            bien[0] = txtMaNhaCungCap.Text;
+            bien[1] = txtTenNhaCungCap.Text;
+            bien[2] = txtDiaChi.Text;
+            bien[3] = txtSoDienThoai.Text;
 
+            foreach (string item in bien)
+            {
+                if(item == "")
+                {
+                    checkedIsNull = 1;
+                }
+            }
+            if (checkedIsNull != 0)
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ!");
+            }
+            else
+            {
+                foreach (NhaCungCap NCC in DanhSachNhaCungCap.Instance.ListNhaCungCap)
+                {
+                    if (bien[1] == NCC.TenNhaCungCap)
+                    {
+                        checkIsDuplictated = 1;
+                    }
+                }
+                if (checkIsDuplictated == 1)
+                {
+                    MessageBox.Show("Đã tồn tại nhà cung cấp này!");
+                }
+                else
+                {
+                    DanhSachNhaCungCap.Instance.ListNhaCungCap.Add(new NhaCungCap(bien[0], bien[1], bien[2], bien[3]));
+                    LoadDataNhaCungCap();
+                }
+            }
+            CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            LoadDataNhaCungCap();
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            int checkedIsNull = 0;
+            string[] bien = new string[4];
+            bien[0] = txtMaNhaCungCap.Text;
+            bien[1] = txtTenNhaCungCap.Text;
+            bien[2] = txtDiaChi.Text;
+            bien[3] = txtSoDienThoai.Text;
+
+            if(index < 0)
+            {
+                MessageBox.Show("Vui lòng chọn 1 hàng!");
+            }
+            else
+            {
+                foreach (string item in bien)
+                {
+                    if (item == "")
+                    {
+                        checkedIsNull = 1;
+                    }
+                }
+                if (checkedIsNull != 0)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ!");
+                }
+                else
+                {                   
+                        DanhSachNhaCungCap.Instance.ListNhaCungCap[index].MaNhaCungCap = bien[0];
+                        DanhSachNhaCungCap.Instance.ListNhaCungCap[index].TenNhaCungCap = bien[1];
+                        DanhSachNhaCungCap.Instance.ListNhaCungCap[index].DiaChi = bien[2];
+                        DanhSachNhaCungCap.Instance.ListNhaCungCap[index].SoDienThoai = bien[3];
+                        LoadDataNhaCungCap();
+                }
+            }
+            CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            LoadDataNhaCungCap();
+        }
+
+        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        static void CapNhatvaThemDuLieu(List<NhaCungCap> danhSach, string connectionStr)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+                foreach (NhaCungCap NCC in danhSach)
+                {
+                    string checkIfExists = "SELECT COUNT(*) FROM NhaCungCap WHERE MaNhaCungCap = @MaNhaCungCap";
+
+                    using (SqlCommand checkIfExistsCommand = new SqlCommand(checkIfExists, connection))
+                    {
+                        checkIfExistsCommand.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
+
+                        int existingRecords = (int)checkIfExistsCommand.ExecuteScalar();
+
+                        if (existingRecords > 0)
+                        {
+                            CapNhat(NCC, connection);
+                        }
+                        else
+                        {
+                            Them(NCC, connection);
+                        }
+                    }
+                        
+                }
+            }
+        }
+
+        static void CapNhat(NhaCungCap NCC, SqlConnection connection)
+        {
+            string updateQuery = "UPDATE NhaCungCap " +
+                                 "SET TenNhaCungCap = @TenNhaCungCap, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai " +
+                                 "WHERE MaNhaCungCap = @MaNhaCungCap";
+
+            using (SqlCommand capNhatCmd = new SqlCommand(updateQuery, connection))
+            {
+                capNhatCmd.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
+                capNhatCmd.Parameters.AddWithValue("@TenNhaCungCap", NCC.TenNhaCungCap);
+                capNhatCmd.Parameters.AddWithValue("@DiaChi", NCC.DiaChi);
+                capNhatCmd.Parameters.AddWithValue("@SoDienThoai", NCC.SoDienThoai);
+
+                capNhatCmd.ExecuteNonQuery();
+            }
+        }
+
+        static void Them(NhaCungCap NCC, SqlConnection connection)
+        {
+            string insertQuery = "INSERT INTO NhaCungCap (MaNhaCungCap, TenNhaCungCap, DiaChi, SoDienThoai) " +
+                                 "VALUES (@MaNhaCungCap, @TenNhaCungCap, @DiaChi, @SoDienTHoai)";
+
+            using (SqlCommand themCmd = new SqlCommand(insertQuery, connection))
+            {
+                themCmd.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
+                themCmd.Parameters.AddWithValue("@TenNhaCungCap", NCC.TenNhaCungCap);
+                themCmd.Parameters.AddWithValue("@DiaChi", NCC.DiaChi);
+                themCmd.Parameters.AddWithValue("@SoDienThoai", NCC.SoDienThoai);
+
+                themCmd.ExecuteNonQuery();
+            }
         }
     }
 }

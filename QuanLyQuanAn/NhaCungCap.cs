@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,14 +28,16 @@ namespace QuanLyQuanAn
         DanhSachNhaCungCap()
         {
             ListNhaCungCap = new List<NhaCungCap>();
-            ListNhaCungCap.Add(new NhaCungCap(1, "name", "1000", "123456789"));
+            ListNhaCungCap.Add(new NhaCungCap("1", "name", "1000", "123456789"));
         }
+
+
     }
 
     public class NhaCungCap
     {
-        private int maNhaCungCap;
-        public int MaNhaCungCap { get => maNhaCungCap; set => maNhaCungCap = value; }
+        private string maNhaCungCap;
+        public string MaNhaCungCap { get => maNhaCungCap; set => maNhaCungCap = value; }
 
         private string tenNhaCungCap;
         public string TenNhaCungCap { get => tenNhaCungCap; set => tenNhaCungCap = value; }
@@ -45,7 +48,7 @@ namespace QuanLyQuanAn
         private string soDienThoai;
         public string SoDienThoai { get => soDienThoai; set => soDienThoai = value; }
 
-        public NhaCungCap(int maNhaCungCap, string tenNhaCungCap, string diaChi, string soDienThoai)
+        public NhaCungCap(string maNhaCungCap, string tenNhaCungCap, string diaChi, string soDienThoai)
         {
             this.MaNhaCungCap = maNhaCungCap;
             this.TenNhaCungCap = tenNhaCungCap;
@@ -54,4 +57,6 @@ namespace QuanLyQuanAn
         }
 
     }
+
+
 }
