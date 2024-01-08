@@ -189,5 +189,12 @@ namespace QuanLyQuanAn
             LoadDataMon();
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DanhSachPhanLoai.Instance.ListMonAn.RemoveAt(index);
+            string maMonAn = tbxIdFood.Text;
+            DataNhaCungCap.Xoa(connectionStr, maMonAn);
+            LoadDataMon();
+        }
     }
 }

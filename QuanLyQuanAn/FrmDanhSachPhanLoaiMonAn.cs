@@ -14,6 +14,7 @@ namespace QuanLyQuanAn
 {
     public partial class FrmDanhSachPhanLoaiMonAn : Form
     {
+        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         int index = -1;
         public FrmDanhSachPhanLoaiMonAn()
         {
@@ -59,8 +60,9 @@ namespace QuanLyQuanAn
             if (checkIsNull == 0 && checkIsDuplicated == 0)
             {
                 DanhSachPhanLoai.Instance.ListCategory.Add(new Category(bien[0], bien[1]));
-                LoadDataPhanLoai();
             }
+            DataPhanLoai.CapNhatvaThemDuLieu(DanhSachPhanLoai.Instance.ListCategory, connectionStr);
+            LoadDataPhanLoai();
 
         }
 
@@ -104,8 +106,9 @@ namespace QuanLyQuanAn
                 {
                     DanhSachPhanLoai.Instance.ListCategory[index].Id = bien[0];
                     DanhSachPhanLoai.Instance.ListCategory[index].Name = bien[1];
-                    LoadDataPhanLoai();
                 }
+                DataPhanLoai.CapNhatvaThemDuLieu(DanhSachPhanLoai.Instance.ListCategory,connectionStr);
+                LoadDataPhanLoai();
             }
         }
 

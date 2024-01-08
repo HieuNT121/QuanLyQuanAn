@@ -164,7 +164,7 @@ namespace QuanLyQuanAn
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@MaMon", maNhaCungCap);
+                    command.Parameters.AddWithValue("@MaMonNhaCungcap", maNhaCungCap);
 
                     try
                     {

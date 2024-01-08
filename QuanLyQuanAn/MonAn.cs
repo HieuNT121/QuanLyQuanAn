@@ -204,6 +204,31 @@ namespace QuanLyQuanAn
 
             return ListMonAn;
         }
+
+        public static void Xoa(string connectionString, string maMonAn)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "DELETE FROM ThucDon WHERE MaMonAn = @MaMonAn";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@MaMonAn", maMonAn);
+
+                    try
+                    {
+                        // Thực hiện truy vấn DELETE
+                        int rowsAffected = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi: {ex.Message}");
+                    }
+                }
+            }
+        }
     }
 
     public class DataPhanLoai
@@ -240,7 +265,7 @@ namespace QuanLyQuanAn
         static void CapNhat(Category phanLoai, SqlConnection connection)
         {
             string updateQuery = "UPDATE PhanLoai " +
-                                 "SET TenPhanLoai = @TenPhanLoai" +
+                                 "SET TenPhanLoai = @TenPhanLoai " +
                                  "WHERE MaPhanLoai = @MaPhanLoai";
 
             using (SqlCommand capNhatCmd = new SqlCommand(updateQuery, connection))
@@ -254,8 +279,8 @@ namespace QuanLyQuanAn
 
         static void Them(Category phanLoai, SqlConnection connection)
         {
-            string insertQuery = "INSERT INTO ThucDon (MaPhanLoai, TenPhanLoai) " +
-                                 "VALUES (@MaPhanLoai, @TenPhanLoai)";
+            string insertQuery = "INSERT INTO PhanLoai (MaPhanLoai, TenPhanLoai) " +
+                                 "VALUES (@MaPhanLoai, @TenPhanLoai )";
 
             using (SqlCommand themCmd = new SqlCommand(insertQuery, connection))
             {
