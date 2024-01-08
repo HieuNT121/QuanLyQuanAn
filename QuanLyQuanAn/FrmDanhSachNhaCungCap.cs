@@ -51,6 +51,8 @@ namespace QuanLyQuanAn
         private void btXoa_Click(object sender, EventArgs e)
         {
             DanhSachNhaCungCap.Instance.ListNhaCungCap.RemoveAt(index);
+            string maNCC = txtMaNhaCungCap.Text;
+            DataNhaCungCap.Xoa(connectionStr, maNCC );
             LoadDataNhaCungCap();
         }
 
@@ -94,7 +96,7 @@ namespace QuanLyQuanAn
                     LoadDataNhaCungCap();
                 }
             }
-            Data.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            DataNhaCungCap.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
             LoadDataNhaCungCap();
         }
 
@@ -133,7 +135,7 @@ namespace QuanLyQuanAn
                         LoadDataNhaCungCap();
                 }
             }
-            Data.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            DataNhaCungCap.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
             LoadDataNhaCungCap();
         }
 

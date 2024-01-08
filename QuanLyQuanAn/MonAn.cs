@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -96,18 +97,207 @@ namespace QuanLyQuanAn
             get => listCategory;
             set => listCategory = value;
         }
-
+        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         DanhSachPhanLoai()
         {
-            listMonAn = new List<MonAn>();
-            listCategory = new List<Category>();
-            listMonAn.Add(new MonAn("1", "cá hồi", "1", "45000"));
-            listMonAn.Add(new MonAn("2", "Khoa", "1", "90000"));
-            listMonAn.Add(new MonAn("3", "Bo", "2", "180000"));
-
-            listCategory.Add(new Category("1", "Hai san"));
-            listCategory.Add(new Category("2", "Nong San"));
+            listMonAn = DataThucDon.TruyenDuLieuVaoList(connectionStr);
+            listCategory = DataPhanLoai.TruyenDuLieuVaoList(connectionStr);
         }
     }
 
+    public class DataThucDon
+    {
+        public static void CapNhatvaThemDuLieu(List<MonAn> danhSach, string connectionStr)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+                foreach (MonAn mon in danhSach)
+                {
+                    string checkIfExists = "SELECT COUNT(*) FROM ThucDon WHERE MaMonAn = @MaMonAn";
+
+                    using (SqlCommand checkIfExistsCommand = new SqlCommand(checkIfExists, connection))
+                    {
+                        checkIfExistsCommand.Parameters.AddWithValue("@MaMonAn", mon.Id);
+
+                        int existingRecords = (int)checkIfExistsCommand.ExecuteScalar();
+
+                        if (existingRecords > 0)
+                        {
+                            CapNhat(mon, connection);
+                        }
+                        else
+                        {
+                            Them(mon, connection);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        static void CapNhat(MonAn mon, SqlConnection connection)
+        {
+            string updateQuery = "UPDATE ThucDon " +
+                                 "SET TenMonAn = @TenMonAn, MaPhanLoai = @MaPhanLoai, DonGia = @DonGia " +
+                                 "WHERE MaMonAn = @MaMonAn";
+
+            using (SqlCommand capNhatCmd = new SqlCommand(updateQuery, connection))
+            {
+                capNhatCmd.Parameters.AddWithValue("@MaMonAn", mon.Id);
+                capNhatCmd.Parameters.AddWithValue("@TenMonAn", mon.Name);
+                capNhatCmd.Parameters.AddWithValue("@MaPhanLoai", mon.IdCategory);
+                capNhatCmd.Parameters.AddWithValue("@DonGia", mon.Price);
+
+                capNhatCmd.ExecuteNonQuery();
+            }
+        }
+
+        static void Them(MonAn mon, SqlConnection connection)
+        {
+            string insertQuery = "INSERT INTO ThucDon (MaMonAn, TenMonAn, MaPhanLoai, DonGia) " +
+                                 "VALUES (@MaMonAn, @TenMonAn, @MaPhanLoai, @DonGia)";
+
+            using (SqlCommand themCmd = new SqlCommand(insertQuery, connection))
+            {
+                themCmd.Parameters.AddWithValue("@MaMonAn", mon.Id);
+                themCmd.Parameters.AddWithValue("@TenMonAn", mon.Name);
+                themCmd.Parameters.AddWithValue("@MaPhanLoai", mon.IdCategory);
+                themCmd.Parameters.AddWithValue("@DonGia", mon.Price);
+
+                themCmd.ExecuteNonQuery();
+            }
+        }
+
+        public static List<MonAn> TruyenDuLieuVaoList(string chuoi)
+        {
+            List<MonAn> ListMonAn = new List<MonAn>();
+            using (SqlConnection connection = new SqlConnection(chuoi))
+            {
+                connection.Open();
+
+                string query = $"SELECT * FROM ThucDon";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string MaMonAn = reader["MaMonAn"].ToString();
+                                string TenMonAn = reader["TenMonAn"].ToString();
+                                string MaPhanLoai = reader["MaPhanLoai"].ToString();
+                                string DonGia = reader["DonGia"].ToString();
+
+                                ListMonAn.Add(new MonAn(MaMonAn, TenMonAn, MaPhanLoai, DonGia));
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi: {ex.Message}");
+                    }
+                }
+            }
+
+            return ListMonAn;
+        }
+    }
+
+    public class DataPhanLoai
+    {
+        public static void CapNhatvaThemDuLieu(List<Category> danhSach, string connectionStr)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionStr))
+            {
+                connection.Open();
+                foreach (Category phanLoai in danhSach)
+                {
+                    string checkIfExists = "SELECT COUNT(*) FROM PhanLoai WHERE MaPhanLoai = @MaPhanLoai";
+
+                    using (SqlCommand checkIfExistsCommand = new SqlCommand(checkIfExists, connection))
+                    {
+                        checkIfExistsCommand.Parameters.AddWithValue("@MaPhanLoai", phanLoai.Id);
+
+                        int existingRecords = (int)checkIfExistsCommand.ExecuteScalar();
+
+                        if (existingRecords > 0)
+                        {
+                            CapNhat(phanLoai, connection);
+                        }
+                        else
+                        {
+                            Them(phanLoai, connection);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        static void CapNhat(Category phanLoai, SqlConnection connection)
+        {
+            string updateQuery = "UPDATE PhanLoai " +
+                                 "SET TenPhanLoai = @TenPhanLoai" +
+                                 "WHERE MaPhanLoai = @MaPhanLoai";
+
+            using (SqlCommand capNhatCmd = new SqlCommand(updateQuery, connection))
+            {
+                capNhatCmd.Parameters.AddWithValue("@MaPhanLoai", phanLoai.Id);
+                capNhatCmd.Parameters.AddWithValue("@TenPhanLoai", phanLoai.Name);
+
+                capNhatCmd.ExecuteNonQuery();
+            }
+        }
+
+        static void Them(Category phanLoai, SqlConnection connection)
+        {
+            string insertQuery = "INSERT INTO ThucDon (MaPhanLoai, TenPhanLoai) " +
+                                 "VALUES (@MaPhanLoai, @TenPhanLoai)";
+
+            using (SqlCommand themCmd = new SqlCommand(insertQuery, connection))
+            {
+                themCmd.Parameters.AddWithValue("@MaPhanLoai", phanLoai.Id);
+                themCmd.Parameters.AddWithValue("@TenPhanLoai", phanLoai.Name);
+
+                themCmd.ExecuteNonQuery();
+            }
+        }
+
+        public static List<Category> TruyenDuLieuVaoList(string chuoi)
+        {
+            List<Category> ListPhanLoai = new List<Category>();
+            using (SqlConnection connection = new SqlConnection(chuoi))
+            {
+                connection.Open();
+
+                string query = $"SELECT * FROM PhanLoai";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    try
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string MaPhanLoai = reader["MaPhanLoai"].ToString();
+                                string TenPhanLoai = reader["TenPhanLoai"].ToString();
+
+                                ListPhanLoai.Add(new Category(MaPhanLoai,TenPhanLoai));
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi: {ex.Message}");
+                    }
+                }
+            }
+
+            return ListPhanLoai;
+        }
+    }
 }

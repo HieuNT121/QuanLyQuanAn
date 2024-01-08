@@ -27,7 +27,7 @@ namespace QuanLyQuanAn
         string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         DanhSachNhaCungCap()
         {
-            ListNhaCungCap = Data.TruyenDuLieuVaoList(connectionStr);
+            ListNhaCungCap = DataNhaCungCap.TruyenDuLieuVaoList(connectionStr);
         }
     }
 
@@ -54,7 +54,7 @@ namespace QuanLyQuanAn
         }
 
     }
-    public class Data
+    public class DataNhaCungCap
     {
         public static void CapNhatvaThemDuLieu(List<NhaCungCap> danhSach, string connectionStr)
         {
@@ -152,6 +152,31 @@ namespace QuanLyQuanAn
             }
 
             return ListNhaCungCap;
+        }
+
+        public static void Xoa(string connectionString, string maNhaCungCap)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = $"DELETE FROM NhaCungCap WHERE MaNhaCungCap = @MaNhaCungCap";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@MaMon", maNhaCungCap);
+
+                    try
+                    {
+                        // Thực hiện truy vấn DELETE
+                        int rowsAffected = command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi: {ex.Message}");
+                    }
+                }
+            }
         }
     }
 
