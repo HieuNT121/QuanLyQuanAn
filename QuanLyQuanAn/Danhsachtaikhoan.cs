@@ -31,10 +31,10 @@ namespace QuanLyQuanAn
 
         Danhsachtaikhoan()
         {
-            listTaiKhoan = new List<Taikhoan>();
-            listTaiKhoan.Add(new Taikhoan("admin", "admin123", true));
-            listTaiKhoan.Add(new Taikhoan("A", "123", false));
-            listTaiKhoan.Add(new Taikhoan("B", "456", false));
+            ListTaiKhoan = new List<Taikhoan>();
+            ListTaiKhoan.Add(new Taikhoan("admin", "admin123", true));
+            ListTaiKhoan.Add(new Taikhoan("A", "123", false));
+            ListTaiKhoan.Add(new Taikhoan("B", "456", false));
         }
     }
 }

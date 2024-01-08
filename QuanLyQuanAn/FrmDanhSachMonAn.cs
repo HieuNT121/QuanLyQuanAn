@@ -21,8 +21,8 @@ namespace QuanLyQuanAn
         }
         void LoadDataMon()
         {
-            dtgvDanhSachMonAn.DataSource = null;
-            dtgvDanhSachMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
+            dtgvMonAn.DataSource = null;
+            dtgvMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
                                     from cate in DanhSachPhanLoai.Instance.ListCategory
                                     where mon.IdCategory == cate.Id
                                     select new
@@ -32,7 +32,7 @@ namespace QuanLyQuanAn
                                         Category = cate.Name,
                                         Giá = mon.Price
                                     }).ToList();
-            dtgvDanhSachMonAn.Refresh();
+            dtgvMonAn.Refresh();
         }
 
         private void FrmThucDon_Load(object sender, EventArgs e)
@@ -43,10 +43,10 @@ namespace QuanLyQuanAn
         private void btnTim_Click(object sender, EventArgs e)
         {
             LoadDataMon();
-            dtgvDanhSachMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
+            dtgvMonAn.DataSource = (from mon in DanhSachPhanLoai.Instance.ListMonAn
                                     from cate in DanhSachPhanLoai.Instance.ListCategory
                                     where mon.IdCategory == cate.Id
-                                    && mon.Name == txtMonAn.Text
+                                    && mon.Name == tenTimKiem.Text
                                     select new
                                     {
                                         ID = mon.Id,
@@ -54,7 +54,7 @@ namespace QuanLyQuanAn
                                         Category = cate.Name,
                                         Giá = mon.Price
                                     }).ToList();
-            dtgvDanhSachMonAn.Refresh();
+            dtgvMonAn.Refresh();
         }
 
 
@@ -73,20 +73,20 @@ namespace QuanLyQuanAn
         {
             index = e.RowIndex;
 
-            tbMaMon.Text = dtgvDanhSachMonAn.Rows[index].Cells[0].Value.ToString();
-            tbTenMon.Text = dtgvDanhSachMonAn.Rows[index].Cells[1].Value.ToString();
-            tbPhanLoai.Text = dtgvDanhSachMonAn.Rows[index].Cells[2].Value.ToString();
-            tbGiaCa.Text = dtgvDanhSachMonAn.Rows[index].Cells[3].Value.ToString();
+            tbxIdFood.Text = dtgvMonAn.Rows[index].Cells[0].Value.ToString();
+            tbxFoodName.Text = dtgvMonAn.Rows[index].Cells[1].Value.ToString();
+            tbxCategory.Text = dtgvMonAn.Rows[index].Cells[2].Value.ToString();
+            tbxFoodPrice.Text = dtgvMonAn.Rows[index].Cells[3].Value.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             int check = 0;
             string[] bien = new string[5];
-            bien[0] = tbMaMon.Text;
-            bien[1] = tbTenMon.Text;
-            bien[2] = tbPhanLoai.Text;
-            bien[3] = tbGiaCa.Text;
+            bien[0] = tbxIdFood.Text;
+            bien[1] = tbxFoodName.Text;
+            bien[2] = tbxCategory.Text;
+            bien[3] = tbxFoodPrice.Text;
 
             foreach (string a in bien)
             {
@@ -122,10 +122,10 @@ namespace QuanLyQuanAn
             }
             int check = 0;
             string[] bien = new string[5];
-            bien[0] = tbMaMon.Text;
-            bien[1] = tbTenMon.Text;
-            bien[2] = tbPhanLoai.Text;
-            bien[3] = tbGiaCa.Text;
+            bien[0] = tbxIdFood.Text;
+            bien[1] = tbxFoodName.Text;
+            bien[2] = tbxCategory.Text;
+            bien[3] = tbxFoodPrice.Text;
 
             for (int i = 0; i < 4; i++)
             {
@@ -156,11 +156,6 @@ namespace QuanLyQuanAn
                 DanhSachPhanLoai.Instance.ListMonAn[index].Price = bien[3];
             }
             LoadDataMon();
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
         }
 
     }

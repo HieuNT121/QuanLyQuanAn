@@ -10,25 +10,24 @@ namespace QuanLyQuanAn
     {
         private static DanhSachNhaCungCap instance;
 
-        public static DanhSachNhaCungCap Instance 
+        public static DanhSachNhaCungCap Instance
         {
             get
             {
                 if (instance == null)
-                    instance = new DanhSachNhaCungCap);
+                    instance = new DanhSachNhaCungCap();
                 return instance;
             }
             set => instance = value;
         }
 
-        List<NhaCungCap> danhSachNhaCungCap;
-
-        public List<NhaCungCap> DanhSachNhaCungCap { get => danhSachNhaCungCap; set => danhSachNhaCungCap = value; }
+        List<NhaCungCap> listNhaCungCap;
+        public List<NhaCungCap> ListNhaCungCap { get => listNhaCungCap; set => listNhaCungCap = value; }
 
         DanhSachNhaCungCap()
         {
-            danhSachNhaCungCap = new List<NhaCungCap>();
-            danhSachNhaCungCap.Add(new NhaCungCap(1, "name", 100, 0123456789));
+            ListNhaCungCap = new List<NhaCungCap>();
+            ListNhaCungCap.Add(new NhaCungCap(1, "name", "1000", "123456789"));
         }
     }
 
