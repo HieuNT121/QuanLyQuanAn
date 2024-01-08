@@ -14,6 +14,7 @@ namespace QuanLyQuanAn
 {
     public partial class FrmDanhSachNhaCungCap : Form
     {
+        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         int index = -1;
         public FrmDanhSachNhaCungCap()
         {
@@ -23,9 +24,8 @@ namespace QuanLyQuanAn
 
         void LoadDataNhaCungCap()
         {
-            List<NhaCungCap> ListNhaCungCap = TruyenDuLieuVaoList(connectionStr);
             dtgvNhaCungCap.DataSource = null;
-            dtgvNhaCungCap.DataSource = ListNhaCungCap;
+            dtgvNhaCungCap.DataSource = DanhSachNhaCungCap.Instance.ListNhaCungCap;
             dtgvNhaCungCap.Columns["MaNhaCungCap"].HeaderText = "Mã nhà cung cấp";
             dtgvNhaCungCap.Columns["TenNhaCungCap"].HeaderText = "Tên nhà cung cấp";
             dtgvNhaCungCap.Columns["DiaChi"].HeaderText = "Địa chỉ";
@@ -94,7 +94,7 @@ namespace QuanLyQuanAn
                     LoadDataNhaCungCap();
                 }
             }
-            CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            Data.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
             LoadDataNhaCungCap();
         }
 
@@ -133,107 +133,10 @@ namespace QuanLyQuanAn
                         LoadDataNhaCungCap();
                 }
             }
-            CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
+            Data.CapNhatvaThemDuLieu(DanhSachNhaCungCap.Instance.ListNhaCungCap, connectionStr);
             LoadDataNhaCungCap();
         }
 
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
-        static void CapNhatvaThemDuLieu(List<NhaCungCap> danhSach, string connectionStr)
-        {
-            using (SqlConnection connection = new SqlConnection(connectionStr))
-            {
-                connection.Open();
-                foreach (NhaCungCap NCC in danhSach)
-                {
-                    string checkIfExists = "SELECT COUNT(*) FROM NhaCungCap WHERE MaNhaCungCap = @MaNhaCungCap";
-
-                    using (SqlCommand checkIfExistsCommand = new SqlCommand(checkIfExists, connection))
-                    {
-                        checkIfExistsCommand.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
-
-                        int existingRecords = (int)checkIfExistsCommand.ExecuteScalar();
-
-                        if (existingRecords > 0)
-                        {
-                            CapNhat(NCC, connection);
-                        }
-                        else
-                        {
-                            Them(NCC, connection);
-                        }
-                    }
-                        
-                }
-            }
-        }
-
-        static void CapNhat(NhaCungCap NCC, SqlConnection connection)
-        {
-            string updateQuery = "UPDATE NhaCungCap " +
-                                 "SET TenNhaCungCap = @TenNhaCungCap, DiaChi = @DiaChi, SoDienThoai = @SoDienThoai " +
-                                 "WHERE MaNhaCungCap = @MaNhaCungCap";
-
-            using (SqlCommand capNhatCmd = new SqlCommand(updateQuery, connection))
-            {
-                capNhatCmd.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
-                capNhatCmd.Parameters.AddWithValue("@TenNhaCungCap", NCC.TenNhaCungCap);
-                capNhatCmd.Parameters.AddWithValue("@DiaChi", NCC.DiaChi);
-                capNhatCmd.Parameters.AddWithValue("@SoDienThoai", NCC.SoDienThoai);
-
-                capNhatCmd.ExecuteNonQuery();
-            }
-        }
-
-        static void Them(NhaCungCap NCC, SqlConnection connection)
-        {
-            string insertQuery = "INSERT INTO NhaCungCap (MaNhaCungCap, TenNhaCungCap, DiaChi, SoDienThoai) " +
-                                 "VALUES (@MaNhaCungCap, @TenNhaCungCap, @DiaChi, @SoDienTHoai)";
-
-            using (SqlCommand themCmd = new SqlCommand(insertQuery, connection))
-            {
-                themCmd.Parameters.AddWithValue("@MaNhaCungCap", NCC.MaNhaCungCap);
-                themCmd.Parameters.AddWithValue("@TenNhaCungCap", NCC.TenNhaCungCap);
-                themCmd.Parameters.AddWithValue("@DiaChi", NCC.DiaChi);
-                themCmd.Parameters.AddWithValue("@SoDienThoai", NCC.SoDienThoai);
-
-                themCmd.ExecuteNonQuery();
-            }
-        }
-
-        public static List<NhaCungCap> TruyenDuLieuVaoList(string connectionStr)
-        {
-            List<NhaCungCap> ListNhaCungCap = DanhSachNhaCungCap.Instance.ListNhaCungCap;
-            using (SqlConnection connection = new SqlConnection(connectionStr))
-            {
-                connection.Open();
-
-                string query = $"SELECT * FROM NhaCungCap";
-
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    try
-                    {
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                string MaNhaCungCap = reader["MaNhaCungCap"].ToString();
-                                string TenNhaCungCap = reader["TenNhaCungCap"].ToString();
-                                string DiaChi = reader["DiaChi"].ToString();
-                                string SoDienThoai = reader["SoDienThoai"].ToString();
-
-                                ListNhaCungCap.Add(new NhaCungCap(MaNhaCungCap, TenNhaCungCap, DiaChi, SoDienThoai));
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine($"Lỗi: {ex.Message}");
-                    }
-                }
-            }
-
-            return ListNhaCungCap;
-        }
+        
     }
 }
