@@ -29,7 +29,8 @@ namespace QuanLyQuanAn
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            Danhsachtaikhoan.Instance.ListTaiKhoan.RemoveAt(index);
+            LoadListUser();
         }
 
         private void FrmQuanLyTaiKhoan_Load(object sender, EventArgs e)

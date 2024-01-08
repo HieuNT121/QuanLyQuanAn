@@ -35,7 +35,7 @@ namespace QuanLyQuanAn
         {
             this.TenTaikhoan = tenTaikhoan;
             this.MatKhau = matKhau;
-            this.loaiTaiKhoan = loaiTaiKhoan;
+            this.LoaiTaiKhoan = loaiTaiKhoan;
         }
     }
 }
