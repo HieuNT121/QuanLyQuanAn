@@ -39,16 +39,6 @@ namespace QuanLyQuanAn
             OpenChildForm(new FrmDoanhSo());
         }
 
-        private void btLuongKhach_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FrmLuongKhach());
-        }
-
-        private void btChiTieu_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FrmChiTieu());
-        }
-
         private void btLuong_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FrmLuong());
