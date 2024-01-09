@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTimKiemVatTu));
             this.label1 = new System.Windows.Forms.Label();
-            this.cbLuaChonTimKiem = new System.Windows.Forms.ComboBox();
+            this.cbLuaChon = new System.Windows.Forms.ComboBox();
             this.tbThongTinTimKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtgvTimKiemVatTu = new System.Windows.Forms.DataGridView();
+            this.dgvTimKiem = new System.Windows.Forms.DataGridView();
             this.ColumnMaVatTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTenVatTu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNhaCungCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbTitle = new System.Windows.Forms.Label();
             this.btTim = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvTimKiemVatTu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiem)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,19 +53,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Lựa chọn tìm kiếm";
             // 
-            // cbLuaChonTimKiem
+            // cbLuaChon
             // 
-            this.cbLuaChonTimKiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbLuaChonTimKiem.FormattingEnabled = true;
-            this.cbLuaChonTimKiem.Items.AddRange(new object[] {
+            this.cbLuaChon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLuaChon.FormattingEnabled = true;
+            this.cbLuaChon.Items.AddRange(new object[] {
             "Mã Vật Tư",
             "Tên Vật Tư",
             "Nhà Cung Cấp",
             "Số Lượng"});
-            this.cbLuaChonTimKiem.Location = new System.Drawing.Point(215, 77);
-            this.cbLuaChonTimKiem.Name = "cbLuaChonTimKiem";
-            this.cbLuaChonTimKiem.Size = new System.Drawing.Size(258, 31);
-            this.cbLuaChonTimKiem.TabIndex = 2;
+            this.cbLuaChon.Location = new System.Drawing.Point(215, 77);
+            this.cbLuaChon.Name = "cbLuaChon";
+            this.cbLuaChon.Size = new System.Drawing.Size(258, 31);
+            this.cbLuaChon.TabIndex = 2;
             // 
             // tbThongTinTimKiem
             // 
@@ -85,20 +85,20 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Thông tin tìm kiếm";
             // 
-            // dtgvTimKiemVatTu
+            // dgvTimKiem
             // 
-            this.dtgvTimKiemVatTu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvTimKiemVatTu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvTimKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTimKiem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnMaVatTu,
             this.ColumnTenVatTu,
             this.ColumnNhaCungCap,
             this.ColumnSoLuong});
-            this.dtgvTimKiemVatTu.Location = new System.Drawing.Point(45, 203);
-            this.dtgvTimKiemVatTu.Name = "dtgvTimKiemVatTu";
-            this.dtgvTimKiemVatTu.RowHeadersWidth = 51;
-            this.dtgvTimKiemVatTu.RowTemplate.Height = 24;
-            this.dtgvTimKiemVatTu.Size = new System.Drawing.Size(554, 373);
-            this.dtgvTimKiemVatTu.TabIndex = 5;
+            this.dgvTimKiem.Location = new System.Drawing.Point(45, 203);
+            this.dgvTimKiem.Name = "dgvTimKiem";
+            this.dgvTimKiem.RowHeadersWidth = 51;
+            this.dgvTimKiem.RowTemplate.Height = 24;
+            this.dgvTimKiem.Size = new System.Drawing.Size(554, 373);
+            this.dgvTimKiem.TabIndex = 5;
             // 
             // ColumnMaVatTu
             // 
@@ -150,6 +150,7 @@
             this.btTim.TabIndex = 23;
             this.btTim.Text = "    Tìm";
             this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // FrmTimKiemVatTu
             // 
@@ -159,15 +160,15 @@
             this.ClientSize = new System.Drawing.Size(1034, 600);
             this.Controls.Add(this.btTim);
             this.Controls.Add(this.lbTitle);
-            this.Controls.Add(this.dtgvTimKiemVatTu);
+            this.Controls.Add(this.dgvTimKiem);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbThongTinTimKiem);
-            this.Controls.Add(this.cbLuaChonTimKiem);
+            this.Controls.Add(this.cbLuaChon);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTimKiemVatTu";
             this.Text = "FrmSapXepHang";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvTimKiemVatTu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTimKiem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,10 +176,10 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbLuaChonTimKiem;
+        private System.Windows.Forms.ComboBox cbLuaChon;
         private System.Windows.Forms.TextBox tbThongTinTimKiem;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dtgvTimKiemVatTu;
+        private System.Windows.Forms.DataGridView dgvTimKiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMaVatTu;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTenVatTu;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNhaCungCap;
