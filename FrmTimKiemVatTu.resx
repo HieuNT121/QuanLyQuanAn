@@ -117,27 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btTim.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYa
-        HSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgo
-        KCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAeAB4DASIAAhEBAxEB/8QA
-        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
-        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
-        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
-        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
-        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
-        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
-        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
-        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC58Zfih4m8R+Oj8PfhgZUuUcwXV3A22RpB99Vf+BU53Nwcg8gD
-        nIX9l3xLLD9vufGNv/bWN3+rkYbv+uu7d+O2nfsaLHP4z8ZXWpYOteUn3vvYaRjL/wCPBM19Y0AfK3w0
-        +JHi34dePYfA3xQlluLWdljgvJ38xotxwjiQ/fiJ455X2wRX1TXy7+2/FaC08Jz/ACjUPMuEUj7xjwhP
-        4A4x9TX0noDzyaFpr3mftLW0bS567yoz+uaAPmH4r+DPE/wu+I83xC8AwPcabcO0t3CiFxEWOZEkUcmN
-        j82R90+mATow/tZad/Zu6bwvd/2ht/1a3S+UT/vbcgf8Br6crIk8M6DJefa5NE0trrO7zmtIy+fXdjNA
-        HwT4+8aeIPE3jLSvFni7SnaxLq9naSRvHbyQI4JjRj94HuwzyfoK+5vh3420jx74bh1fQ5tyN8s0DH95
-        BJ3Rx6+/QjkUvxA8FaR478NzaPrkG6JvmilUYkgfHDoexH5EcHivm74K/CnxLpnjnxdY6d4ufSU0xltJ
-        ZrJNzXBbDoSjjaAF/EE4HGSQD//Z
-</value>
-  </data>
 </root>

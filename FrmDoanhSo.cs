@@ -11,7 +11,8 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmTimKiemVatTu : Form
+
+    public partial class FrmDoanhSo : Form
     {
         SqlConnection connection;
         SqlCommand command;
@@ -21,24 +22,29 @@ namespace QuanLyQuanAn
 
         void loadData()
         {
-            string TimKiem = "MaNguyenLieu";
-            if (cbLuaChon.Text == "Tên Hàng Hóa") TimKiem = "TenNGuenLieu";
-            else if (cbLuaChon.Text == "Nhà Cung Cấp") TimKiem = "MaNhaCungCap";
-            else if (cbLuaChon.Text == "Đơn Giá") TimKiem = "DonGia";
+            int iTongThu = 0;
+            int iTongChi = 0;
             command = connection.CreateCommand();
-            command.CommandText = "select MaNguyenLieu,TenNguenLieu,MaNhaCungCap,SoLuong,DonGia,NgayNhap from KhoHang where " +TimKiem+ "='"+tbThongTinTimKiem.Text+"'";
+            command.CommandText = "select * from ThongKeDoanhSo where ThoiGian between ' "+dtpStart.Text+" ' and '"+dtpEnd.Text+"'";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
-            dgvTimKiem.DataSource = table;
-        }
+            dgvDoanhSo.DataSource = table;
+            foreach (DataRow row in table.Rows)
+            {
+                iTongChi += int.Parse(row["TongThu"].ToString());
+                iTongChi += int.Parse(row["TongChi"].ToString());
+            }
+            tbTongChi.Text = iTongChi.ToString();
+            tbTongThu.Text = iTongThu.ToString();
 
-        public FrmTimKiemVatTu()
+        }
+        public FrmDoanhSo()
         {
             InitializeComponent();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        private void btnThongKe_Click(object sender, EventArgs e)
         {
             connection = new SqlConnection(str);
             connection.Open();
