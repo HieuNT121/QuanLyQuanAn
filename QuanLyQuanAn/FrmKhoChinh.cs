@@ -43,15 +43,5 @@ namespace QuanLyQuanAn
         {
             OpenChildForm(new FrmTimKiemVatTu());
         }
-
-        private void btnTrinhTrang_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FrmTinhTrangKho());
-        }
-
-        private void btnLienHe_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new FrmLienHeNhaCungCap());
-        }
     }
 }
