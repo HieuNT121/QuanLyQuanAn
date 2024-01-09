@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanAn
 {
-    public partial class FrmKhoChinh : Form
+    public partial class FrmThongKeChinh : Form
     {
-        public FrmKhoChinh()
+        public FrmThongKeChinh()
         {
             InitializeComponent();
         }
@@ -34,14 +34,15 @@ namespace QuanLyQuanAn
             childForm.Show();
         }
 
-        private void btnCapNhat_Click(object sender, EventArgs e)
+        private void btnDoanhSo_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmCapNhatKho());
+            OpenChildForm(new FrmDoanhSo());
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
+
+        private void btnLuong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmTimKiemVatTu());
+            OpenChildForm(new FrmLuong());
         }
     }
 }

@@ -30,7 +30,6 @@ namespace QuanLyQuanAn
             ListNhaCungCap = DataNhaCungCap.TruyenDuLieuVaoList(connectionStr);
         }
     }
-
     public class NhaCungCap
     {
         private string maNhaCungCap;
@@ -164,7 +163,7 @@ namespace QuanLyQuanAn
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@MaMonNhaCungcap", maNhaCungCap);
+                    command.Parameters.AddWithValue("@MaNhaCungcap", maNhaCungCap);
 
                     try
                     {
