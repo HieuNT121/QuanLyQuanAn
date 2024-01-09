@@ -32,18 +32,19 @@
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpStart = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgayBatDau = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtpEnd = new System.Windows.Forms.DateTimePicker();
-            this.dgvDoanhSo = new System.Windows.Forms.DataGridView();
+            this.dtpkNgayKetThuc = new System.Windows.Forms.DateTimePicker();
+            this.dtgvDoanhSo = new System.Windows.Forms.DataGridView();
+            this.Ban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tong_Tien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thoi_gian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btThongKe = new System.Windows.Forms.Button();
-            this.btnIn = new System.Windows.Forms.Button();
-            this.tbTongChi = new System.Windows.Forms.TextBox();
-            this.tbTongThu = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.TongDoanhThu = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhSo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhSo)).BeginInit();
             this.SuspendLayout();
             // 
             // elipseControl1
@@ -54,9 +55,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.dtpStart);
+            this.flowLayoutPanel1.Controls.Add(this.dtpkNgayBatDau);
             this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.dtpEnd);
+            this.flowLayoutPanel1.Controls.Add(this.dtpkNgayKetThuc);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 38);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(901, 37);
@@ -74,14 +75,14 @@
             this.label1.Text = "Doanh thu từ ngày";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dtpStart
+            // dtpkNgayBatDau
             // 
-            this.dtpStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpStart.Location = new System.Drawing.Point(185, 3);
-            this.dtpStart.Name = "dtpStart";
-            this.dtpStart.Size = new System.Drawing.Size(299, 28);
-            this.dtpStart.TabIndex = 2;
+            this.dtpkNgayBatDau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayBatDau.Location = new System.Drawing.Point(185, 3);
+            this.dtpkNgayBatDau.Name = "dtpkNgayBatDau";
+            this.dtpkNgayBatDau.Size = new System.Drawing.Size(299, 28);
+            this.dtpkNgayBatDau.TabIndex = 2;
             // 
             // label2
             // 
@@ -95,24 +96,57 @@
             this.label2.Text = "đến ngày";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // dtpEnd
+            // dtpkNgayKetThuc
             // 
-            this.dtpEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEnd.Location = new System.Drawing.Point(589, 3);
-            this.dtpEnd.Name = "dtpEnd";
-            this.dtpEnd.Size = new System.Drawing.Size(292, 28);
-            this.dtpEnd.TabIndex = 4;
+            this.dtpkNgayKetThuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayKetThuc.Location = new System.Drawing.Point(589, 3);
+            this.dtpkNgayKetThuc.Name = "dtpkNgayKetThuc";
+            this.dtpkNgayKetThuc.Size = new System.Drawing.Size(292, 28);
+            this.dtpkNgayKetThuc.TabIndex = 4;
             // 
-            // dgvDoanhSo
+            // dtgvDoanhSo
             // 
-            this.dgvDoanhSo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDoanhSo.Location = new System.Drawing.Point(89, 135);
-            this.dgvDoanhSo.Name = "dgvDoanhSo";
-            this.dgvDoanhSo.RowHeadersWidth = 51;
-            this.dgvDoanhSo.RowTemplate.Height = 24;
-            this.dgvDoanhSo.Size = new System.Drawing.Size(869, 339);
-            this.dgvDoanhSo.TabIndex = 1;
+            this.dtgvDoanhSo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDoanhSo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ban,
+            this.Tong_Tien,
+            this.Thoi_gian,
+            this.Ngay});
+            this.dtgvDoanhSo.Location = new System.Drawing.Point(172, 135);
+            this.dtgvDoanhSo.Name = "dtgvDoanhSo";
+            this.dtgvDoanhSo.RowHeadersWidth = 51;
+            this.dtgvDoanhSo.RowTemplate.Height = 24;
+            this.dtgvDoanhSo.Size = new System.Drawing.Size(677, 339);
+            this.dtgvDoanhSo.TabIndex = 1;
+            // 
+            // Ban
+            // 
+            this.Ban.HeaderText = "Bàn số";
+            this.Ban.MinimumWidth = 6;
+            this.Ban.Name = "Ban";
+            this.Ban.Width = 90;
+            // 
+            // Tong_Tien
+            // 
+            this.Tong_Tien.HeaderText = "Tổng Tiền";
+            this.Tong_Tien.MinimumWidth = 6;
+            this.Tong_Tien.Name = "Tong_Tien";
+            this.Tong_Tien.Width = 170;
+            // 
+            // Thoi_gian
+            // 
+            this.Thoi_gian.HeaderText = "Thời gian";
+            this.Thoi_gian.MinimumWidth = 6;
+            this.Thoi_gian.Name = "Thoi_gian";
+            this.Thoi_gian.Width = 150;
+            // 
+            // Ngay
+            // 
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.MinimumWidth = 6;
+            this.Ngay.Name = "Ngay";
+            this.Ngay.Width = 210;
             // 
             // btThongKe
             // 
@@ -125,50 +159,25 @@
             this.btThongKe.TabIndex = 2;
             this.btThongKe.Text = "   Thống kê";
             this.btThongKe.UseVisualStyleBackColor = true;
-            this.btThongKe.Click += new System.EventHandler(this.btThongKe_Click);
             // 
-            // btnIn
+            // TongDoanhThu
             // 
-            this.btnIn.Location = new System.Drawing.Point(643, 559);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(151, 33);
-            this.btnIn.TabIndex = 16;
-            this.btnIn.Text = "In Kết Quả";
-            this.btnIn.UseVisualStyleBackColor = true;
+            this.TongDoanhThu.AutoSize = true;
+            this.TongDoanhThu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TongDoanhThu.ForeColor = System.Drawing.Color.Black;
+            this.TongDoanhThu.Location = new System.Drawing.Point(271, 517);
+            this.TongDoanhThu.Name = "TongDoanhThu";
+            this.TongDoanhThu.Size = new System.Drawing.Size(145, 25);
+            this.TongDoanhThu.TabIndex = 3;
+            this.TongDoanhThu.Text = "Tổng doanh thu";
             // 
-            // tbTongChi
+            // textBox1
             // 
-            this.tbTongChi.Location = new System.Drawing.Point(673, 511);
-            this.tbTongChi.Name = "tbTongChi";
-            this.tbTongChi.Size = new System.Drawing.Size(148, 22);
-            this.tbTongChi.TabIndex = 15;
-            // 
-            // tbTongThu
-            // 
-            this.tbTongThu.Location = new System.Drawing.Point(673, 480);
-            this.tbTongThu.Name = "tbTongThu";
-            this.tbTongThu.Size = new System.Drawing.Size(148, 22);
-            this.tbTongThu.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(583, 517);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Tổng Chi:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(583, 480);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Tổng Thu: ";
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(422, 517);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(317, 31);
+            this.textBox1.TabIndex = 4;
             // 
             // FrmDoanhSo
             // 
@@ -176,20 +185,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
-            this.Controls.Add(this.btnIn);
-            this.Controls.Add(this.tbTongChi);
-            this.Controls.Add(this.tbTongThu);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TongDoanhThu);
             this.Controls.Add(this.btThongKe);
-            this.Controls.Add(this.dgvDoanhSo);
+            this.Controls.Add(this.dtgvDoanhSo);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDoanhSo";
             this.Text = "FrmDoanhThu";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDoanhSo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvDoanhSo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,15 +206,16 @@
         private elipseControl elipseControl1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpStart;
-        private System.Windows.Forms.DataGridView dgvDoanhSo;
+        private System.Windows.Forms.DateTimePicker dtpkNgayBatDau;
+        private System.Windows.Forms.DataGridView dtgvDoanhSo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtpEnd;
+        private System.Windows.Forms.DateTimePicker dtpkNgayKetThuc;
+        private System.Windows.Forms.Label TongDoanhThu;
         private System.Windows.Forms.Button btThongKe;
-        private System.Windows.Forms.Button btnIn;
-        private System.Windows.Forms.TextBox tbTongChi;
-        private System.Windows.Forms.TextBox tbTongThu;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tong_Tien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thoi_gian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
