@@ -24,5 +24,7 @@ namespace QuanLyQuanAn
             TimeLabel.Text = formattedTime;
         }
 
+
+
     }
 }

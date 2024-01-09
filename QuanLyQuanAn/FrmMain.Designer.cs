@@ -221,8 +221,7 @@
             // 
             // sideBarTimer
             // 
-            this.sideBarTimer.Interval = 10;
-            this.sideBarTimer.Tick += new System.EventHandler(this.sideBarTimer_Tick);
+
             // 
             // panel_top
             // 

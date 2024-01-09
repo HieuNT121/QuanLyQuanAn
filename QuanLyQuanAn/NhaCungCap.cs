@@ -30,7 +30,6 @@ namespace QuanLyQuanAn
             ListNhaCungCap = DataNhaCungCap.TruyenDuLieuVaoList(connectionStr);
         }
     }
-
     public class NhaCungCap
     {
         private string maNhaCungCap;
