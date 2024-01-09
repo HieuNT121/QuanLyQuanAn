@@ -20,15 +20,22 @@ namespace QuanLyQuanAn
         List<Taikhoan> listTaiKhoan = Danhsachtaikhoan.Instance.ListTaiKhoan;
         bool KiemtraDangNhap(string tentaikhoan, string matkhau)
         {
+            bool a = false;
             for (int i = 0; i < listTaiKhoan.Count; i++)
             {
                 if (tentaikhoan == listTaiKhoan[i].TenTaikhoan && matkhau == listTaiKhoan[i].MatKhau)
                 {
-                    Const.loaiTaiKhoan = listTaiKhoan[i].LoaiTaiKhoan;
-                    return true;
+                    a = true;
                 }
             }
-            return false;
+            if (a == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -23,19 +23,23 @@ namespace QuanLyQuanAn
             set => matKhau = value; 
         }
 
-        private bool loaiTaiKhoan;
-        public bool LoaiTaiKhoan 
+        private string phanLoai;
+        public string PhanLoai 
         { 
-            get => loaiTaiKhoan; 
-            set => loaiTaiKhoan = value; 
+            get => phanLoai; 
+            set => phanLoai = value; 
         }
+        public string MaNhanVien { get => maNhanVien; set => maNhanVien = value; }
+
+        private string maNhanVien;
 
 
-        public Taikhoan(string tenTaikhoan, string matKhau, bool loaiTaiKhoan)
+        public Taikhoan(string tenTaikhoan, string matKhau, string phanLoai, string maNhanVien)
         {
             this.TenTaikhoan = tenTaikhoan;
             this.MatKhau = matKhau;
-            this.LoaiTaiKhoan = loaiTaiKhoan;
+            this.PhanLoai = phanLoai;
+            this.MaNhanVien = maNhanVien;
         }
     }
 }

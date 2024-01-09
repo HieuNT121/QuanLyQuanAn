@@ -13,11 +13,13 @@ namespace QuanLyQuanAn
     public partial class FrmQuanLyTaiKhoan : Form
     {
         List<string> listAccountType = new List<string>() { "Quản lý", "Nhân viên" };
+        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
         int index = -1;
 
         public FrmQuanLyTaiKhoan()
         {
             InitializeComponent();
+            LoadListUser();
         }
 
         void LoadListUser()
@@ -30,6 +32,8 @@ namespace QuanLyQuanAn
         private void btnXoa_Click(object sender, EventArgs e)
         {
             Danhsachtaikhoan.Instance.ListTaiKhoan.RemoveAt(index);
+            string tenTaiKhoan = tbTenTaiKhoan.Text;
+            DataTaiKhoan.Xoa(connectionStr, tenTaiKhoan);
             LoadListUser();
         }
 
@@ -43,17 +47,19 @@ namespace QuanLyQuanAn
         {
             string userName = tbTenTaiKhoan.Text;
             string password = tbMatKhau.Text;
-            bool accountType = false;
+            string type = "Nhân viên";
+            string maNhanVien = tbxMaNhanVIen.Text;
             switch (cbLoaiTaiKhoan.Text)
             {
                 case "Quản lý":
-                    accountType = true;
+                    type = "Quản lý";
                     break;
                 case "Nhân viên":
-                    accountType = false;
+                    type = "Nhân viên";
                     break;
             }
-            Danhsachtaikhoan.Instance.ListTaiKhoan.Add(new Taikhoan(userName, password, accountType));
+            Danhsachtaikhoan.Instance.ListTaiKhoan.Add(new Taikhoan(userName, password, type, maNhanVien));
+            DataTaiKhoan.CapNhatvaThemDuLieu(Danhsachtaikhoan.Instance.ListTaiKhoan, connectionStr);
             LoadListUser();
         }
 
@@ -61,19 +67,22 @@ namespace QuanLyQuanAn
         {
             string userName = tbTenTaiKhoan.Text;
             string password = tbMatKhau.Text;
-            bool accountType = false;
+            string type = "Nhân viên";
+            string maNhanVien = tbxMaNhanVIen.Text;
             switch (cbLoaiTaiKhoan.Text)
             {
                 case "Quản lý":
-                    accountType = true;
+                    type = "Quản lý";
                     break;
                 case "Nhân viên":
-                    accountType = false;
+                    type = "Nhân viên";
                     break;
             }
             Danhsachtaikhoan.Instance.ListTaiKhoan[index].TenTaikhoan = userName;
             Danhsachtaikhoan.Instance.ListTaiKhoan[index].MatKhau = password;
-            Danhsachtaikhoan.Instance.ListTaiKhoan[index].LoaiTaiKhoan = accountType;
+            Danhsachtaikhoan.Instance.ListTaiKhoan[index].PhanLoai = type;
+            Danhsachtaikhoan.Instance.ListTaiKhoan[index].MaNhanVien = maNhanVien;
+            DataTaiKhoan.CapNhatvaThemDuLieu(Danhsachtaikhoan.Instance.ListTaiKhoan, connectionStr);
             LoadListUser();
         }
 
@@ -83,12 +92,14 @@ namespace QuanLyQuanAn
 
             tbTenTaiKhoan.Text = dtvgUser.Rows[index].Cells[0].Value.ToString();
             tbMatKhau.Text = dtvgUser.Rows[index].Cells[1].Value.ToString();
-            switch (Danhsachtaikhoan.Instance.ListTaiKhoan[index].LoaiTaiKhoan)
+            cbLoaiTaiKhoan.Text = dtvgUser.Rows[index].Cells[2].Value.ToString();
+            tbxMaNhanVIen.Text = dtvgUser.Rows[index].Cells[3].Value.ToString();
+            switch (Danhsachtaikhoan.Instance.ListTaiKhoan[index].PhanLoai)
             {
-                case true:
+                case "Quản lý":
                     cbLoaiTaiKhoan.Text = "Quản lý";
                     break;
-                case false:
+                case "Nhân viên":
                     cbLoaiTaiKhoan.Text = "Nhân viên";
                     break;
             }
