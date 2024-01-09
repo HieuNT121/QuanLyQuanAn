@@ -43,10 +43,10 @@
             this.btQuanlyHoaDon = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btBaoCaoThongKe = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.sideBarTimer = new System.Windows.Forms.Timer(this.components);
             this.panel_top = new System.Windows.Forms.Panel();
             this.panel_body = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.sideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -219,9 +219,15 @@
             this.btBaoCaoThongKe.UseVisualStyleBackColor = false;
             this.btBaoCaoThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
-            // sideBarTimer
+            // btnExit
             // 
-
+            this.btnExit.Location = new System.Drawing.Point(3, 683);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel_top
             // 
@@ -238,16 +244,6 @@
             this.panel_body.Name = "panel_body";
             this.panel_body.Size = new System.Drawing.Size(1034, 710);
             this.panel_body.TabIndex = 3;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(3, 683);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmMain
             // 

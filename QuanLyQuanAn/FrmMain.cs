@@ -18,6 +18,7 @@ namespace QuanLyQuanAn
         public FrmMain()
         {
             InitializeComponent();
+            PhanQuyen();
         }
 
         //private void FrmMain_Load(object sender, EventArgs e)
@@ -58,12 +59,28 @@ namespace QuanLyQuanAn
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmThongKeChinh());
+            
+            if (TypeTaiKhoan.AccountType == "Quản lý")
+            {
+                OpenChildForm(new FrmThongKeChinh());
+            }
+            else
+            {
+                MessageBox.Show("Bạn không phải là quản lý", "Cảnh báo");
+            }
         }
 
         private void btnHeThong_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmHeThongChinh());
+            if(TypeTaiKhoan.AccountType == "Quản lý")
+            {
+                OpenChildForm(new FrmHeThongChinh());
+            }
+            else
+            {
+                MessageBox.Show("Bạn không phải là quản lý", "Cảnh báo");
+            }
+
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
@@ -79,6 +96,19 @@ namespace QuanLyQuanAn
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        void PhanQuyen()
+        {
+            if (TypeTaiKhoan.AccountType == "Nhân viên")
+            {
+                btQuantriHeThong.Enabled = btBaoCaoThongKe.Enabled = false;
+            }
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            btQuantriHeThong.Enabled = btBaoCaoThongKe.Enabled = false;
         }
     }
 }

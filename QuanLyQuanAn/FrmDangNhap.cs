@@ -25,17 +25,11 @@ namespace QuanLyQuanAn
             {
                 if (tentaikhoan == listTaiKhoan[i].TenTaikhoan && matkhau == listTaiKhoan[i].MatKhau)
                 {
+                    TypeTaiKhoan.AccountType = listTaiKhoan[i].PhanLoai;
                     a = true;
                 }
             }
-            if (a == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return a;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -58,7 +52,7 @@ namespace QuanLyQuanAn
             }
         }
 
-        private void cbxMatKhau_CheckedChanged(object sender, EventArgs e)
+        private void cbxMatKhau_CheckedChanged_1(object sender, EventArgs e)
         {
             if (cbxMatKhau.Checked)
             {

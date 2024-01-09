@@ -11,23 +11,23 @@ namespace QuanLyQuanAn
         private string tenTaikhoan;
 
         public string TenTaikhoan
-        { 
-            get => tenTaikhoan; 
-            set => tenTaikhoan = value; 
+        {
+            get => tenTaikhoan;
+            set => tenTaikhoan = value;
         }
 
         private string matKhau;
-        public string MatKhau 
-        { 
-            get => matKhau; 
-            set => matKhau = value; 
+        public string MatKhau
+        {
+            get => matKhau;
+            set => matKhau = value;
         }
 
         private string phanLoai;
-        public string PhanLoai 
-        { 
-            get => phanLoai; 
-            set => phanLoai = value; 
+        public string PhanLoai
+        {
+            get => phanLoai;
+            set => phanLoai = value;
         }
         public string MaNhanVien { get => maNhanVien; set => maNhanVien = value; }
 
@@ -42,4 +42,10 @@ namespace QuanLyQuanAn
             this.MaNhanVien = maNhanVien;
         }
     }
+
+    public class TypeTaiKhoan
+    {
+        public static string AccountType;
+    }
+
 }

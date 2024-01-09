@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Const.cs" />
     <Compile Include="Danhsachtaikhoan.cs" />
     <Compile Include="DataAccess.cs" />
     <Compile Include="elipseControl.cs">

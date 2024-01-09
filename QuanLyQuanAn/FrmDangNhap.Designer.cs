@@ -126,6 +126,7 @@
             this.cbxMatKhau.Size = new System.Drawing.Size(18, 17);
             this.cbxMatKhau.TabIndex = 8;
             this.cbxMatKhau.UseVisualStyleBackColor = true;
+            this.cbxMatKhau.CheckedChanged += new System.EventHandler(this.cbxMatKhau_CheckedChanged_1);
             // 
             // FrmDangNhap
             // 
