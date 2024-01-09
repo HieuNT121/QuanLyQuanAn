@@ -163,7 +163,7 @@ namespace QuanLyQuanAn
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@MaMonNhaCungcap", maNhaCungCap);
+                    command.Parameters.AddWithValue("@MaNhaCungcap", maNhaCungCap);
 
                     try
                     {

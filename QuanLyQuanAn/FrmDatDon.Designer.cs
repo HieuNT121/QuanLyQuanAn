@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.flowpanel_left = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpBan = new System.Windows.Forms.FlowLayoutPanel();
             this.order = new System.Windows.Forms.Label();
             this.cbLoaiMon = new System.Windows.Forms.ComboBox();
             this.cbTenMon = new System.Windows.Forms.ComboBox();
@@ -38,22 +38,23 @@
             this.btThemMon = new System.Windows.Forms.Button();
             this.cbxBan = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.TimeLabel = new System.Windows.Forms.Label();
             this.btXoaMon = new System.Windows.Forms.Button();
             this.dtpkThoiGian = new System.Windows.Forms.DateTimePicker();
             this.elipseControl1 = new QuanLyQuanAn.elipseControl();
             this.elipseControl2 = new QuanLyQuanAn.elipseControl();
+            this.dtgvHoaDon = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSoLuongMon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).BeginInit();
             this.SuspendLayout();
             // 
-            // flowpanel_left
+            // flpBan
             // 
-            this.flowpanel_left.BackColor = System.Drawing.Color.White;
-            this.flowpanel_left.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowpanel_left.Location = new System.Drawing.Point(0, 0);
-            this.flowpanel_left.Name = "flowpanel_left";
-            this.flowpanel_left.Size = new System.Drawing.Size(417, 600);
-            this.flowpanel_left.TabIndex = 1;
+            this.flpBan.BackColor = System.Drawing.Color.White;
+            this.flpBan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flpBan.Location = new System.Drawing.Point(0, 0);
+            this.flpBan.Name = "flpBan";
+            this.flpBan.Size = new System.Drawing.Size(417, 600);
+            this.flpBan.TabIndex = 1;
             // 
             // order
             // 
@@ -123,7 +124,7 @@
             // btThemMon
             // 
             this.btThemMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThemMon.Location = new System.Drawing.Point(447, 260);
+            this.btThemMon.Location = new System.Drawing.Point(688, 179);
             this.btThemMon.Name = "btThemMon";
             this.btThemMon.Size = new System.Drawing.Size(128, 45);
             this.btThemMon.TabIndex = 8;
@@ -147,21 +148,10 @@
             this.cbxBan.TabIndex = 12;
             this.cbxBan.Text = "Bàn";
             // 
-            // TimeLabel
-            // 
-            this.TimeLabel.AutoSize = true;
-            this.TimeLabel.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.ForeColor = System.Drawing.Color.Black;
-            this.TimeLabel.Location = new System.Drawing.Point(681, 9);
-            this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(133, 38);
-            this.TimeLabel.TabIndex = 13;
-            this.TimeLabel.Text = "Thời gian";
-            // 
             // btXoaMon
             // 
             this.btXoaMon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoaMon.Location = new System.Drawing.Point(446, 192);
+            this.btXoaMon.Location = new System.Drawing.Point(446, 179);
             this.btXoaMon.Name = "btXoaMon";
             this.btXoaMon.Size = new System.Drawing.Size(128, 45);
             this.btXoaMon.TabIndex = 15;
@@ -186,6 +176,19 @@
             // elipseControl2
             // 
             this.elipseControl2.CornerRadius = 25;
+            this.elipseControl2.TargetControl = null;
+            // 
+            // dtgvHoaDon
+            // 
+            this.dtgvHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvHoaDon.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dtgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHoaDon.Location = new System.Drawing.Point(447, 244);
+            this.dtgvHoaDon.Name = "dtgvHoaDon";
+            this.dtgvHoaDon.RowHeadersWidth = 51;
+            this.dtgvHoaDon.RowTemplate.Height = 24;
+            this.dtgvHoaDon.Size = new System.Drawing.Size(549, 291);
+            this.dtgvHoaDon.TabIndex = 17;
             // 
             // FrmDatDon
             // 
@@ -193,9 +196,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1034, 600);
+            this.Controls.Add(this.dtgvHoaDon);
             this.Controls.Add(this.dtpkThoiGian);
             this.Controls.Add(this.btXoaMon);
-            this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.cbxBan);
             this.Controls.Add(this.btThemMon);
             this.Controls.Add(this.numericUpDownSoLuongMon);
@@ -203,12 +206,13 @@
             this.Controls.Add(this.cbTenMon);
             this.Controls.Add(this.cbLoaiMon);
             this.Controls.Add(this.order);
-            this.Controls.Add(this.flowpanel_left);
+            this.Controls.Add(this.flpBan);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDatDon";
             this.Text = "Quản lý Đặt Đơn";
             this.Load += new System.EventHandler(this.FrmDatDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSoLuongMon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +220,7 @@
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowpanel_left;
+        private System.Windows.Forms.FlowLayoutPanel flpBan;
         private elipseControl elipseControl1;
         private elipseControl elipseControl2;
         private System.Windows.Forms.Label order;
@@ -227,8 +231,8 @@
         private System.Windows.Forms.Label soLuong;
         private System.Windows.Forms.ComboBox cbxBan;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label TimeLabel;
         private System.Windows.Forms.Button btXoaMon;
         private System.Windows.Forms.DateTimePicker dtpkThoiGian;
+        private System.Windows.Forms.DataGridView dtgvHoaDon;
     }
 }

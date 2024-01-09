@@ -31,7 +31,6 @@ namespace QuanLyQuanAn
             set
             {
                 _cntrl = value;
-                _cntrl.SizeChanged += (sender, eventArgs) => _cntrl.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, _cntrl.Width, _cntrl.Height, _CornerRadius, _CornerRadius));
             }
         }
 

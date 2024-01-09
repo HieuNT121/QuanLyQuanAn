@@ -47,16 +47,21 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.tbDiaChi = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.tbGioiTinh = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.tbTenNhanVien = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.tbLuong = new System.Windows.Forms.TextBox();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.tbChucVu = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.dtpkNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.dtgvDanhSachNhanVien = new System.Windows.Forms.DataGridView();
@@ -72,11 +77,6 @@
             this.btSua = new System.Windows.Forms.Button();
             this.panel22 = new System.Windows.Forms.Panel();
             this.btThoat = new System.Windows.Forms.Button();
-            this.tbGioiTinh = new System.Windows.Forms.TextBox();
-            this.tbChucVu = new System.Windows.Forms.TextBox();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbLuong = new System.Windows.Forms.TextBox();
             this.tbSoGioLamTrongThang = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -89,9 +89,10 @@
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -103,7 +104,6 @@
             this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
-            this.panel23.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -277,6 +277,14 @@
             this.panel10.Size = new System.Drawing.Size(272, 51);
             this.panel10.TabIndex = 2;
             // 
+            // tbGioiTinh
+            // 
+            this.tbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbGioiTinh.Location = new System.Drawing.Point(4, 10);
+            this.tbGioiTinh.Name = "tbGioiTinh";
+            this.tbGioiTinh.Size = new System.Drawing.Size(265, 31);
+            this.tbGioiTinh.TabIndex = 5;
+            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.tbTenNhanVien);
@@ -313,14 +321,25 @@
             this.panel6.Size = new System.Drawing.Size(166, 171);
             this.panel6.TabIndex = 11;
             // 
-            // panel14
+            // panel23
             // 
-            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel14.Controls.Add(this.label);
-            this.panel14.Location = new System.Drawing.Point(511, 194);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(282, 51);
-            this.panel14.TabIndex = 15;
+            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel23.Controls.Add(this.label6);
+            this.panel23.Location = new System.Drawing.Point(3, 113);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(163, 51);
+            this.panel23.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(41, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 28);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Lương";
             // 
             // panel13
             // 
@@ -339,6 +358,15 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(163, 48);
             this.panel12.TabIndex = 13;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel14.Controls.Add(this.label);
+            this.panel14.Location = new System.Drawing.Point(511, 194);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(282, 51);
+            this.panel14.TabIndex = 15;
             // 
             // panel7
             // 
@@ -360,6 +388,14 @@
             this.panel17.Size = new System.Drawing.Size(280, 48);
             this.panel17.TabIndex = 1;
             // 
+            // tbLuong
+            // 
+            this.tbLuong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLuong.Location = new System.Drawing.Point(8, 9);
+            this.tbLuong.Name = "tbLuong";
+            this.tbLuong.Size = new System.Drawing.Size(265, 31);
+            this.tbLuong.TabIndex = 7;
+            // 
             // panel16
             // 
             this.panel16.Controls.Add(this.tbChucVu);
@@ -367,6 +403,14 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(280, 48);
             this.panel16.TabIndex = 1;
+            // 
+            // tbChucVu
+            // 
+            this.tbChucVu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbChucVu.Location = new System.Drawing.Point(8, 9);
+            this.tbChucVu.Name = "tbChucVu";
+            this.tbChucVu.Size = new System.Drawing.Size(265, 31);
+            this.tbChucVu.TabIndex = 6;
             // 
             // panel15
             // 
@@ -475,6 +519,7 @@
             this.btXoa.TabIndex = 5;
             this.btXoa.Text = "    Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // panel21
             // 
@@ -517,50 +562,6 @@
             this.btThoat.Text = "    Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
-            // 
-            // tbGioiTinh
-            // 
-            this.tbGioiTinh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGioiTinh.Location = new System.Drawing.Point(4, 10);
-            this.tbGioiTinh.Name = "tbGioiTinh";
-            this.tbGioiTinh.Size = new System.Drawing.Size(265, 31);
-            this.tbGioiTinh.TabIndex = 5;
-            // 
-            // tbChucVu
-            // 
-            this.tbChucVu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbChucVu.Location = new System.Drawing.Point(8, 9);
-            this.tbChucVu.Name = "tbChucVu";
-            this.tbChucVu.Size = new System.Drawing.Size(265, 31);
-            this.tbChucVu.TabIndex = 6;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel23.Controls.Add(this.label6);
-            this.panel23.Location = new System.Drawing.Point(3, 113);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(163, 51);
-            this.panel23.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(41, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 28);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Lương";
-            // 
-            // tbLuong
-            // 
-            this.tbLuong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbLuong.Location = new System.Drawing.Point(8, 9);
-            this.tbLuong.Name = "tbLuong";
-            this.tbLuong.Size = new System.Drawing.Size(265, 31);
-            this.tbLuong.TabIndex = 7;
             // 
             // tbSoGioLamTrongThang
             // 
@@ -608,12 +609,14 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
@@ -627,8 +630,6 @@
             this.panel20.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

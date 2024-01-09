@@ -98,7 +98,6 @@ namespace QuanLyQuanAn
         private void btSua_Click(object sender, EventArgs e)
         {
             int checkedIsNull = 0;
-            int checkIsDuplictated = 0;
             string[] bien = new string[8];
             bien[0] = tbMaNhanVien.Text;
             bien[1] = tbTenNhanVien.Text;
@@ -128,19 +127,7 @@ namespace QuanLyQuanAn
                 }
                 else
                 {
-                    foreach (NhanVien NV in DanhSachNhanVien.Instance.ListNhanVien)
-                    {
-                        if (bien[1] == NV.HoTen)
-                        {
-                            checkIsDuplictated = 1;
-                        }
-                    }
-                    if (checkIsDuplictated == 1)
-                    {
-                        MessageBox.Show("Đã tồn tại nhân viên này!");
-                    }
-                    else
-                    {
+                    
                         DateTime x = dtpkNgaySinh.Value;
                         DanhSachNhanVien.Instance.ListNhanVien[index].MaNhanVien = bien[0];
                         DanhSachNhanVien.Instance.ListNhanVien[index].HoTen = bien[1];
@@ -151,7 +138,7 @@ namespace QuanLyQuanAn
                         DanhSachNhanVien.Instance.ListNhanVien[index].NgaySinh = x;
                         DanhSachNhanVien.Instance.ListNhanVien[index].SoGioLamTrongThang = Convert.ToInt32(bien[7]);
                         LoadDataNhanVien();
-                    }
+                    
                 }
             }
             
@@ -170,6 +157,14 @@ namespace QuanLyQuanAn
             tbLuong.Text = dtgvDanhSachNhanVien.Rows[index].Cells[5].Value.ToString();
             dtpkNgaySinh.Value = Convert.ToDateTime(dtgvDanhSachNhanVien.Rows[index].Cells[6].Value);
             tbSoGioLamTrongThang.Text = dtgvDanhSachNhanVien.Rows[index].Cells[7].Value.ToString();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            DanhSachNhanVien.Instance.ListNhanVien.RemoveAt(index);
+            string maNhanVien = tbMaNhanVien.Text;
+            DataNhanVien.Xoa(connectionStr, maNhanVien);
+            LoadDataNhanVien();
         }
     }
 }
