@@ -29,7 +29,7 @@ namespace QuanLyQuanAn
             set => listTaiKhoan = value; 
         }
 
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
 
         Danhsachtaikhoan()
         {

@@ -70,5 +70,7 @@ namespace QuanLyQuanAn
 
             return dt;
         }
+
+        public static string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
     }
 }

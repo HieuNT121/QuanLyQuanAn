@@ -122,7 +122,6 @@
     </Compile>
     <Compile Include="HoaDon.cs" />
     <Compile Include="NhanVien.cs" />
-    <Compile Include="ThongTinHoaDon.cs" />
     <Compile Include="`.cs">
       <SubType>Form</SubType>
     </Compile>
