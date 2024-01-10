@@ -10,7 +10,7 @@ namespace QuanLyQuanAn
 {
     internal class MainClass
     {
-        public static readonly string con_string = @"Data Source=DESKTOP-MC\SQLEXPRESS;Initial Catalog=RM demo;Integrated Security=True";
+        public static readonly string con_string = DataAccess.connectionStr;
         public static SqlConnection con = new SqlConnection(con_string);
 
         public static bool isValidUser(string username, string pass)

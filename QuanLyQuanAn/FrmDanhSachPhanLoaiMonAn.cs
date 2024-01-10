@@ -14,7 +14,7 @@ namespace QuanLyQuanAn
 {
     public partial class FrmDanhSachPhanLoaiMonAn : Form
     {
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
         int index = -1;
         public FrmDanhSachPhanLoaiMonAn()
         {

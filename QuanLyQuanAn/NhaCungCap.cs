@@ -24,7 +24,7 @@ namespace QuanLyQuanAn
 
         List<NhaCungCap> listNhaCungCap;
         public List<NhaCungCap> ListNhaCungCap { get => listNhaCungCap; set => listNhaCungCap = value; }
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
         DanhSachNhaCungCap()
         {
             ListNhaCungCap = DataNhaCungCap.TruyenDuLieuVaoList(connectionStr);

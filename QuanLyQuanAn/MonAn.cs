@@ -97,7 +97,7 @@ namespace QuanLyQuanAn
             get => listCategory;
             set => listCategory = value;
         }
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
         DanhSachPhanLoai()
         {
             listMonAn = DataThucDon.TruyenDuLieuVaoList(connectionStr);

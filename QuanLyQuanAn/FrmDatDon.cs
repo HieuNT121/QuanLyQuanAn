@@ -21,7 +21,7 @@ namespace QuanLyQuanAn
 
         SqlConnection connection = new SqlConnection();
         //SqlCommand command;
-        string str = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string str = DataAccess.connectionStr;
         string sql;
         SqlCommand cmd = null;
         SqlDataAdapter adapter = new SqlDataAdapter();

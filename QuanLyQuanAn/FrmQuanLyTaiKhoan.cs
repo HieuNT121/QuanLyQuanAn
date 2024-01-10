@@ -13,7 +13,7 @@ namespace QuanLyQuanAn
     public partial class FrmQuanLyTaiKhoan : Form
     {
         List<string> listAccountType = new List<string>() { "Quản lý", "Nhân viên" };
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
         int index = -1;
 
         public FrmQuanLyTaiKhoan()

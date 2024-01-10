@@ -15,7 +15,7 @@ namespace QuanLyQuanAn
     {
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=DESKTOP-CEQKQIM;Initial Catalog=QuanLyQuanAn;Integrated Security=True;Encrypt=False";
+        string str = DataAccess.connectionStr;
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable table = new DataTable();
 

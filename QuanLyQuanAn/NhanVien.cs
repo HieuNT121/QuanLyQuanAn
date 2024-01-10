@@ -66,7 +66,7 @@ namespace QuanLyQuanAn
         List<NhanVien> listNhanVien;
         public List<NhanVien> ListNhanVien { get => listNhanVien; set => listNhanVien = value; }
 
-        string connectionStr = @"Data Source=TRUNG-HIEU\SQLEXPRESS;Initial Catalog=QuanLyQuanAn;Integrated Security=True";
+        string connectionStr = DataAccess.connectionStr;
 
         DanhSachNhanVien()
         {
